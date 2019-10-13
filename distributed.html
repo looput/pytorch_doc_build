@@ -35,7 +35,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Probability distributions - torch.distributions" href="distributions.html" />
-    <link rel="prev" title="Automatic differentiation package - torch.autograd" href="autograd.html" /> 
+    <link rel="prev" title="torch.cuda" href="cuda.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -110,7 +110,7 @@
               
               
                 <div class="version">
-                  master (1.0.0 )
+                  master (1.1.0 )
                 </div>
               
             
@@ -149,9 +149,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="notes/autograd.html">Autograd mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/broadcasting.html">Broadcasting semantics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes/cpu_threading_torchscript_inference.html">CPU threading and TorchScript inference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/cuda.html">CUDA semantics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/extending.html">Extending PyTorch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes/large_scale_deployments.html">Features for large-scale deployments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/multiprocessing.html">Multiprocessing best practices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/randomness.html">Reproducibility</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/serialization.html">Serialization semantics</a></li>
@@ -163,34 +165,37 @@
 <li class="toctree-l1"><a class="reference internal" href="community/governance.html">PyTorch Governance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="community/persons_of_interest.html">PyTorch Governance | Persons of Interest</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Package Reference</span></p>
+<p class="caption"><span class="caption-text">Python API</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="torch.html">torch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nn.html">torch.nn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nn.functional.html">torch.nn.functional</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tensors.html">torch.Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tensor_attributes.html">Tensor Attributes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="type_info.html">Type Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sparse.html">torch.sparse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cuda.html">torch.cuda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="storage.html">torch.Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nn.html">torch.nn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nn.html#torch-nn-functional">torch.nn.functional</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nn.html#torch-nn-init">torch.nn.init</a></li>
-<li class="toctree-l1"><a class="reference internal" href="optim.html">torch.optim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="autograd.html">torch.autograd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cuda.html">torch.cuda</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">torch.distributed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="distributions.html">torch.distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jit.html">torch.jit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="multiprocessing.html">torch.multiprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nn.init.html">torch.nn.init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="optim.html">torch.optim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="random.html">torch.random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sparse.html">torch.sparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">torch.Storage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bottleneck.html">torch.utils.bottleneck</a></li>
 <li class="toctree-l1"><a class="reference internal" href="checkpoint.html">torch.utils.checkpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cpp_extension.html">torch.utils.cpp_extension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data.html">torch.utils.data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dlpack.html">torch.utils.dlpack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="model_zoo.html">torch.utils.model_zoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tensorboard.html">torch.utils.tensorboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type_info.html">Type Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="named_tensor.html">Named Tensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="name_inference.html">Named Tensors operator coverage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="__config__.html">torch.__config__</a></li>
-<li class="toctree-l1"><a class="reference internal" href="distributed_deprecated.html">torch.distributed.deprecated</a></li>
 </ul>
 
             
@@ -423,16 +428,17 @@ Gloo in the upcoming releases.</p></li>
 <h3>Common environment variables<a class="headerlink" href="#common-environment-variables" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="choosing-the-network-interface-to-use">
 <h4>Choosing the network interface to use<a class="headerlink" href="#choosing-the-network-interface-to-use" title="Permalink to this headline">¶</a></h4>
-<p>By default, both NCCL and Gloo
-backends will try to find the network interface to use for communication. However, this
-is not always guaranteed to be successful from our experiences. Therefore, if you
-encounter any problem on either backend not being able to find the correct network
-interface. You can try to set the following environment variables (each one
-applicable to its respective backend):</p>
+<p>By default, both the NCCL and Gloo backends will try to find the right network interface to use.
+If the automatically detected interface is not correct, you can override it using the following
+environment variables (applicable to the respective backend):</p>
 <ul class="simple">
 <li><p><strong>NCCL_SOCKET_IFNAME</strong>, for example <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">NCCL_SOCKET_IFNAME=eth0</span></code></p></li>
 <li><p><strong>GLOO_SOCKET_IFNAME</strong>, for example <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">GLOO_SOCKET_IFNAME=eth0</span></code></p></li>
 </ul>
+<p>If you’re using the Gloo backend, you can specify multiple interfaces by separating
+them by a comma, like this: <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">GLOO_SOCKET_IFNAME=eth0,eth1,eth2,eth3</span></code>.
+The backend will dispatch operations in a round-robin fashion across these interfaces.
+It is imperative that all processes specify the same number of interfaces in this variable.</p>
 </div>
 <div class="section" id="other-nccl-environment-variables">
 <h4>Other NCCL environment variables<a class="headerlink" href="#other-nccl-environment-variables" title="Permalink to this headline">¶</a></h4>
@@ -480,9 +486,19 @@ function before calling any other methods. This blocks until all processes have
 joined.</p>
 <dl class="function">
 <dt id="torch.distributed.init_process_group">
-<code class="descclassname">torch.distributed.</code><code class="descname">init_process_group</code><span class="sig-paren">(</span><em>backend</em>, <em>init_method='env://'</em>, <em>timeout=datetime.timedelta(seconds=1800)</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/distributed/distributed_c10d.html#init_process_group"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.distributed.init_process_group" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">torch.distributed.</code><code class="descname">init_process_group</code><span class="sig-paren">(</span><em>backend</em>, <em>init_method=None</em>, <em>timeout=datetime.timedelta(seconds=1800)</em>, <em>world_size=-1</em>, <em>rank=-1</em>, <em>store=None</em>, <em>group_name=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/distributed/distributed_c10d.html#init_process_group"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.distributed.init_process_group" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initializes the default distributed process group, and this will also
-initialize the distributed package</p>
+initialize the distributed package.</p>
+<dl>
+<dt>There are 2 main ways to initialize a process group:</dt><dd><ol class="arabic simple">
+<li><p>Specify <code class="docutils literal notranslate"><span class="pre">store</span></code>, <code class="docutils literal notranslate"><span class="pre">rank</span></code>, and <code class="docutils literal notranslate"><span class="pre">world_size</span></code> explicitly.</p></li>
+<li><p>Specify <code class="docutils literal notranslate"><span class="pre">init_method</span></code> (a URL string) which indicates where/how
+to discover peers. Optionally specify <code class="docutils literal notranslate"><span class="pre">rank</span></code> and <code class="docutils literal notranslate"><span class="pre">world_size</span></code>,
+or encode all required parameters in the URL and omit them.</p></li>
+</ol>
+<p>If neither is specified, <code class="docutils literal notranslate"><span class="pre">init_method</span></code> is assumed to be “env://”.</p>
+</dd>
+</dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -490,12 +506,21 @@ initialize the distributed package</p>
 build-time configurations, valid values include <code class="docutils literal notranslate"><span class="pre">mpi</span></code>, <code class="docutils literal notranslate"><span class="pre">gloo</span></code>,
 and <code class="docutils literal notranslate"><span class="pre">nccl</span></code>. This field should be given as a lowercase string
 (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;gloo&quot;</span></code>), which can also be accessed via
-<a class="reference internal" href="#torch.distributed.Backend" title="torch.distributed.Backend"><code class="xref py py-class docutils literal notranslate"><span class="pre">Backend</span></code></a> attributes (e.g., <code class="docutils literal notranslate"><span class="pre">Backend.GLOO</span></code>).</p></li>
+<a class="reference internal" href="#torch.distributed.Backend" title="torch.distributed.Backend"><code class="xref py py-class docutils literal notranslate"><span class="pre">Backend</span></code></a> attributes (e.g., <code class="docutils literal notranslate"><span class="pre">Backend.GLOO</span></code>). If using
+multiple processes per machine with <code class="docutils literal notranslate"><span class="pre">nccl</span></code> backend, each process
+must have exclusive access to every GPU it uses, as sharing GPUs
+between processes can result in deadlocks.</p></li>
 <li><p><strong>init_method</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em>, </em><em>optional</em>) – URL specifying how to initialize the
-process group.</p></li>
+process group. Default is “env://” if no
+<code class="docutils literal notranslate"><span class="pre">init_method</span></code> or <code class="docutils literal notranslate"><span class="pre">store</span></code> is specified.
+Mutually exclusive with <code class="docutils literal notranslate"><span class="pre">store</span></code>.</p></li>
 <li><p><strong>world_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – Number of processes participating in
-the job.</p></li>
-<li><p><strong>rank</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – Rank of the current process.</p></li>
+the job. Required if <code class="docutils literal notranslate"><span class="pre">store</span></code> is specified.</p></li>
+<li><p><strong>rank</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – Rank of the current process.
+Required if <code class="docutils literal notranslate"><span class="pre">store</span></code> is specified.</p></li>
+<li><p><strong>store</strong> (<em>Store</em><em>, </em><em>optional</em>) – Key/value store accessible to all workers, used
+to exchange connection/address information.
+Mutually exclusive with <code class="docutils literal notranslate"><span class="pre">init_method</span></code>.</p></li>
 <li><p><strong>timeout</strong> (<em>timedelta</em><em>, </em><em>optional</em>) – Timeout for operations executed against
 the process group. Default value equals 30 minutes.
 This is only applicable for the <code class="docutils literal notranslate"><span class="pre">gloo</span></code> backend.</p></li>
@@ -544,7 +569,7 @@ is specified, the calling process must be part of <code class="xref py py-attr d
 <dl class="function">
 <dt id="torch.distributed.get_rank">
 <code class="descclassname">torch.distributed.</code><code class="descname">get_rank</code><span class="sig-paren">(</span><em>group=&lt;object object&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/distributed/distributed_c10d.html#get_rank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.distributed.get_rank" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the rank of currrent process group</p>
+<dd><p>Returns the rank of current process group</p>
 <p>Rank is a unique identifier assigned to each process within a distributed
 process group. They are always consecutive integers ranging from 0 to
 <code class="docutils literal notranslate"><span class="pre">world_size</span></code>.</p>
@@ -583,13 +608,13 @@ process group. They are always consecutive integers ranging from 0 to
 <dl class="function">
 <dt id="torch.distributed.is_mpi_available">
 <code class="descclassname">torch.distributed.</code><code class="descname">is_mpi_available</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/distributed/distributed_c10d.html#is_mpi_available"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.distributed.is_mpi_available" title="Permalink to this definition">¶</a></dt>
-<dd><p>Checks if MPI is available</p>
+<dd><p>Checks if the MPI backend is available.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="torch.distributed.is_nccl_available">
 <code class="descclassname">torch.distributed.</code><code class="descname">is_nccl_available</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/distributed/distributed_c10d.html#is_nccl_available"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.distributed.is_nccl_available" title="Permalink to this definition">¶</a></dt>
-<dd><p>Checks if NCCL is available</p>
+<dd><p>Checks if the NCCL backend is available.</p>
 </dd></dl>
 
 <hr class="docutils" />
@@ -676,12 +701,9 @@ into play. <a class="reference internal" href="#torch.distributed.new_group" tit
 used to create new groups, with arbitrary subsets of all processes. It returns
 an opaque group handle that can be given as a <code class="docutils literal notranslate"><span class="pre">group</span></code> argument to all collectives
 (collectives are distributed functions to exchange information in certain well-known programming patterns).</p>
-<p>Currently <cite>torch.distributed</cite> does not support creating groups with different backends.
-In other words, each group being created will use the same backend as you specified in
-<a class="reference internal" href="#torch.distributed.init_process_group" title="torch.distributed.init_process_group"><code class="xref py py-func docutils literal notranslate"><span class="pre">init_process_group()</span></code></a>.</p>
 <dl class="function">
 <dt id="torch.distributed.new_group">
-<code class="descclassname">torch.distributed.</code><code class="descname">new_group</code><span class="sig-paren">(</span><em>ranks=None</em>, <em>timeout=datetime.timedelta(seconds=1800)</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/distributed/distributed_c10d.html#new_group"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.distributed.new_group" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">torch.distributed.</code><code class="descname">new_group</code><span class="sig-paren">(</span><em>ranks=None</em>, <em>timeout=datetime.timedelta(seconds=1800)</em>, <em>backend=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/distributed/distributed_c10d.html#new_group"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.distributed.new_group" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a new distributed group.</p>
 <p>This function requires that all processes in the main group (i.e. all
 processes that are part of the distributed job) enter this function, even
@@ -694,6 +716,12 @@ should be created in the same order in all processes.</p>
 <li><p><strong>timeout</strong> (<em>timedelta</em><em>, </em><em>optional</em>) – Timeout for operations executed against
 the process group. Default value equals 30 minutes.
 This is only applicable for the <code class="docutils literal notranslate"><span class="pre">gloo</span></code> backend.</p></li>
+<li><p><strong>backend</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em> or </em><a class="reference internal" href="#torch.distributed.Backend" title="torch.distributed.Backend"><em>Backend</em></a><em>, </em><em>optional</em>) – The backend to use. Depending on
+build-time configurations, valid values are <code class="docutils literal notranslate"><span class="pre">gloo</span></code> and <code class="docutils literal notranslate"><span class="pre">nccl</span></code>.
+By default uses the same backend as the global group. This field
+should be given as a lowercase string (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;gloo&quot;</span></code>), which can
+also be accessed via <a class="reference internal" href="#torch.distributed.Backend" title="torch.distributed.Backend"><code class="xref py py-class docutils literal notranslate"><span class="pre">Backend</span></code></a> attributes (e.g.,
+<code class="docutils literal notranslate"><span class="pre">Backend.GLOO</span></code>).</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -1061,10 +1089,10 @@ tensors should only be GPU tensors</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>tensor_list</strong> (<em>List</em><em>[</em><a class="reference internal" href="tensors.html#torch.Tensor" title="torch.Tensor"><em>Tensor</em></a><em>]</em>) – Tensors that participate in the collective
-operation. if <code class="docutils literal notranslate"><span class="pre">src</span></code> is the rank, then <code class="docutils literal notranslate"><span class="pre">src_tensor``th</span> <span class="pre">element</span> <span class="pre">of</span>
-<span class="pre">``tensor_list</span></code> (<code class="docutils literal notranslate"><span class="pre">tensor_list[src_tensor]</span></code>) will be broadcasted
-to all other tensors (on different GPUs) in the src process and
-all tensors in <code class="docutils literal notranslate"><span class="pre">tensor_list</span></code> of other non-src processes.
+operation. If <code class="docutils literal notranslate"><span class="pre">src</span></code> is the rank, then the specified <code class="docutils literal notranslate"><span class="pre">src_tensor</span></code>
+element of <code class="docutils literal notranslate"><span class="pre">tensor_list</span></code> (<code class="docutils literal notranslate"><span class="pre">tensor_list[src_tensor]</span></code>) will be
+broadcast to all other tensors (on different GPUs) in the src process
+and all tensors in <code class="docutils literal notranslate"><span class="pre">tensor_list</span></code> of other non-src processes.
 You also need to make sure that <code class="docutils literal notranslate"><span class="pre">len(tensor_list)</span></code> is the same
 for all the distributed processes calling this function.</p></li>
 <li><p><strong>src</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Source rank.</p></li>
@@ -1157,21 +1185,22 @@ tensors should only be GPU tensors</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>output_tensor_lists</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><a class="reference internal" href="tensors.html#torch.Tensor" title="torch.Tensor"><em>Tensor</em></a><em>]</em><em>]</em>) – Output lists. It should
-contain correctly-sized tensors on each GPU to be used for output of
-the collective.
-e.g. <code class="docutils literal notranslate"><span class="pre">output_tensor_lists[i]</span></code> contains the all_gather
-result that resides on the GPU of <code class="docutils literal notranslate"><span class="pre">input_tensor_list[i]</span></code>.
-Note that each element of <code class="docutils literal notranslate"><span class="pre">output_tensor_lists[i]</span></code> has the size of
+<li><p><strong>output_tensor_lists</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><a class="reference internal" href="tensors.html#torch.Tensor" title="torch.Tensor"><em>Tensor</em></a><em>]</em><em>]</em>) – <p>Output lists. It should
+contain correctly-sized tensors on each GPU to be used for output
+of the collective, e.g. <code class="docutils literal notranslate"><span class="pre">output_tensor_lists[i]</span></code> contains the
+all_gather result that resides on the GPU of
+<code class="docutils literal notranslate"><span class="pre">input_tensor_list[i]</span></code>.</p>
+<p>Note that each element of <code class="docutils literal notranslate"><span class="pre">output_tensor_lists</span></code> has the size of
 <code class="docutils literal notranslate"><span class="pre">world_size</span> <span class="pre">*</span> <span class="pre">len(input_tensor_list)</span></code>, since the function all
 gathers the result from every single GPU in the group. To interpret
-each element of <code class="docutils literal notranslate"><span class="pre">output_tensor_list[i]</span></code>, note that
+each element of <code class="docutils literal notranslate"><span class="pre">output_tensor_lists[i]</span></code>, note that
 <code class="docutils literal notranslate"><span class="pre">input_tensor_list[j]</span></code> of rank k will be appear in
-<code class="docutils literal notranslate"><span class="pre">output_tensor_list[i][rank</span> <span class="pre">*</span> <span class="pre">world_size</span> <span class="pre">+</span> <span class="pre">j]</span></code>
-Also note that <code class="docutils literal notranslate"><span class="pre">len(output_tensor_lists)</span></code>, and the size of each
+<code class="docutils literal notranslate"><span class="pre">output_tensor_lists[i][k</span> <span class="pre">*</span> <span class="pre">world_size</span> <span class="pre">+</span> <span class="pre">j]</span></code></p>
+<p>Also note that <code class="docutils literal notranslate"><span class="pre">len(output_tensor_lists)</span></code>, and the size of each
 element in <code class="docutils literal notranslate"><span class="pre">output_tensor_lists</span></code> (each element is a list,
 therefore <code class="docutils literal notranslate"><span class="pre">len(output_tensor_lists[i])</span></code>) need to be the same
-for all the distributed processes calling this function.</p></li>
+for all the distributed processes calling this function.</p>
+</p></li>
 <li><p><strong>input_tensor_list</strong> (<em>List</em><em>[</em><a class="reference internal" href="tensors.html#torch.Tensor" title="torch.Tensor"><em>Tensor</em></a><em>]</em>) – List of tensors(on different GPUs) to
 be broadcast from current process.
 Note that <code class="docutils literal notranslate"><span class="pre">len(input_tensor_list)</span></code> needs to be the same for
@@ -1292,6 +1321,11 @@ that your code will be operating on. This is generally the local rank of the
 process. In other words, the <code class="docutils literal notranslate"><span class="pre">device_ids</span></code> needs to be <code class="docutils literal notranslate"><span class="pre">[args.local_rank]</span></code>,
 and <code class="docutils literal notranslate"><span class="pre">output_device</span></code> needs to be <code class="docutils literal notranslate"><span class="pre">args.local_rank</span></code> in order to use this
 utility</p>
+<p>5. Another way to pass <code class="docutils literal notranslate"><span class="pre">local_rank</span></code> to the subprocesses via environment variable
+<code class="docutils literal notranslate"><span class="pre">LOCAL_RANK</span></code>. This behavior is enabled when you launch the script with
+<code class="docutils literal notranslate"><span class="pre">--use_env=True</span></code>. You must adjust the subprocess example above to replace
+<code class="docutils literal notranslate"><span class="pre">args.local_rank</span></code> with <code class="docutils literal notranslate"><span class="pre">os.environ['LOCAL_RANK']</span></code>; the launcher
+will not pass <code class="docutils literal notranslate"><span class="pre">--local_rank</span></code> when you specify this flag.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><code class="docutils literal notranslate"><span class="pre">local_rank</span></code> is NOT globally unique: it is only unique per process
@@ -1308,7 +1342,7 @@ function in <a class="reference internal" href="multiprocessing.html#torch.multi
 can be used to spawn multiple processes. It works by passing in the
 function that you want to run and spawns N processes to run it. This
 can be used for multiprocess distributed training as well.</p>
-<p>For references on how to use it, please refer to <a class="reference external" href="https://github.com/pytorch/examples/tree/master/imagenet">PyToch example - ImageNet
+<p>For references on how to use it, please refer to <a class="reference external" href="https://github.com/pytorch/examples/tree/master/imagenet">PyTorch example - ImageNet
 implementation</a></p>
 <p>Note that this function requires Python 3.4 or higher.</p>
 </div>
@@ -1325,7 +1359,7 @@ implementation</a></p>
         <a href="distributions.html" class="btn btn-neutral float-right" title="Probability distributions - torch.distributions" accesskey="n" rel="next">Next <img src="_static/images/chevron-right-orange.svg" class="next-page"></a>
       
       
-        <a href="autograd.html" class="btn btn-neutral" title="Automatic differentiation package - torch.autograd" accesskey="p" rel="prev"><img src="_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+        <a href="cuda.html" class="btn btn-neutral" title="torch.cuda" accesskey="p" rel="prev"><img src="_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
       
     </div>
   
@@ -1338,7 +1372,7 @@ implementation</a></p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Torch Contributors.
+        &copy; Copyright 2019, Torch Contributors.
 
     </p>
   </div>

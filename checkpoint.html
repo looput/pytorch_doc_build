@@ -110,7 +110,7 @@
               
               
                 <div class="version">
-                  master (1.0.0 )
+                  master (1.1.0 )
                 </div>
               
             
@@ -149,9 +149,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="notes/autograd.html">Autograd mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/broadcasting.html">Broadcasting semantics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes/cpu_threading_torchscript_inference.html">CPU threading and TorchScript inference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/cuda.html">CUDA semantics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/extending.html">Extending PyTorch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes/large_scale_deployments.html">Features for large-scale deployments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/multiprocessing.html">Multiprocessing best practices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/randomness.html">Reproducibility</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/serialization.html">Serialization semantics</a></li>
@@ -163,34 +165,37 @@
 <li class="toctree-l1"><a class="reference internal" href="community/governance.html">PyTorch Governance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="community/persons_of_interest.html">PyTorch Governance | Persons of Interest</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Package Reference</span></p>
+<p class="caption"><span class="caption-text">Python API</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="torch.html">torch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nn.html">torch.nn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nn.functional.html">torch.nn.functional</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tensors.html">torch.Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tensor_attributes.html">Tensor Attributes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="type_info.html">Type Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sparse.html">torch.sparse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cuda.html">torch.cuda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="storage.html">torch.Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nn.html">torch.nn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nn.html#torch-nn-functional">torch.nn.functional</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nn.html#torch-nn-init">torch.nn.init</a></li>
-<li class="toctree-l1"><a class="reference internal" href="optim.html">torch.optim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="autograd.html">torch.autograd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cuda.html">torch.cuda</a></li>
 <li class="toctree-l1"><a class="reference internal" href="distributed.html">torch.distributed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="distributions.html">torch.distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jit.html">torch.jit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="multiprocessing.html">torch.multiprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nn.init.html">torch.nn.init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="optim.html">torch.optim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="random.html">torch.random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sparse.html">torch.sparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">torch.Storage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bottleneck.html">torch.utils.bottleneck</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">torch.utils.checkpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cpp_extension.html">torch.utils.cpp_extension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data.html">torch.utils.data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dlpack.html">torch.utils.dlpack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="model_zoo.html">torch.utils.model_zoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tensorboard.html">torch.utils.tensorboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type_info.html">Type Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="named_tensor.html">Named Tensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="name_inference.html">Named Tensors operator coverage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="__config__.html">torch.__config__</a></li>
-<li class="toctree-l1"><a class="reference internal" href="distributed_deprecated.html">torch.distributed.deprecated</a></li>
 </ul>
 
             
@@ -290,7 +295,7 @@ output compared to non-checkpointed passes is never guaranteed.</p>
 </div>
 <dl class="function">
 <dt id="torch.utils.checkpoint.checkpoint">
-<code class="descclassname">torch.utils.checkpoint.</code><code class="descname">checkpoint</code><span class="sig-paren">(</span><em>function</em>, <em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/utils/checkpoint.html#checkpoint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.utils.checkpoint.checkpoint" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">torch.utils.checkpoint.</code><code class="descname">checkpoint</code><span class="sig-paren">(</span><em>function</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/utils/checkpoint.html#checkpoint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.utils.checkpoint.checkpoint" title="Permalink to this definition">¶</a></dt>
 <dd><p>Checkpoint a model or part of the model</p>
 <p>Checkpointing works by trading compute for memory. Rather than storing all
 intermediate activations of the entire computation graph for computing
@@ -324,6 +329,8 @@ part of the model. It should also know how to handle the inputs
 passed as the tuple. For example, in LSTM, if user passes
 <code class="docutils literal notranslate"><span class="pre">(activation,</span> <span class="pre">hidden)</span></code>, <code class="xref py py-attr docutils literal notranslate"><span class="pre">function</span></code> should correctly use the
 first input as <code class="docutils literal notranslate"><span class="pre">activation</span></code> and the second input as <code class="docutils literal notranslate"><span class="pre">hidden</span></code></p></li>
+<li><p><strong>preserve_rng_state</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a><em>, </em><em>optional</em><em>, </em><em>default=True</em>) – Omit stashing and restoring
+the RNG state during each checkpoint.</p></li>
 <li><p><strong>args</strong> – tuple containing inputs to the <code class="xref py py-attr docutils literal notranslate"><span class="pre">function</span></code></p></li>
 </ul>
 </dd>
@@ -335,7 +342,7 @@ first input as <code class="docutils literal notranslate"><span class="pre">acti
 
 <dl class="function">
 <dt id="torch.utils.checkpoint.checkpoint_sequential">
-<code class="descclassname">torch.utils.checkpoint.</code><code class="descname">checkpoint_sequential</code><span class="sig-paren">(</span><em>functions</em>, <em>segments</em>, <em>*inputs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/utils/checkpoint.html#checkpoint_sequential"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.utils.checkpoint.checkpoint_sequential" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">torch.utils.checkpoint.</code><code class="descname">checkpoint_sequential</code><span class="sig-paren">(</span><em>functions</em>, <em>segments</em>, <em>*inputs</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/utils/checkpoint.html#checkpoint_sequential"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.utils.checkpoint.checkpoint_sequential" title="Permalink to this definition">¶</a></dt>
 <dd><p>A helper function for checkpointing sequential models.</p>
 <p>Sequential models execute a list of modules/functions in order
 (sequentially). Therefore, we can divide such a model in various segments
@@ -356,6 +363,8 @@ with <a class="reference internal" href="autograd.html#torch.autograd.backward" 
 functions (comprising the model) to run sequentially.</p></li>
 <li><p><strong>segments</strong> – Number of chunks to create in the model</p></li>
 <li><p><strong>inputs</strong> – tuple of Tensors that are inputs to <code class="xref py py-attr docutils literal notranslate"><span class="pre">functions</span></code></p></li>
+<li><p><strong>preserve_rng_state</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a><em>, </em><em>optional</em><em>, </em><em>default=True</em>) – Omit stashing and restoring
+the RNG state during each checkpoint.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -395,7 +404,7 @@ functions (comprising the model) to run sequentially.</p></li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Torch Contributors.
+        &copy; Copyright 2019, Torch Contributors.
 
     </p>
   </div>

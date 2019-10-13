@@ -34,8 +34,8 @@
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Automatic differentiation package - torch.autograd" href="autograd.html" />
-    <link rel="prev" title="torch.nn" href="nn.html" /> 
+    <link rel="next" title="Quantization" href="quantization.html" />
+    <link rel="prev" title="torch.onnx" href="onnx.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -110,7 +110,7 @@
               
               
                 <div class="version">
-                  master (1.0.0 )
+                  master (1.1.0 )
                 </div>
               
             
@@ -149,9 +149,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="notes/autograd.html">Autograd mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/broadcasting.html">Broadcasting semantics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes/cpu_threading_torchscript_inference.html">CPU threading and TorchScript inference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/cuda.html">CUDA semantics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/extending.html">Extending PyTorch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes/large_scale_deployments.html">Features for large-scale deployments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/multiprocessing.html">Multiprocessing best practices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/randomness.html">Reproducibility</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes/serialization.html">Serialization semantics</a></li>
@@ -163,34 +165,37 @@
 <li class="toctree-l1"><a class="reference internal" href="community/governance.html">PyTorch Governance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="community/persons_of_interest.html">PyTorch Governance | Persons of Interest</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Package Reference</span></p>
+<p class="caption"><span class="caption-text">Python API</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="torch.html">torch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nn.html">torch.nn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nn.functional.html">torch.nn.functional</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tensors.html">torch.Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tensor_attributes.html">Tensor Attributes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="type_info.html">Type Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sparse.html">torch.sparse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cuda.html">torch.cuda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="storage.html">torch.Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nn.html">torch.nn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nn.html#torch-nn-functional">torch.nn.functional</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nn.html#torch-nn-init">torch.nn.init</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">torch.optim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="autograd.html">torch.autograd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cuda.html">torch.cuda</a></li>
 <li class="toctree-l1"><a class="reference internal" href="distributed.html">torch.distributed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="distributions.html">torch.distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jit.html">torch.jit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="multiprocessing.html">torch.multiprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nn.init.html">torch.nn.init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onnx.html">torch.onnx</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">torch.optim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="random.html">torch.random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sparse.html">torch.sparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">torch.Storage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bottleneck.html">torch.utils.bottleneck</a></li>
 <li class="toctree-l1"><a class="reference internal" href="checkpoint.html">torch.utils.checkpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cpp_extension.html">torch.utils.cpp_extension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data.html">torch.utils.data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dlpack.html">torch.utils.dlpack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="model_zoo.html">torch.utils.model_zoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tensorboard.html">torch.utils.tensorboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type_info.html">Type Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="named_tensor.html">Named Tensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="name_inference.html">Named Tensors operator coverage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="__config__.html">torch.__config__</a></li>
-<li class="toctree-l1"><a class="reference internal" href="distributed_deprecated.html">torch.distributed.deprecated</a></li>
 </ul>
 
             
@@ -281,8 +286,8 @@ parameters (all should be <code class="xref py py-class docutils literal notrans
 you can specify optimizer-specific options such as the learning rate, weight decay, etc.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you need to move a model to GPU via <cite>.cuda()</cite>, please do so before
-constructing optimizers for it. Parameters of a model after <cite>.cuda()</cite> will
+<p>If you need to move a model to GPU via <code class="docutils literal notranslate"><span class="pre">.cuda()</span></code>, please do so before
+constructing optimizers for it. Parameters of a model after <code class="docutils literal notranslate"><span class="pre">.cuda()</span></code> will
 be different objects with those before the call.</p>
 <p>In general, you should make sure that optimized parameters live in
 consistent locations when optimizers are constructed and used.</p>
@@ -830,6 +835,24 @@ and returns the loss.</p>
 <p><code class="xref py py-mod docutils literal notranslate"><span class="pre">torch.optim.lr_scheduler</span></code> provides several methods to adjust the learning
 rate based on the number of epochs. <a class="reference internal" href="#torch.optim.lr_scheduler.ReduceLROnPlateau" title="torch.optim.lr_scheduler.ReduceLROnPlateau"><code class="xref py py-class docutils literal notranslate"><span class="pre">torch.optim.lr_scheduler.ReduceLROnPlateau</span></code></a>
 allows dynamic learning rate reducing based on some validation measurements.</p>
+<p>Learning rate scheduling should be applied after optimizer’s update; e.g., you
+should write your code this way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scheduler</span> <span class="o">=</span> <span class="o">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">train</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">validate</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">scheduler</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Prior to PyTorch 1.1.0, the learning rate scheduler was expected to be called before
+the optimizer’s update; 1.1.0 changed this behavior in a BC-breaking way.  If you use
+the learning rate scheduler (calling <code class="docutils literal notranslate"><span class="pre">scheduler.step()</span></code>) before the optimizer’s update
+(calling <code class="docutils literal notranslate"><span class="pre">optimizer.step()</span></code>), this will skip the first value of the learning rate schedule.
+If you are unable to reproduce results after upgrading to PyTorch 1.1.0, please check
+if you are calling <code class="docutils literal notranslate"><span class="pre">scheduler.step()</span></code> at the wrong time.</p>
+</div>
 <dl class="class">
 <dt id="torch.optim.lr_scheduler.LambdaLR">
 <em class="property">class </em><code class="descclassname">torch.optim.lr_scheduler.</code><code class="descname">LambdaLR</code><span class="sig-paren">(</span><em>optimizer</em>, <em>lr_lambda</em>, <em>last_epoch=-1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/optim/lr_scheduler.html#LambdaLR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.optim.lr_scheduler.LambdaLR" title="Permalink to this definition">¶</a></dt>
@@ -852,9 +875,9 @@ functions, one for each group in optimizer.param_groups.</p></li>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lambda2</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">epoch</span><span class="p">:</span> <span class="mf">0.95</span> <span class="o">**</span> <span class="n">epoch</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">scheduler</span> <span class="o">=</span> <span class="n">LambdaLR</span><span class="p">(</span><span class="n">optimizer</span><span class="p">,</span> <span class="n">lr_lambda</span><span class="o">=</span><span class="p">[</span><span class="n">lambda1</span><span class="p">,</span> <span class="n">lambda2</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
-<span class="gp">&gt;&gt;&gt; </span>    <span class="n">scheduler</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">train</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">validate</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">scheduler</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
 </pre></div>
 </div>
 <dl class="method">
@@ -884,9 +907,10 @@ and not if they are functions or lambdas.</p>
 <dl class="class">
 <dt id="torch.optim.lr_scheduler.StepLR">
 <em class="property">class </em><code class="descclassname">torch.optim.lr_scheduler.</code><code class="descname">StepLR</code><span class="sig-paren">(</span><em>optimizer</em>, <em>step_size</em>, <em>gamma=0.1</em>, <em>last_epoch=-1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/optim/lr_scheduler.html#StepLR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.optim.lr_scheduler.StepLR" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sets the learning rate of each parameter group to the initial lr
-decayed by gamma every step_size epochs. When last_epoch=-1, sets
-initial lr as lr.</p>
+<dd><p>Decays the learning rate of each parameter group by gamma every
+step_size epochs. Notice that such decay can happen simultaneously with
+other changes to the learning rate from outside this scheduler. When
+last_epoch=-1, sets initial lr as lr.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -906,9 +930,9 @@ Default: 0.1.</p></li>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># ...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">scheduler</span> <span class="o">=</span> <span class="n">StepLR</span><span class="p">(</span><span class="n">optimizer</span><span class="p">,</span> <span class="n">step_size</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
-<span class="gp">&gt;&gt;&gt; </span>    <span class="n">scheduler</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">train</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">validate</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">scheduler</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -916,9 +940,10 @@ Default: 0.1.</p></li>
 <dl class="class">
 <dt id="torch.optim.lr_scheduler.MultiStepLR">
 <em class="property">class </em><code class="descclassname">torch.optim.lr_scheduler.</code><code class="descname">MultiStepLR</code><span class="sig-paren">(</span><em>optimizer</em>, <em>milestones</em>, <em>gamma=0.1</em>, <em>last_epoch=-1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/optim/lr_scheduler.html#MultiStepLR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.optim.lr_scheduler.MultiStepLR" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the learning rate of each parameter group to the initial lr decayed
-by gamma once the number of epoch reaches one of the milestones. When
-last_epoch=-1, sets initial lr as lr.</p>
+<dd><p>Decays the learning rate of each parameter group by gamma once the
+number of epoch reaches one of the milestones. Notice that such decay can
+happen simultaneously with other changes to the learning rate from outside
+this scheduler. When last_epoch=-1, sets initial lr as lr.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -937,9 +962,9 @@ Default: 0.1.</p></li>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># lr = 0.0005   if epoch &gt;= 80</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">scheduler</span> <span class="o">=</span> <span class="n">MultiStepLR</span><span class="p">(</span><span class="n">optimizer</span><span class="p">,</span> <span class="n">milestones</span><span class="o">=</span><span class="p">[</span><span class="mi">30</span><span class="p">,</span><span class="mi">80</span><span class="p">],</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
-<span class="gp">&gt;&gt;&gt; </span>    <span class="n">scheduler</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">train</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">validate</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">scheduler</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -947,8 +972,8 @@ Default: 0.1.</p></li>
 <dl class="class">
 <dt id="torch.optim.lr_scheduler.ExponentialLR">
 <em class="property">class </em><code class="descclassname">torch.optim.lr_scheduler.</code><code class="descname">ExponentialLR</code><span class="sig-paren">(</span><em>optimizer</em>, <em>gamma</em>, <em>last_epoch=-1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/optim/lr_scheduler.html#ExponentialLR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.optim.lr_scheduler.ExponentialLR" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the learning rate of each parameter group to the initial lr decayed
-by gamma every epoch. When last_epoch=-1, sets initial lr as lr.</p>
+<dd><p>Decays the learning rate of each parameter group by gamma every epoch.
+When last_epoch=-1, sets initial lr as lr.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -967,9 +992,23 @@ by gamma every epoch. When last_epoch=-1, sets initial lr as lr.</p>
 schedule, where <span class="math">\(\eta_{max}\)</span> is set to the initial lr and
 <span class="math">\(T_{cur}\)</span> is the number of epochs since the last restart in SGDR:</p>
 <div class="math">
+\[\eta_{t+1} = \eta_{min} + (\eta_t - \eta_{min})\frac{1 +
+\cos(\frac{T_{cur+1}}{T_{max}}\pi)}{1 + \cos(\frac{T_{cur}}{T_{max}}\pi)},
+T_{cur} \neq (2k+1)T_{max};\\
+\eta_{t+1} = \eta_{t} + (\eta_{max} - \eta_{min})\frac{1 -
+\cos(\frac{1}{T_{max}}\pi)}{2},
+T_{cur} = (2k+1)T_{max}.\\
+
+\]</div>
+<p>When last_epoch=-1, sets initial lr as lr. Notice that because the schedule
+is defined recursively, the learning rate can be simultaneously modified
+outside this scheduler by other operators. If the learning rate is set
+solely by this scheduler, the learning rate at each step becomes:</p>
+<div class="math">
 \[\eta_t = \eta_{min} + \frac{1}{2}(\eta_{max} - \eta_{min})(1 +
-\cos(\frac{T_{cur}}{T_{max}}\pi))\]</div>
-<p>When last_epoch=-1, sets initial lr as lr.</p>
+\cos(\frac{T_{cur}}{T_{max}}\pi))
+
+\]</div>
 <p>It has been proposed in
 <a class="reference external" href="https://arxiv.org/abs/1608.03983">SGDR: Stochastic Gradient Descent with Warm Restarts</a>. Note that this only
 implements the cosine annealing part of SGDR, and not the restarts.</p>
@@ -1041,6 +1080,153 @@ ignored. Default: 1e-8.</p></li>
 </div>
 </dd></dl>
 
+<dl class="class">
+<dt id="torch.optim.lr_scheduler.CyclicLR">
+<em class="property">class </em><code class="descclassname">torch.optim.lr_scheduler.</code><code class="descname">CyclicLR</code><span class="sig-paren">(</span><em>optimizer</em>, <em>base_lr</em>, <em>max_lr</em>, <em>step_size_up=2000</em>, <em>step_size_down=None</em>, <em>mode='triangular'</em>, <em>gamma=1.0</em>, <em>scale_fn=None</em>, <em>scale_mode='cycle'</em>, <em>cycle_momentum=True</em>, <em>base_momentum=0.8</em>, <em>max_momentum=0.9</em>, <em>last_epoch=-1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/optim/lr_scheduler.html#CyclicLR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.optim.lr_scheduler.CyclicLR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the learning rate of each parameter group according to
+cyclical learning rate policy (CLR). The policy cycles the learning
+rate between two boundaries with a constant frequency, as detailed in
+the paper <a class="reference external" href="https://arxiv.org/abs/1506.01186">Cyclical Learning Rates for Training Neural Networks</a>.
+The distance between the two boundaries can be scaled on a per-iteration
+or per-cycle basis.</p>
+<p>Cyclical learning rate policy changes the learning rate after every batch.
+<cite>step</cite> should be called after a batch has been used for training.</p>
+<p>This class has three built-in policies, as put forth in the paper:
+“triangular”:</p>
+<blockquote>
+<div><p>A basic triangular cycle w/ no amplitude scaling.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>“triangular2”:</dt><dd><p>A basic triangular cycle that scales initial amplitude by half each cycle.</p>
+</dd>
+<dt>“exp_range”:</dt><dd><p>A cycle that scales initial amplitude by gamma**(cycle iterations) at each
+cycle iteration.</p>
+</dd>
+</dl>
+<p>This implementation was adapted from the github repo: <a class="reference external" href="https://github.com/bckenstler/CLR">bckenstler/CLR</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>optimizer</strong> (<a class="reference internal" href="#torch.optim.Optimizer" title="torch.optim.Optimizer"><em>Optimizer</em></a>) – Wrapped optimizer.</p></li>
+<li><p><strong>base_lr</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – Initial learning rate which is the
+lower boundary in the cycle for each parameter group.</p></li>
+<li><p><strong>max_lr</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – Upper learning rate boundaries in the cycle
+for each parameter group. Functionally,
+it defines the cycle amplitude (max_lr - base_lr).
+The lr at any cycle is the sum of base_lr
+and some scaling of the amplitude; therefore
+max_lr may not actually be reached depending on
+scaling function.</p></li>
+<li><p><strong>step_size_up</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Number of training iterations in the
+increasing half of a cycle. Default: 2000</p></li>
+<li><p><strong>step_size_down</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Number of training iterations in the
+decreasing half of a cycle. If step_size_down is None,
+it is set to step_size_up. Default: None</p></li>
+<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – One of {triangular, triangular2, exp_range}.
+Values correspond to policies detailed above.
+If scale_fn is not None, this argument is ignored.
+Default: ‘triangular’</p></li>
+<li><p><strong>gamma</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Constant in ‘exp_range’ scaling function:
+gamma**(cycle iterations)
+Default: 1.0</p></li>
+<li><p><strong>scale_fn</strong> (<em>function</em>) – Custom scaling policy defined by a single
+argument lambda function, where
+0 &lt;= scale_fn(x) &lt;= 1 for all x &gt;= 0.
+If specified, then ‘mode’ is ignored.
+Default: None</p></li>
+<li><p><strong>scale_mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – {‘cycle’, ‘iterations’}.
+Defines whether scale_fn is evaluated on
+cycle number or cycle iterations (training
+iterations since start of cycle).
+Default: ‘cycle’</p></li>
+<li><p><strong>cycle_momentum</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, momentum is cycled inversely
+to learning rate between ‘base_momentum’ and ‘max_momentum’.
+Default: True</p></li>
+<li><p><strong>base_momentum</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – Initial momentum which is the
+lower boundary in the cycle for each parameter group.
+Default: 0.8</p></li>
+<li><p><strong>max_momentum</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – Upper momentum boundaries in the cycle
+for each parameter group. Functionally,
+it defines the cycle amplitude (max_momentum - base_momentum).
+The momentum at any cycle is the difference of max_momentum
+and some scaling of the amplitude; therefore
+base_momentum may not actually be reached depending on
+scaling function. Default: 0.9</p></li>
+<li><p><strong>last_epoch</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The index of the last batch. This parameter is used when
+resuming a training job. Since <cite>step()</cite> should be invoked after each
+batch instead of after each epoch, this number represents the total
+number of <em>batches</em> computed, not the total number of epochs computed.
+When last_epoch=-1, the schedule is started from the beginning.
+Default: -1</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">optimizer</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">scheduler</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">CyclicLR</span><span class="p">(</span><span class="n">optimizer</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data_loader</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">DataLoader</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="k">for</span> <span class="n">batch</span> <span class="ow">in</span> <span class="n">data_loader</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">train_batch</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">scheduler</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="torch.optim.lr_scheduler.CyclicLR.get_lr">
+<code class="descname">get_lr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/optim/lr_scheduler.html#CyclicLR.get_lr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.optim.lr_scheduler.CyclicLR.get_lr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the learning rate at batch index. This function treats
+<cite>self.last_epoch</cite> as the last batch index.</p>
+<p>If <cite>self.cycle_momentum</cite> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, this function has a side effect of
+updating the optimizer’s momentum.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="torch.optim.lr_scheduler.CosineAnnealingWarmRestarts">
+<em class="property">class </em><code class="descclassname">torch.optim.lr_scheduler.</code><code class="descname">CosineAnnealingWarmRestarts</code><span class="sig-paren">(</span><em>optimizer</em>, <em>T_0</em>, <em>T_mult=1</em>, <em>eta_min=0</em>, <em>last_epoch=-1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/optim/lr_scheduler.html#CosineAnnealingWarmRestarts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.optim.lr_scheduler.CosineAnnealingWarmRestarts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the learning rate of each parameter group using a cosine annealing
+schedule, where <span class="math">\(\eta_{max}\)</span> is set to the initial lr, <span class="math">\(T_{cur}\)</span>
+is the number of epochs since the last restart and <span class="math">\(T_{i}\)</span> is the number
+of epochs between two warm restarts in SGDR:</p>
+<div class="math">
+\[\eta_t = \eta_{min} + \frac{1}{2}(\eta_{max} - \eta_{min})(1 +
+\cos(\frac{T_{cur}}{T_{i}}\pi))
+
+\]</div>
+<p>When <span class="math">\(T_{cur}=T_{i}\)</span>, set <span class="math">\(\eta_t = \eta_{min}\)</span>.
+When <span class="math">\(T_{cur}=0\)</span>eta_t=eta_{max}`.</p>
+<p>It has been proposed in
+<a class="reference external" href="https://arxiv.org/abs/1608.03983">SGDR: Stochastic Gradient Descent with Warm Restarts</a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>optimizer</strong> (<a class="reference internal" href="#torch.optim.Optimizer" title="torch.optim.Optimizer"><em>Optimizer</em></a>) – Wrapped optimizer.</p></li>
+<li><p><strong>T_0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Number of iterations for the first restart.</p></li>
+<li><p><strong>T_mult</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – A factor increases <span class="math">\(T_{i}\)</span> after a restart. Default: 1.</p></li>
+<li><p><strong>eta_min</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em>, </em><em>optional</em>) – Minimum learning rate. Default: 0.</p></li>
+<li><p><strong>last_epoch</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – The index of last epoch. Default: -1.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="torch.optim.lr_scheduler.CosineAnnealingWarmRestarts.step">
+<code class="descname">step</code><span class="sig-paren">(</span><em>epoch=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/optim/lr_scheduler.html#CosineAnnealingWarmRestarts.step"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.optim.lr_scheduler.CosineAnnealingWarmRestarts.step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Step could be called after every update, i.e. if one epoch has 10 iterations
+(number_of_train_examples / batch_size), we should call SGDR.step(0.1), SGDR.step(0.2), etc.</p>
+<p>This function can be called in an interleaved way.</p>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scheduler</span> <span class="o">=</span> <span class="n">SGDR</span><span class="p">(</span><span class="n">optimizer</span><span class="p">,</span> <span class="n">T_0</span><span class="p">,</span> <span class="n">T_mult</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">scheduler</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">scheduler</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="mi">26</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">scheduler</span><span class="o">.</span><span class="n">step</span><span class="p">()</span> <span class="c1"># scheduler.step(27), instead of scheduler(20)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 </div>
 
@@ -1052,10 +1238,10 @@ ignored. Default: 1e-8.</p></li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="autograd.html" class="btn btn-neutral float-right" title="Automatic differentiation package - torch.autograd" accesskey="n" rel="next">Next <img src="_static/images/chevron-right-orange.svg" class="next-page"></a>
+        <a href="quantization.html" class="btn btn-neutral float-right" title="Quantization" accesskey="n" rel="next">Next <img src="_static/images/chevron-right-orange.svg" class="next-page"></a>
       
       
-        <a href="nn.html" class="btn btn-neutral" title="torch.nn" accesskey="p" rel="prev"><img src="_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+        <a href="onnx.html" class="btn btn-neutral" title="torch.onnx" accesskey="p" rel="prev"><img src="_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
       
     </div>
   
@@ -1068,7 +1254,7 @@ ignored. Default: 1e-8.</p></li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Torch Contributors.
+        &copy; Copyright 2019, Torch Contributors.
 
     </p>
   </div>

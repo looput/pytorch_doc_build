@@ -108,7 +108,7 @@
               
               
                 <div class="version">
-                  master (1.0.0 )
+                  master (1.1.0 )
                 </div>
               
             
@@ -147,9 +147,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/autograd.html">Autograd mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/broadcasting.html">Broadcasting semantics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notes/cpu_threading_torchscript_inference.html">CPU threading and TorchScript inference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/cuda.html">CUDA semantics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/extending.html">Extending PyTorch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notes/large_scale_deployments.html">Features for large-scale deployments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/multiprocessing.html">Multiprocessing best practices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/randomness.html">Reproducibility</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/serialization.html">Serialization semantics</a></li>
@@ -161,34 +163,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../../community/governance.html">PyTorch Governance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../community/persons_of_interest.html">PyTorch Governance | Persons of Interest</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Package Reference</span></p>
+<p class="caption"><span class="caption-text">Python API</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../torch.html">torch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nn.html">torch.nn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nn.functional.html">torch.nn.functional</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tensors.html">torch.Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tensor_attributes.html">Tensor Attributes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../type_info.html">Type Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sparse.html">torch.sparse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../cuda.html">torch.cuda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../storage.html">torch.Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nn.html">torch.nn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nn.html#torch-nn-functional">torch.nn.functional</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nn.html#torch-nn-init">torch.nn.init</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../optim.html">torch.optim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../autograd.html">torch.autograd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cuda.html">torch.cuda</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../distributed.html">torch.distributed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../distributions.html">torch.distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../jit.html">torch.jit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../multiprocessing.html">torch.multiprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nn.init.html">torch.nn.init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../optim.html">torch.optim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../random.html">torch.random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sparse.html">torch.sparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../storage.html">torch.Storage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../bottleneck.html">torch.utils.bottleneck</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../checkpoint.html">torch.utils.checkpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../cpp_extension.html">torch.utils.cpp_extension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../data.html">torch.utils.data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../dlpack.html">torch.utils.dlpack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../model_zoo.html">torch.utils.model_zoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tensorboard.html">torch.utils.tensorboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../type_info.html">Type Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../named_tensor.html">Named Tensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../name_inference.html">Named Tensors operator coverage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../__config__.html">torch.__config__</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_deprecated.html">torch.distributed.deprecated</a></li>
 </ul>
 
             
@@ -271,26 +276,27 @@
 
 <span class="kn">import</span> <span class="nn">weakref</span>
 <span class="kn">import</span> <span class="nn">inspect</span>
-<span class="k">try</span><span class="p">:</span>
-    <span class="kn">import</span> <span class="nn">builtins</span>  <span class="c1"># PY3</span>
-<span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
-    <span class="kn">import</span> <span class="nn">__builtin__</span> <span class="k">as</span> <span class="nn">builtins</span>  <span class="c1"># PY2</span>
+<span class="kn">from</span> <span class="nn">torch._six</span> <span class="k">import</span> <span class="n">builtins</span>
 
 <span class="c1"># Tracks standalone weak script functions</span>
-<span class="n">_compiled_weak_fns</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">WeakKeyDictionary</span><span class="p">()</span>
+<span class="n">compiled_weak_fns</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">WeakKeyDictionary</span><span class="p">()</span>  <span class="c1"># noqa: T484</span>
 
 <span class="c1"># Tracks which methods should be converted to strong methods</span>
-<span class="n">_weak_script_methods</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">WeakKeyDictionary</span><span class="p">()</span>
+<span class="n">weak_script_methods</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">WeakKeyDictionary</span><span class="p">()</span>  <span class="c1"># noqa: T484</span>
 
 <span class="c1"># Converted modules and their corresponding WeakScriptModuleProxy objects</span>
-<span class="n">_weak_modules</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">WeakKeyDictionary</span><span class="p">()</span>
+<span class="n">weak_modules</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">WeakKeyDictionary</span><span class="p">()</span>  <span class="c1"># noqa: T484</span>
 
 <span class="c1"># Types that have been declared as weak modules</span>
-<span class="n">_weak_types</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">WeakKeyDictionary</span><span class="p">()</span>
+<span class="n">weak_types</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">WeakKeyDictionary</span><span class="p">()</span>  <span class="c1"># noqa: T484</span>
 
 <span class="c1"># Wrapper functions that can call either of 2 functions depending on a boolean</span>
 <span class="c1"># argument</span>
-<span class="n">_boolean_dispatched</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">WeakKeyDictionary</span><span class="p">()</span>
+<span class="n">boolean_dispatched</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">WeakKeyDictionary</span><span class="p">()</span>  <span class="c1"># noqa: T484</span>
+
+<span class="c1"># Python Op functions that should be ignored by the compiler. These will be replaced</span>
+<span class="c1"># with an operator that always throws an error</span>
+<span class="n">ignored_fns</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">WeakSet</span><span class="p">()</span>  <span class="c1"># noqa: T484</span>
 
 <span class="n">COMPILATION_PENDING</span> <span class="o">=</span> <span class="nb">object</span><span class="p">()</span>
 <span class="n">COMPILED</span> <span class="o">=</span> <span class="nb">object</span><span class="p">()</span>
@@ -352,7 +358,7 @@
 <span class="sd">    inlined in the graph. When not used in a script function, the weak script</span>
 <span class="sd">    annotation has no effect.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">_compiled_weak_fns</span><span class="p">[</span><span class="n">fn</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">compiled_weak_fns</span><span class="p">[</span><span class="n">fn</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="n">COMPILATION_PENDING</span><span class="p">,</span>
         <span class="s2">&quot;compiled_fn&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
         <span class="s2">&quot;rcb&quot;</span><span class="p">:</span> <span class="n">createResolutionCallback</span><span class="p">(</span><span class="n">_frames_up</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
@@ -361,27 +367,27 @@
 
 
 <span class="k">def</span> <span class="nf">weak_module</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
-    <span class="n">_weak_types</span><span class="p">[</span><span class="bp">cls</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">weak_types</span><span class="p">[</span><span class="bp">cls</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;method_stubs&quot;</span><span class="p">:</span> <span class="kc">None</span>
     <span class="p">}</span>
     <span class="k">return</span> <span class="bp">cls</span>
 
 
 <span class="k">def</span> <span class="nf">weak_script_method</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
-    <span class="n">_weak_script_methods</span><span class="p">[</span><span class="n">fn</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">weak_script_methods</span><span class="p">[</span><span class="n">fn</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;rcb&quot;</span><span class="p">:</span> <span class="n">createResolutionCallback</span><span class="p">(</span><span class="n">frames_up</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span>
         <span class="s2">&quot;original_method&quot;</span><span class="p">:</span> <span class="n">fn</span>
     <span class="p">}</span>
     <span class="k">return</span> <span class="n">fn</span>
 
 
-<span class="k">def</span> <span class="nf">boolean_dispatch</span><span class="p">(</span><span class="n">arg_name</span><span class="p">,</span> <span class="n">arg_index</span><span class="p">,</span> <span class="n">default</span><span class="p">,</span> <span class="n">if_true</span><span class="p">,</span> <span class="n">if_false</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">boolean_dispatch</span><span class="p">(</span><span class="n">arg_name</span><span class="p">,</span> <span class="n">arg_index</span><span class="p">,</span> <span class="n">default</span><span class="p">,</span> <span class="n">if_true</span><span class="p">,</span> <span class="n">if_false</span><span class="p">,</span> <span class="n">module_name</span><span class="p">,</span> <span class="n">func_name</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Dispatches to either of 2 weak script functions based on a boolean argument.</span>
-<span class="sd">    In Torch Script, the boolean argument must be constant so that the correct</span>
+<span class="sd">    In TorchScript, the boolean argument must be constant so that the correct</span>
 <span class="sd">    function to use can be determined at compile time.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">_compiled_weak_fns</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">if_true</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">_compiled_weak_fns</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">if_false</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">compiled_weak_fns</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">if_true</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">compiled_weak_fns</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">if_false</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;both functions must be weak script&quot;</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -402,11 +408,19 @@
     <span class="k">elif</span> <span class="n">if_false</span><span class="o">.</span><span class="vm">__doc__</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">if_true</span><span class="o">.</span><span class="vm">__doc__</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">doc</span> <span class="o">=</span> <span class="n">if_true</span><span class="o">.</span><span class="vm">__doc__</span>
         <span class="n">if_false</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">doc</span>
+    <span class="k">elif</span> <span class="n">if_false</span><span class="o">.</span><span class="vm">__doc__</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">if_true</span><span class="o">.</span><span class="vm">__doc__</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># neither function has a docstring</span>
+        <span class="n">doc</span> <span class="o">=</span> <span class="kc">None</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;only one function can have a docstring&quot;</span><span class="p">)</span>
     <span class="n">fn</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">doc</span>
 
-    <span class="n">_boolean_dispatched</span><span class="p">[</span><span class="n">fn</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="n">module_name</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">fn</span><span class="o">.</span><span class="vm">__module__</span> <span class="o">=</span> <span class="n">module_name</span>
+    <span class="k">if</span> <span class="n">func_name</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">fn</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">=</span> <span class="n">func_name</span>
+
+    <span class="n">boolean_dispatched</span><span class="p">[</span><span class="n">fn</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;if_true&quot;</span><span class="p">:</span> <span class="n">if_true</span><span class="p">,</span>
         <span class="s2">&quot;if_false&quot;</span><span class="p">:</span> <span class="n">if_false</span><span class="p">,</span>
         <span class="s2">&quot;index&quot;</span><span class="p">:</span> <span class="n">arg_index</span><span class="p">,</span>
@@ -416,15 +430,42 @@
     <span class="k">return</span> <span class="n">fn</span>
 
 
+<div class="viewcode-block" id="ignore"><a class="viewcode-back" href="../../jit.html#torch.jit.ignore">[docs]</a><span class="k">def</span> <span class="nf">ignore</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
+    <span class="n">ignored_fns</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">fn</span></div>
+
+
+<span class="k">def</span> <span class="nf">_parameter_list</span><span class="p">(</span><span class="n">parameter_names_fn</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Decorator to denote that a function returns a list of all the parameters</span>
+<span class="sd">    in a module</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">decorator</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
+        <span class="n">fn</span><span class="o">.</span><span class="n">_parameter_names_fn</span> <span class="o">=</span> <span class="n">parameter_names_fn</span>
+        <span class="k">return</span> <span class="n">fn</span>
+
+    <span class="k">return</span> <span class="n">decorator</span>
+
+
 <span class="k">try</span><span class="p">:</span>
     <span class="kn">import</span> <span class="nn">typing</span>
-    <span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">List</span>
+    <span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Dict</span>
 
     <span class="k">def</span> <span class="nf">is_tuple</span><span class="p">(</span><span class="n">ann</span><span class="p">):</span>
         <span class="c1"># For some reason Python 3.7 violates the Type[A, B].__origin__ == Type rule</span>
         <span class="k">return</span> <span class="n">ann</span><span class="o">.</span><span class="vm">__module__</span> <span class="o">==</span> <span class="s1">&#39;typing&#39;</span> <span class="ow">and</span> \
             <span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">ann</span><span class="p">,</span> <span class="s1">&#39;__origin__&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">is</span> <span class="n">typing</span><span class="o">.</span><span class="n">Tuple</span> <span class="ow">or</span>
              <span class="nb">getattr</span><span class="p">(</span><span class="n">ann</span><span class="p">,</span> <span class="s1">&#39;__origin__&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">tuple</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">is_list</span><span class="p">(</span><span class="n">ann</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">ann</span><span class="o">.</span><span class="vm">__module__</span> <span class="o">==</span> <span class="s1">&#39;typing&#39;</span> <span class="ow">and</span> \
+            <span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">ann</span><span class="p">,</span> <span class="s1">&#39;__origin__&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">is</span> <span class="n">typing</span><span class="o">.</span><span class="n">List</span> <span class="ow">or</span>
+             <span class="nb">getattr</span><span class="p">(</span><span class="n">ann</span><span class="p">,</span> <span class="s1">&#39;__origin__&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">is_dict</span><span class="p">(</span><span class="n">ann</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">ann</span><span class="o">.</span><span class="vm">__module__</span> <span class="o">==</span> <span class="s1">&#39;typing&#39;</span> <span class="ow">and</span> \
+            <span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">ann</span><span class="p">,</span> <span class="s1">&#39;__origin__&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">is</span> <span class="n">typing</span><span class="o">.</span><span class="n">Dict</span> <span class="ow">or</span>
+             <span class="nb">getattr</span><span class="p">(</span><span class="n">ann</span><span class="p">,</span> <span class="s1">&#39;__origin__&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">dict</span><span class="p">)</span>
 <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
     <span class="c1"># A minimal polyfill for versions of Python that don&#39;t have typing.</span>
     <span class="c1"># Note that this means that they also don&#39;t support the fancy annotation syntax, so</span>
@@ -436,22 +477,43 @@
             <span class="k">return</span> <span class="n">TupleInstance</span><span class="p">(</span><span class="n">types</span><span class="p">)</span>
 
     <span class="k">class</span> <span class="nc">TupleInstance</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+        <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;__args__&#39;</span><span class="p">]</span>
+
         <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">types</span><span class="p">):</span>
-            <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;__args__&#39;</span><span class="p">,</span> <span class="n">types</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__args__</span> <span class="o">=</span> <span class="n">types</span>
 
     <span class="k">class</span> <span class="nc">ListInstance</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+        <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;__args__&#39;</span><span class="p">]</span>
+
         <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">types</span><span class="p">):</span>
-            <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;__args__&#39;</span><span class="p">,</span> <span class="n">types</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__args__</span> <span class="o">=</span> <span class="n">types</span>
 
     <span class="k">class</span> <span class="nc">ListCls</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
         <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">types</span><span class="p">):</span>
             <span class="k">return</span> <span class="n">TupleInstance</span><span class="p">(</span><span class="n">types</span><span class="p">)</span>
 
-    <span class="n">Tuple</span> <span class="o">=</span> <span class="n">TupleCls</span><span class="p">()</span>
-    <span class="n">List</span> <span class="o">=</span> <span class="n">ListCls</span><span class="p">()</span>
+    <span class="k">class</span> <span class="nc">DictInstance</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+        <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;__args__&#39;</span><span class="p">]</span>
+
+        <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">types</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__args__</span> <span class="o">=</span> <span class="n">types</span>
+
+    <span class="k">class</span> <span class="nc">DictCls</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">types</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">DictInstance</span><span class="p">(</span><span class="n">types</span><span class="p">)</span>
+
+    <span class="n">Tuple</span> <span class="o">=</span> <span class="n">TupleCls</span><span class="p">()</span>  <span class="c1"># noqa: T484</span>
+    <span class="n">List</span> <span class="o">=</span> <span class="n">ListCls</span><span class="p">()</span>  <span class="c1"># noqa: T484</span>
+    <span class="n">Dict</span> <span class="o">=</span> <span class="n">DictCls</span><span class="p">()</span>  <span class="c1"># noqa: T484</span>
 
     <span class="k">def</span> <span class="nf">is_tuple</span><span class="p">(</span><span class="n">ann</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ann</span><span class="p">,</span> <span class="n">TupleInstance</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">is_list</span><span class="p">(</span><span class="n">ann</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ann</span><span class="p">,</span> <span class="n">ListInstance</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">is_dict</span><span class="p">(</span><span class="n">ann</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ann</span><span class="p">,</span> <span class="n">DictInstance</span><span class="p">)</span>
 
 
 <span class="c1"># allows BroadcastingList instance to be subscriptable</span>
@@ -480,7 +542,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Torch Contributors.
+        &copy; Copyright 2019, Torch Contributors.
 
     </p>
   </div>

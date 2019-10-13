@@ -108,7 +108,7 @@
               
               
                 <div class="version">
-                  master (1.0.0 )
+                  master (1.1.0 )
                 </div>
               
             
@@ -147,9 +147,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../notes/autograd.html">Autograd mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../notes/broadcasting.html">Broadcasting semantics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notes/cpu_threading_torchscript_inference.html">CPU threading and TorchScript inference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../notes/cuda.html">CUDA semantics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../notes/extending.html">Extending PyTorch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../notes/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notes/large_scale_deployments.html">Features for large-scale deployments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../notes/multiprocessing.html">Multiprocessing best practices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../notes/randomness.html">Reproducibility</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../notes/serialization.html">Serialization semantics</a></li>
@@ -161,34 +163,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../community/governance.html">PyTorch Governance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../community/persons_of_interest.html">PyTorch Governance | Persons of Interest</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Package Reference</span></p>
+<p class="caption"><span class="caption-text">Python API</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../torch.html">torch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../nn.html">torch.nn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../nn.functional.html">torch.nn.functional</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../tensors.html">torch.Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../tensor_attributes.html">Tensor Attributes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../type_info.html">Type Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../sparse.html">torch.sparse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../cuda.html">torch.cuda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../storage.html">torch.Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../nn.html">torch.nn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../nn.html#torch-nn-functional">torch.nn.functional</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../nn.html#torch-nn-init">torch.nn.init</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../optim.html">torch.optim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../autograd.html">torch.autograd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../cuda.html">torch.cuda</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../distributed.html">torch.distributed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../distributions.html">torch.distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../jit.html">torch.jit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../multiprocessing.html">torch.multiprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../nn.init.html">torch.nn.init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../optim.html">torch.optim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../random.html">torch.random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../sparse.html">torch.sparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../storage.html">torch.Storage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../bottleneck.html">torch.utils.bottleneck</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../checkpoint.html">torch.utils.checkpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../cpp_extension.html">torch.utils.cpp_extension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../data.html">torch.utils.data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../dlpack.html">torch.utils.dlpack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../model_zoo.html">torch.utils.model_zoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tensorboard.html">torch.utils.tensorboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../type_info.html">Type Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../named_tensor.html">Named Tensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../name_inference.html">Named Tensors operator coverage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../__config__.html">torch.__config__</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../distributed_deprecated.html">torch.distributed.deprecated</a></li>
 </ul>
 
             
@@ -266,6 +271,7 @@
 <span></span><span class="kn">import</span> <span class="nn">operator</span>
 <span class="kn">import</span> <span class="nn">torch</span>
 <span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="k">import</span> <span class="n">chain</span>
 <span class="kn">from</span> <span class="nn">..modules</span> <span class="k">import</span> <span class="n">Module</span>
 <span class="kn">from</span> <span class="nn">.scatter_gather</span> <span class="k">import</span> <span class="n">scatter_kwargs</span><span class="p">,</span> <span class="n">gather</span>
 <span class="kn">from</span> <span class="nn">.replicate</span> <span class="k">import</span> <span class="n">replicate</span>
@@ -312,10 +318,10 @@
 <span class="sd">    See also: :ref:`cuda-nn-dataparallel-instead`</span>
 
 <span class="sd">    Arbitrary positional and keyword inputs are allowed to be passed into</span>
-<span class="sd">    DataParallel EXCEPT Tensors. All tensors will be scattered on dim</span>
-<span class="sd">    specified (default 0). Primitive types will be broadcasted, but all</span>
-<span class="sd">    other types will be a shallow copy and can be corrupted if written to in</span>
-<span class="sd">    the model&#39;s forward pass.</span>
+<span class="sd">    DataParallel but some types are specially handled. tensors will be</span>
+<span class="sd">    **scattered** on dim specified (default 0). tuple, list and dict types will</span>
+<span class="sd">    be shallow copied. The other types will be shared among different threads</span>
+<span class="sd">    and can be corrupted if written to in the model&#39;s forward pass.</span>
 
 <span class="sd">    The parallelized :attr:`module` must have its parameters and buffers on</span>
 <span class="sd">    ``device_ids[0]`` before running this :class:`~torch.nn.DataParallel`</span>
@@ -323,9 +329,9 @@
 
 <span class="sd">    .. warning::</span>
 <span class="sd">        In each forward, :attr:`module` is **replicated** on each device, so any</span>
-<span class="sd">        updates to the runing module in ``forward`` will be lost. For example,</span>
+<span class="sd">        updates to the running module in ``forward`` will be lost. For example,</span>
 <span class="sd">        if :attr:`module` has a counter attribute that is incremented in each</span>
-<span class="sd">        ``forward``, it will always stay at the initial value becasue the update</span>
+<span class="sd">        ``forward``, it will always stay at the initial value because the update</span>
 <span class="sd">        is done on the replicas which are destroyed after ``forward``. However,</span>
 <span class="sd">        :class:`~torch.nn.DataParallel` guarantees that the replica on</span>
 <span class="sd">        ``device[0]`` will have its parameters and buffers sharing storage with</span>
@@ -370,7 +376,7 @@
 <span class="sd">    Example::</span>
 
 <span class="sd">        &gt;&gt;&gt; net = torch.nn.DataParallel(model, device_ids=[0, 1, 2])</span>
-<span class="sd">        &gt;&gt;&gt; output = net(input_var)</span>
+<span class="sd">        &gt;&gt;&gt; output = net(input_var)  # input_var can be on any device, including CPU</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="c1"># TODO: update notes/cuda.rst when this class handles 8+ GPUs well</span>
@@ -392,6 +398,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">module</span> <span class="o">=</span> <span class="n">module</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">device_ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">_get_device_index</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> <span class="n">device_ids</span><span class="p">))</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">output_device</span> <span class="o">=</span> <span class="n">_get_device_index</span><span class="p">(</span><span class="n">output_device</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">src_device_obj</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">&quot;cuda:</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">device_ids</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
 
         <span class="n">_check_balance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">device_ids</span><span class="p">)</span>
 
@@ -401,6 +408,13 @@
     <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">inputs</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">device_ids</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="p">(</span><span class="o">*</span><span class="n">inputs</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">chain</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">buffers</span><span class="p">()):</span>
+            <span class="k">if</span> <span class="n">t</span><span class="o">.</span><span class="n">device</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">src_device_obj</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;module must have its parameters and buffers &quot;</span>
+                                   <span class="s2">&quot;on device </span><span class="si">{}</span><span class="s2"> (device_ids[0]) but found one of &quot;</span>
+                                   <span class="s2">&quot;them on device: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">src_device_obj</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">device</span><span class="p">))</span>
+
         <span class="n">inputs</span><span class="p">,</span> <span class="n">kwargs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">device_ids</span><span class="p">)</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">device_ids</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="p">(</span><span class="o">*</span><span class="n">inputs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -421,14 +435,14 @@
         <span class="k">return</span> <span class="n">gather</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="n">output_device</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dim</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="data_parallel"><a class="viewcode-back" href="../../../../nn.html#torch.nn.data_parallel">[docs]</a><span class="k">def</span> <span class="nf">data_parallel</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">inputs</span><span class="p">,</span> <span class="n">device_ids</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_device</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">module_kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="data_parallel"><a class="viewcode-back" href="../../../../nn.functional.html#torch.nn.data_parallel">[docs]</a><span class="k">def</span> <span class="nf">data_parallel</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">inputs</span><span class="p">,</span> <span class="n">device_ids</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_device</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">module_kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Evaluates module(input) in parallel across the GPUs given in device_ids.</span>
 
 <span class="sd">    This is the functional version of the DataParallel module.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        module (Module): the module to evaluate in parallel</span>
-<span class="sd">        inputs (tensor): inputs to the module</span>
+<span class="sd">        inputs (Tensor): inputs to the module</span>
 <span class="sd">        device_ids (list of int or torch.device): GPU ids on which to replicate module</span>
 <span class="sd">        output_device (list of int or torch.device): GPU location of the output  Use -1 to indicate the CPU.</span>
 <span class="sd">            (default: device_ids[0])</span>
@@ -444,6 +458,16 @@
 
     <span class="k">if</span> <span class="n">output_device</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">output_device</span> <span class="o">=</span> <span class="n">device_ids</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">device_ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">_get_device_index</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> <span class="n">device_ids</span><span class="p">))</span>
+    <span class="n">output_device</span> <span class="o">=</span> <span class="n">_get_device_index</span><span class="p">(</span><span class="n">output_device</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+    <span class="n">src_device_obj</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">&quot;cuda:</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">device_ids</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">chain</span><span class="p">(</span><span class="n">module</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">module</span><span class="o">.</span><span class="n">buffers</span><span class="p">()):</span>
+        <span class="k">if</span> <span class="n">t</span><span class="o">.</span><span class="n">device</span> <span class="o">!=</span> <span class="n">src_device_obj</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;module must have its parameters and buffers &quot;</span>
+                               <span class="s2">&quot;on device </span><span class="si">{}</span><span class="s2"> (device_ids[0]) but found one of &quot;</span>
+                               <span class="s2">&quot;them on device: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">src_device_obj</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">device</span><span class="p">))</span>
 
     <span class="n">inputs</span><span class="p">,</span> <span class="n">module_kwargs</span> <span class="o">=</span> <span class="n">scatter_kwargs</span><span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">module_kwargs</span><span class="p">,</span> <span class="n">device_ids</span><span class="p">,</span> <span class="n">dim</span><span class="p">)</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">device_ids</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
@@ -468,7 +492,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Torch Contributors.
+        &copy; Copyright 2019, Torch Contributors.
 
     </p>
   </div>

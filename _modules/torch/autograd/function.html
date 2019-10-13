@@ -108,7 +108,7 @@
               
               
                 <div class="version">
-                  master (1.0.0 )
+                  master (1.1.0 )
                 </div>
               
             
@@ -147,9 +147,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/autograd.html">Autograd mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/broadcasting.html">Broadcasting semantics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notes/cpu_threading_torchscript_inference.html">CPU threading and TorchScript inference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/cuda.html">CUDA semantics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/extending.html">Extending PyTorch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notes/large_scale_deployments.html">Features for large-scale deployments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/multiprocessing.html">Multiprocessing best practices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/randomness.html">Reproducibility</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/serialization.html">Serialization semantics</a></li>
@@ -161,34 +163,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../community/governance.html">PyTorch Governance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../community/persons_of_interest.html">PyTorch Governance | Persons of Interest</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Package Reference</span></p>
+<p class="caption"><span class="caption-text">Python API</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../torch.html">torch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nn.html">torch.nn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nn.functional.html">torch.nn.functional</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tensors.html">torch.Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tensor_attributes.html">Tensor Attributes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../type_info.html">Type Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sparse.html">torch.sparse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../cuda.html">torch.cuda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../storage.html">torch.Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nn.html">torch.nn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nn.html#torch-nn-functional">torch.nn.functional</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nn.html#torch-nn-init">torch.nn.init</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../optim.html">torch.optim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../autograd.html">torch.autograd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cuda.html">torch.cuda</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../distributed.html">torch.distributed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../distributions.html">torch.distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../jit.html">torch.jit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../multiprocessing.html">torch.multiprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nn.init.html">torch.nn.init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../optim.html">torch.optim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../random.html">torch.random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sparse.html">torch.sparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../storage.html">torch.Storage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../bottleneck.html">torch.utils.bottleneck</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../checkpoint.html">torch.utils.checkpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../cpp_extension.html">torch.utils.cpp_extension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../data.html">torch.utils.data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../dlpack.html">torch.utils.dlpack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../model_zoo.html">torch.utils.model_zoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tensorboard.html">torch.utils.tensorboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../type_info.html">Type Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../named_tensor.html">Named Tensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../name_inference.html">Named Tensors operator coverage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../__config__.html">torch.__config__</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_deprecated.html">torch.distributed.deprecated</a></li>
 </ul>
 
             
@@ -318,7 +323,8 @@
 <span class="sd">        This will mark outputs as not requiring gradients, increasing the</span>
 <span class="sd">        efficiency of backward computation. You still need to accept a gradient</span>
 <span class="sd">        for each output in :meth:`~Function.backward`, but it&#39;s always going to</span>
-<span class="sd">        be ``None``.</span>
+<span class="sd">        be a zero tensor with the same shape as the shape of a corresponding</span>
+<span class="sd">        output.</span>
 
 <span class="sd">        This is used e.g. for indices returned from a max :class:`Function`.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -360,14 +366,14 @@
                 <span class="n">has_static_forward</span> <span class="o">=</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">forward</span><span class="p">,</span> <span class="nb">staticmethod</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">forward</span><span class="p">,</span> <span class="nb">classmethod</span><span class="p">)</span>
                 <span class="k">break</span>
 
-        <span class="nb">setattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="s1">&#39;_is_legacy&#39;</span><span class="p">,</span> <span class="ow">not</span> <span class="n">has_static_forward</span><span class="p">)</span>
+        <span class="bp">cls</span><span class="o">.</span><span class="n">_is_legacy</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">has_static_forward</span>
 
         <span class="c1"># old-style functions</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">has_static_forward</span><span class="p">:</span>
             <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">FunctionMeta</span><span class="p">,</span> <span class="bp">cls</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span>
 
         <span class="n">backward_fn</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;Backward&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">BackwardCFunction</span><span class="p">,),</span> <span class="p">{</span><span class="s1">&#39;_forward_cls&#39;</span><span class="p">:</span> <span class="bp">cls</span><span class="p">})</span>
-        <span class="nb">setattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="s1">&#39;_backward_cls&#39;</span><span class="p">,</span> <span class="n">backward_fn</span><span class="p">)</span>
+        <span class="bp">cls</span><span class="o">.</span><span class="n">_backward_cls</span> <span class="o">=</span> <span class="n">backward_fn</span>
 
         <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">FunctionMeta</span><span class="p">,</span> <span class="bp">cls</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span>
 
@@ -521,6 +527,8 @@
             <span class="k">return</span> <span class="kc">None</span>
         <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)):</span>
             <span class="k">return</span> <span class="nb">type</span><span class="p">(</span><span class="n">obj</span><span class="p">)(</span><span class="n">_map</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">obj</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="k">return</span> <span class="p">{</span><span class="n">x</span> <span class="p">:</span> <span class="n">_map</span><span class="p">(</span><span class="n">obj</span><span class="p">[</span><span class="n">x</span><span class="p">])</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">obj</span><span class="p">}</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Auto nesting doesn&#39;t know how to process &quot;</span>
                              <span class="s2">&quot;an input object of type &quot;</span> <span class="o">+</span> <span class="n">torch</span><span class="o">.</span><span class="n">typename</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> <span class="o">+</span>
@@ -548,6 +556,11 @@
             <span class="k">return</span>
         <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)):</span>
             <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">obj</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">_iter</span><span class="p">(</span><span class="n">o</span><span class="p">):</span>
+                    <span class="k">yield</span> <span class="n">var</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="c1"># We only accept primitive key types, so we needn&#39;t inspect them</span>
+            <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">obj</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
                 <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">_iter</span><span class="p">(</span><span class="n">o</span><span class="p">):</span>
                     <span class="k">yield</span> <span class="n">var</span>
         <span class="k">elif</span> <span class="n">allow_unknown</span><span class="p">:</span>
@@ -663,7 +676,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Torch Contributors.
+        &copy; Copyright 2019, Torch Contributors.
 
     </p>
   </div>

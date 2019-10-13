@@ -35,7 +35,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Extending PyTorch" href="extending.html" />
-    <link rel="prev" title="Broadcasting semantics" href="broadcasting.html" /> 
+    <link rel="prev" title="CPU threading and TorchScript inference" href="cpu_threading_torchscript_inference.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -110,7 +110,7 @@
               
               
                 <div class="version">
-                  master (1.0.0 )
+                  master (1.1.0 )
                 </div>
               
             
@@ -149,9 +149,11 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="autograd.html">Autograd mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="broadcasting.html">Broadcasting semantics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cpu_threading_torchscript_inference.html">CPU threading and TorchScript inference</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">CUDA semantics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extending.html">Extending PyTorch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="large_scale_deployments.html">Features for large-scale deployments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="multiprocessing.html">Multiprocessing best practices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="randomness.html">Reproducibility</a></li>
 <li class="toctree-l1"><a class="reference internal" href="serialization.html">Serialization semantics</a></li>
@@ -163,34 +165,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../community/governance.html">PyTorch Governance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../community/persons_of_interest.html">PyTorch Governance | Persons of Interest</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Package Reference</span></p>
+<p class="caption"><span class="caption-text">Python API</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../torch.html">torch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nn.html">torch.nn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nn.functional.html">torch.nn.functional</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tensors.html">torch.Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tensor_attributes.html">Tensor Attributes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../type_info.html">Type Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../sparse.html">torch.sparse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cuda.html">torch.cuda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../storage.html">torch.Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nn.html">torch.nn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nn.html#torch-nn-functional">torch.nn.functional</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nn.html#torch-nn-init">torch.nn.init</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../optim.html">torch.optim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../autograd.html">torch.autograd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cuda.html">torch.cuda</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../distributed.html">torch.distributed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../distributions.html">torch.distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jit.html">torch.jit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../multiprocessing.html">torch.multiprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nn.init.html">torch.nn.init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../optim.html">torch.optim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../random.html">torch.random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sparse.html">torch.sparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../storage.html">torch.Storage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../bottleneck.html">torch.utils.bottleneck</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../checkpoint.html">torch.utils.checkpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cpp_extension.html">torch.utils.cpp_extension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data.html">torch.utils.data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dlpack.html">torch.utils.dlpack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../model_zoo.html">torch.utils.model_zoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tensorboard.html">torch.utils.tensorboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../type_info.html">Type Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../named_tensor.html">Named Tensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../name_inference.html">Named Tensors operator coverage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../__config__.html">torch.__config__</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../distributed_deprecated.html">torch.distributed.deprecated</a></li>
 </ul>
 
             
@@ -326,10 +331,25 @@ because (1) each device executes operations in the order they are queued, and
 between CPU and GPU or between two GPUs.  Hence, computation will proceed as if
 every operation was executed synchronously.</p>
 <p>You can force synchronous computation by setting environment variable
-<cite>CUDA_LAUNCH_BLOCKING=1</cite>.  This can be handy when an error occurs on the GPU.
+<code class="docutils literal notranslate"><span class="pre">CUDA_LAUNCH_BLOCKING=1</span></code>.  This can be handy when an error occurs on the GPU.
 (With asynchronous execution, such an error isn’t reported until after the
 operation is actually executed, so the stack trace does not show where it was
 requested.)</p>
+<p>A consequence of the asynchronous computation is that time measurements without
+synchronizations are not accurate. To get precise measurements, one should either
+call <a class="reference internal" href="../cuda.html#torch.cuda.synchronize" title="torch.cuda.synchronize"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.cuda.synchronize()</span></code></a> before measuring, or use <a class="reference internal" href="../cuda.html#torch.cuda.Event" title="torch.cuda.Event"><code class="xref py py-class docutils literal notranslate"><span class="pre">torch.cuda.Event</span></code></a>
+to record times as following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">start_event</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">Event</span><span class="p">(</span><span class="n">enable_timing</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">end_event</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">Event</span><span class="p">(</span><span class="n">enable_timing</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">start_event</span><span class="o">.</span><span class="n">record</span><span class="p">()</span>
+
+<span class="c1"># Run some things here</span>
+
+<span class="n">end_event</span><span class="o">.</span><span class="n">record</span><span class="p">()</span>
+<span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">synchronize</span><span class="p">()</span>  <span class="c1"># Wait for the events to be recorded!</span>
+<span class="n">elapsed_time_ms</span> <span class="o">=</span> <span class="n">start_event</span><span class="o">.</span><span class="n">elapsed_time</span><span class="p">(</span><span class="n">end_event</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>As an exception, several functions such as <a class="reference internal" href="../tensors.html#torch.Tensor.to" title="torch.Tensor.to"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to()</span></code></a> and
 <a class="reference internal" href="../tensors.html#torch.Tensor.copy_" title="torch.Tensor.copy_"><code class="xref py py-meth docutils literal notranslate"><span class="pre">copy_()</span></code></a> admit an explicit <code class="xref py py-attr docutils literal notranslate"><span class="pre">non_blocking</span></code> argument,
 which lets the caller bypass synchronization when it is unnecessary.
@@ -365,12 +385,39 @@ allows fast memory deallocation without device synchronizations. However, the
 unused memory managed by the allocator will still show as if used in
 <code class="docutils literal notranslate"><span class="pre">nvidia-smi</span></code>. You can use <a class="reference internal" href="../cuda.html#torch.cuda.memory_allocated" title="torch.cuda.memory_allocated"><code class="xref py py-meth docutils literal notranslate"><span class="pre">memory_allocated()</span></code></a> and
 <a class="reference internal" href="../cuda.html#torch.cuda.max_memory_allocated" title="torch.cuda.max_memory_allocated"><code class="xref py py-meth docutils literal notranslate"><span class="pre">max_memory_allocated()</span></code></a> to monitor memory occupied by
-tensors, and use <a class="reference internal" href="../cuda.html#torch.cuda.memory_cached" title="torch.cuda.memory_cached"><code class="xref py py-meth docutils literal notranslate"><span class="pre">memory_cached()</span></code></a> and
-<a class="reference internal" href="../cuda.html#torch.cuda.max_memory_cached" title="torch.cuda.max_memory_cached"><code class="xref py py-meth docutils literal notranslate"><span class="pre">max_memory_cached()</span></code></a> to monitor memory managed by the caching
-allocator. Calling <a class="reference internal" href="../cuda.html#torch.cuda.empty_cache" title="torch.cuda.empty_cache"><code class="xref py py-meth docutils literal notranslate"><span class="pre">empty_cache()</span></code></a> releases all <strong>unused</strong>
-cached memory from PyTorch so that those can be used by other GPU applications.
-However, the occupied GPU memory by tensors will not be freed so it can not
-increase the amount of GPU memory available for PyTorch.</p>
+tensors, and use <code class="xref py py-meth docutils literal notranslate"><span class="pre">memory_reserved()</span></code> and
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">max_memory_reserved()</span></code> to monitor the total amount of memory
+managed by the caching allocator. Calling <a class="reference internal" href="../cuda.html#torch.cuda.empty_cache" title="torch.cuda.empty_cache"><code class="xref py py-meth docutils literal notranslate"><span class="pre">empty_cache()</span></code></a>
+releases all <strong>unused</strong> cached memory from PyTorch so that those can be used
+by other GPU applications. However, the occupied GPU memory by tensors will not
+be freed so it can not increase the amount of GPU memory available for PyTorch.</p>
+<p>For more advanced users, we offer more comprehensive memory benchmarking via
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">memory_stats()</span></code>. We also offer the capability to capture a
+complete snapshot of the memory allocator state via
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">memory_snapshot()</span></code>, which can help you understand the
+underlying allocation patterns produced by your code.</p>
+</div>
+<div class="section" id="cufft-plan-cache">
+<span id="id2"></span><h2>cuFFT plan cache<a class="headerlink" href="#cufft-plan-cache" title="Permalink to this headline">¶</a></h2>
+<p>For each CUDA device, an LRU cache of cuFFT plans is used to speed up repeatedly
+running FFT methods (e.g., <a class="reference internal" href="../torch.html#torch.fft" title="torch.fft"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.fft()</span></code></a>) on CUDA tensors of same geometry
+with same configuration. Because some cuFFT plans may allocate GPU memory,
+these caches have a maximum capacity.</p>
+<p>You may control and query the properties of the cache of current device with
+the following APIs:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">torch.backends.cuda.cufft_plan_cache.max_size</span></code> gives the capacity of the
+cache (default is 4096 on CUDA 10 and newer, and 1023 on older CUDA versions).
+Setting this value directly modifies the capacity.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">torch.backends.cuda.cufft_plan_cache.size</span></code> gives the number of plans
+currently residing in the cache.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">torch.backends.cuda.cufft_plan_cache.clear()</span></code> clears the cache.</p></li>
+</ul>
+<p>To control and query plan caches of a non-default device, you can index the
+<code class="docutils literal notranslate"><span class="pre">torch.backends.cuda.cufft_plan_cache</span></code> object with either a <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.device</span></code>
+object or a device index, and access one of the above attributes. E.g., to set
+the capacity of the cache for device <code class="docutils literal notranslate"><span class="pre">1</span></code>, one can write
+<code class="docutils literal notranslate"><span class="pre">torch.backends.cuda.cufft_plan_cache[1].max_size</span> <span class="pre">=</span> <span class="pre">10</span></code>.</p>
 </div>
 <div class="section" id="best-practices">
 <h2>Best practices<a class="headerlink" href="#best-practices" title="Permalink to this headline">¶</a></h2>
@@ -468,13 +515,14 @@ also preserve <code class="xref py py-class docutils literal notranslate"><span 
 </div>
 </div>
 <div class="section" id="use-pinned-memory-buffers">
-<h3>Use pinned memory buffers<a class="headerlink" href="#use-pinned-memory-buffers" title="Permalink to this headline">¶</a></h3>
+<span id="cuda-memory-pinning"></span><h3>Use pinned memory buffers<a class="headerlink" href="#use-pinned-memory-buffers" title="Permalink to this headline">¶</a></h3>
 <p>Host to GPU copies are much faster when they originate from pinned (page-locked)
 memory. CPU tensors and storages expose a <a class="reference internal" href="../tensors.html#torch.Tensor.pin_memory" title="torch.Tensor.pin_memory"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pin_memory()</span></code></a>
 method, that returns a copy of the object, with data put in a pinned region.</p>
 <p>Also, once you pin a tensor or storage, you can use asynchronous GPU copies.
-Just pass an additional <code class="docutils literal notranslate"><span class="pre">non_blocking=True</span></code> argument to a <a class="reference internal" href="../tensors.html#torch.Tensor.cuda" title="torch.Tensor.cuda"><code class="xref py py-meth docutils literal notranslate"><span class="pre">cuda()</span></code></a>
-call. This can be used to overlap data transfers with computation.</p>
+Just pass an additional <code class="docutils literal notranslate"><span class="pre">non_blocking=True</span></code> argument to a
+<a class="reference internal" href="../tensors.html#torch.Tensor.to" title="torch.Tensor.to"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to()</span></code></a> or a <a class="reference internal" href="../tensors.html#torch.Tensor.cuda" title="torch.Tensor.cuda"><code class="xref py py-meth docutils literal notranslate"><span class="pre">cuda()</span></code></a> call. This can be used
+to overlap data transfers with computation.</p>
 <p>You can make the <a class="reference internal" href="../data.html#torch.utils.data.DataLoader" title="torch.utils.data.DataLoader"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataLoader</span></code></a> return batches placed in
 pinned memory by passing <code class="docutils literal notranslate"><span class="pre">pin_memory=True</span></code> to its constructor.</p>
 </div>
@@ -505,7 +553,7 @@ undefined behavior.</p>
         <a href="extending.html" class="btn btn-neutral float-right" title="Extending PyTorch" accesskey="n" rel="next">Next <img src="../_static/images/chevron-right-orange.svg" class="next-page"></a>
       
       
-        <a href="broadcasting.html" class="btn btn-neutral" title="Broadcasting semantics" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+        <a href="cpu_threading_torchscript_inference.html" class="btn btn-neutral" title="CPU threading and TorchScript inference" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
       
     </div>
   
@@ -518,7 +566,7 @@ undefined behavior.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Torch Contributors.
+        &copy; Copyright 2019, Torch Contributors.
 
     </p>
   </div>
@@ -543,6 +591,7 @@ undefined behavior.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#memory-management">Memory management</a></li>
+<li><a class="reference internal" href="#cufft-plan-cache">cuFFT plan cache</a></li>
 <li><a class="reference internal" href="#best-practices">Best practices</a><ul>
 <li><a class="reference internal" href="#device-agnostic-code">Device-agnostic code</a></li>
 <li><a class="reference internal" href="#use-pinned-memory-buffers">Use pinned memory buffers</a></li>

@@ -108,7 +108,7 @@
               
               
                 <div class="version">
-                  master (1.0.0 )
+                  master (1.1.0 )
                 </div>
               
             
@@ -147,9 +147,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/autograd.html">Autograd mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/broadcasting.html">Broadcasting semantics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notes/cpu_threading_torchscript_inference.html">CPU threading and TorchScript inference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/cuda.html">CUDA semantics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/extending.html">Extending PyTorch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notes/large_scale_deployments.html">Features for large-scale deployments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/multiprocessing.html">Multiprocessing best practices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/randomness.html">Reproducibility</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/serialization.html">Serialization semantics</a></li>
@@ -161,34 +163,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../../community/governance.html">PyTorch Governance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../community/persons_of_interest.html">PyTorch Governance | Persons of Interest</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Package Reference</span></p>
+<p class="caption"><span class="caption-text">Python API</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../torch.html">torch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nn.html">torch.nn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nn.functional.html">torch.nn.functional</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tensors.html">torch.Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tensor_attributes.html">Tensor Attributes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../type_info.html">Type Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sparse.html">torch.sparse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../cuda.html">torch.cuda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../storage.html">torch.Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nn.html">torch.nn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nn.html#torch-nn-functional">torch.nn.functional</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nn.html#torch-nn-init">torch.nn.init</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../optim.html">torch.optim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../autograd.html">torch.autograd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cuda.html">torch.cuda</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../distributed.html">torch.distributed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../distributions.html">torch.distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../jit.html">torch.jit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../multiprocessing.html">torch.multiprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nn.init.html">torch.nn.init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../optim.html">torch.optim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../random.html">torch.random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sparse.html">torch.sparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../storage.html">torch.Storage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../bottleneck.html">torch.utils.bottleneck</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../checkpoint.html">torch.utils.checkpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../cpp_extension.html">torch.utils.cpp_extension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../data.html">torch.utils.data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../dlpack.html">torch.utils.dlpack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../model_zoo.html">torch.utils.model_zoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tensorboard.html">torch.utils.tensorboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../type_info.html">Type Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../named_tensor.html">Named Tensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../name_inference.html">Named Tensors operator coverage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../__config__.html">torch.__config__</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_deprecated.html">torch.distributed.deprecated</a></li>
 </ul>
 
             
@@ -272,11 +277,16 @@
 <span class="kn">import</span> <span class="nn">weakref</span>
 <span class="kn">from</span> <span class="nn">torch._six</span> <span class="k">import</span> <span class="n">imap</span>
 <span class="kn">from</span> <span class="nn">torch._C</span> <span class="k">import</span> <span class="n">_add_docstr</span>
+<span class="kn">from</span> <span class="nn">numbers</span> <span class="k">import</span> <span class="n">Number</span>
 
 
 <span class="c1"># NB: If you subclass Tensor, and want to share the subclassed class</span>
 <span class="c1"># across processes, you must also update torch/multiprocessing/reductions.py</span>
 <span class="c1"># to define a ForkingPickler serialization mode for the class.</span>
+<span class="c1">#</span>
+<span class="c1"># NB: If you add a new method to Tensor, you must update</span>
+<span class="c1"># torch/__init__.py.in to add a type annotation for your method;</span>
+<span class="c1"># otherwise, it will not show up in autocomplete.</span>
 <span class="k">class</span> <span class="nc">Tensor</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_TensorBase</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__deepcopy__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">memo</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_leaf</span><span class="p">:</span>
@@ -440,9 +450,17 @@
 
 <span class="s2">    .. note::</span>
 
-<span class="s2">      Returned Tensor uses the same data tensor as the original one.</span>
+<span class="s2">      Returned Tensor shares the same storage with the original one.</span>
 <span class="s2">      In-place modifications on either of them will be seen, and may trigger</span>
 <span class="s2">      errors in correctness checks.</span>
+<span class="s2">      IMPORTANT NOTE: Previously, in-place size / stride / storage changes</span>
+<span class="s2">      (such as `resize_` / `resize_as_` / `set_` / `transpose_`) to the returned tensor</span>
+<span class="s2">      also update the original tensor. Now, these in-place changes will not update the</span>
+<span class="s2">      original tensor anymore, and will instead trigger an error.</span>
+<span class="s2">      For sparse tensors:</span>
+<span class="s2">      In-place indices / values changes (such as `zero_` / `copy_` / `add_`) to the</span>
+<span class="s2">      returned tensor will not update the original tensor anymore, and will instead</span>
+<span class="s2">      trigger an error.</span>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
     <span class="n">detach_</span> <span class="o">=</span> <span class="n">_add_docstr</span><span class="p">(</span><span class="n">_C</span><span class="o">.</span><span class="n">_TensorBase</span><span class="o">.</span><span class="n">detach_</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;&quot;&quot;</span>
@@ -500,42 +518,81 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Tensor.argmax"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.argmax">[docs]</a>    <span class="k">def</span> <span class="nf">argmax</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">keepdim</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.argmax`&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">keepdim</span><span class="p">)</span></div>
+<div class="viewcode-block" id="Tensor.norm"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.norm">[docs]</a>    <span class="k">def</span> <span class="nf">norm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="s2">&quot;fro&quot;</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">keepdim</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.norm`&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">keepdim</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Tensor.argmin"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.argmin">[docs]</a>    <span class="k">def</span> <span class="nf">argmin</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">keepdim</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.argmin`&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">keepdim</span><span class="p">)</span></div>
+    <span class="k">def</span> <span class="nf">pstrf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">upper</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.pstrf`&quot;&quot;&quot;</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;torch.pstrf is deprecated in favour of torch.cholesky and will be removed &quot;</span>
+                      <span class="s2">&quot;in the next release.&quot;</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">Tensor</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">pstrf</span><span class="p">(</span><span class="n">upper</span><span class="o">=</span><span class="n">upper</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Tensor.argsort"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.argsort">[docs]</a>    <span class="k">def</span> <span class="nf">argsort</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">descending</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func: `torch.argsort`&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">descending</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Tensor.norm"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.norm">[docs]</a>    <span class="k">def</span> <span class="nf">norm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="s2">&quot;fro&quot;</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">keepdim</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func: `torch.norm`&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">keepdim</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Tensor.btrifact"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.btrifact">[docs]</a>    <span class="k">def</span> <span class="nf">btrifact</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">info</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pivot</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.btrifact`</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="n">info</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;info option in btrifact is deprecated and will be removed in v0.4, &quot;</span>
-                          <span class="s2">&quot;consider using btrifact_with_info instead&quot;</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-            <span class="n">factorization</span><span class="p">,</span> <span class="n">pivots</span><span class="p">,</span> <span class="n">_info</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">Tensor</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">btrifact_with_info</span><span class="p">(</span><span class="n">pivot</span><span class="o">=</span><span class="n">pivot</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">info</span><span class="o">.</span><span class="n">type</span><span class="p">()</span> <span class="o">!=</span> <span class="n">_info</span><span class="o">.</span><span class="n">type</span><span class="p">():</span>
-                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;btrifact expects info to be an IntTensor&#39;</span><span class="p">)</span>
-            <span class="n">info</span><span class="o">.</span><span class="n">resize_as_</span><span class="p">(</span><span class="n">_info</span><span class="p">)</span><span class="o">.</span><span class="n">copy_</span><span class="p">(</span><span class="n">_info</span><span class="p">)</span>
-            <span class="k">return</span> <span class="n">factorization</span><span class="p">,</span> <span class="n">pivots</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">Tensor</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">btrifact</span><span class="p">(</span><span class="n">pivot</span><span class="o">=</span><span class="n">pivot</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Tensor.potrf"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.potrf">[docs]</a>    <span class="k">def</span> <span class="nf">potrf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">upper</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">potrf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">upper</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
         <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.cholesky`&quot;&quot;&quot;</span>
         <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;torch.potrf is deprecated in favour of torch.cholesky and will be removed &quot;</span>
                       <span class="s2">&quot;in the next release. Please use torch.cholesky instead and note that the &quot;</span>
                       <span class="s2">&quot;:attr:`upper` argument in torch.cholesky defaults to ``False``.&quot;</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">Tensor</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">cholesky</span><span class="p">(</span><span class="n">upper</span><span class="o">=</span><span class="n">upper</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">Tensor</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">cholesky</span><span class="p">(</span><span class="n">upper</span><span class="o">=</span><span class="n">upper</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">potri</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">upper</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.cholesky_inverse`&quot;&quot;&quot;</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;torch.potri is deprecated in favour of torch.cholesky_inverse and will be &quot;</span>
+                      <span class="s2">&quot;removed in the next release. Please use torch.cholesky_inverse instead and &quot;</span>
+                      <span class="s2">&quot;note that the :attr:`upper` argument in torch.cholesky_inverse defaults to &quot;</span>
+                      <span class="s2">&quot;``False``.&quot;</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">Tensor</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">cholesky_inverse</span><span class="p">(</span><span class="n">upper</span><span class="o">=</span><span class="n">upper</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">potrs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">upper</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.cholesky_solve`&quot;&quot;&quot;</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;torch.potrs is deprecated in favour of torch.cholesky_solve and &quot;</span>
+                      <span class="s2">&quot;will be removed in the next release. Please use torch.cholesky_solve instead &quot;</span>
+                      <span class="s2">&quot;and note that the :attr:`upper` argument in torch.cholesky_solve defaults &quot;</span>
+                      <span class="s2">&quot;to ``False``.&quot;</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">Tensor</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">cholesky_solve</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">upper</span><span class="o">=</span><span class="n">upper</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">gesv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">A</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.solve`&quot;&quot;&quot;</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;torch.gesv is deprecated in favour of torch.solve and will be removed in the &quot;</span>
+                      <span class="s2">&quot;next release. Please use torch.solve instead.&quot;</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">Tensor</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">trtrs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">upper</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">transpose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">unitriangular</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.triangular_solve`&quot;&quot;&quot;</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;torch.trtrs is deprecated in favour of torch.triangular_solve and will be &quot;</span>
+                      <span class="s2">&quot;removed in the next release. Please use torch.triangular_solve instead.&quot;</span><span class="p">,</span>
+                      <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">Tensor</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">triangular_solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">upper</span><span class="o">=</span><span class="n">upper</span><span class="p">,</span>
+                                                    <span class="n">transpose</span><span class="o">=</span><span class="n">transpose</span><span class="p">,</span> <span class="n">unitriangular</span><span class="o">=</span><span class="n">unitriangular</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">btrifact</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pivot</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.lu`&quot;&quot;&quot;</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;torch.btrifact is deprecated in favour of torch.lu and will be removed in &quot;</span>
+                      <span class="s2">&quot;the next release. Please use torch.lu instead.&quot;</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">_lu_with_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pivot</span><span class="o">=</span><span class="n">pivot</span><span class="p">,</span> <span class="n">check_errors</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">btrifact_with_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pivot</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.lu`&quot;&quot;&quot;</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;torch.btrifact_with_info is deprecated in favour of torch.lu with the &quot;</span>
+                      <span class="s2">&quot;get_infos argument and will be removed in the next release. Please use &quot;</span>
+                      <span class="s2">&quot;torch.lu with the get_infos argument set to True instead.&quot;</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">_lu_with_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pivot</span><span class="o">=</span><span class="n">pivot</span><span class="p">,</span> <span class="n">check_errors</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">btrisolve</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">LU_data</span><span class="p">,</span> <span class="n">LU_pivots</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.lu_solve`&quot;&quot;&quot;</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;torch.btrisolve is deprecated in favour of torch.lu_solve and will be &quot;</span>
+                      <span class="s2">&quot;removed in the next release. Please use torch.lu_solve instead.&quot;</span><span class="p">,</span>
+                      <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">Tensor</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">lu_solve</span><span class="p">(</span><span class="n">LU_data</span><span class="o">=</span><span class="n">LU_data</span><span class="p">,</span> <span class="n">LU_pivots</span><span class="o">=</span><span class="n">LU_pivots</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Tensor.lu"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.lu">[docs]</a>    <span class="k">def</span> <span class="nf">lu</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pivot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">get_infos</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;See :func:`torch.lu`&quot;&quot;&quot;</span>
+        <span class="c1"># If get_infos is True, then we don&#39;t need to check for errors and vice versa</span>
+        <span class="n">LU</span><span class="p">,</span> <span class="n">pivots</span><span class="p">,</span> <span class="n">infos</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_lu_with_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pivot</span><span class="o">=</span><span class="n">pivot</span><span class="p">,</span> <span class="n">check_errors</span><span class="o">=</span><span class="p">(</span><span class="ow">not</span> <span class="n">get_infos</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">get_infos</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">LU</span><span class="p">,</span> <span class="n">pivots</span><span class="p">,</span> <span class="n">infos</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">LU</span><span class="p">,</span> <span class="n">pivots</span></div>
 
 <div class="viewcode-block" id="Tensor.stft"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.stft">[docs]</a>    <span class="k">def</span> <span class="nf">stft</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_fft</span><span class="p">,</span> <span class="n">hop_length</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">win_length</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
              <span class="n">center</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">pad_mode</span><span class="o">=</span><span class="s1">&#39;reflect&#39;</span><span class="p">,</span> <span class="n">normalized</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">onesided</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
@@ -566,63 +623,19 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">Tensor</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">split_with_sizes</span><span class="p">(</span><span class="n">split_size</span><span class="p">,</span> <span class="n">dim</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Tensor.index_add"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.index_add">[docs]</a>    <span class="k">def</span> <span class="nf">index_add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">tensor</span><span class="p">):</span>
-        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Out-of-place version of :meth:`torch.Tensor.index_add_`</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">index_add_</span><span class="p">(</span><span class="n">dim</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">tensor</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Tensor.index_copy"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.index_copy">[docs]</a>    <span class="k">def</span> <span class="nf">index_copy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">tensor</span><span class="p">):</span>
-        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Out-of-place version of :meth:`torch.Tensor.index_copy_`</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">index_copy_</span><span class="p">(</span><span class="n">dim</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">tensor</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Tensor.index_fill"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.index_fill">[docs]</a>    <span class="k">def</span> <span class="nf">index_fill</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Out-of-place version of :meth:`torch.Tensor.index_fill_`</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">index_fill_</span><span class="p">(</span><span class="n">dim</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Tensor.scatter"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.scatter">[docs]</a>    <span class="k">def</span> <span class="nf">scatter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">source</span><span class="p">):</span>
-        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Out-of-place version of :meth:`torch.Tensor.scatter_`</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">scatter_</span><span class="p">(</span><span class="n">dim</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">source</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Tensor.scatter_add"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.scatter_add">[docs]</a>    <span class="k">def</span> <span class="nf">scatter_add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">source</span><span class="p">):</span>
-        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Out-of-place version of :meth:`torch.Tensor.scatter_add_`</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">scatter_add_</span><span class="p">(</span><span class="n">dim</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">source</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Tensor.masked_scatter"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.masked_scatter">[docs]</a>    <span class="k">def</span> <span class="nf">masked_scatter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mask</span><span class="p">,</span> <span class="n">tensor</span><span class="p">):</span>
-        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Out-of-place version of :meth:`torch.Tensor.masked_scatter_`</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">masked_scatter_</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="n">tensor</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Tensor.masked_fill"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.masked_fill">[docs]</a>    <span class="k">def</span> <span class="nf">masked_fill</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mask</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Out-of-place version of :meth:`torch.Tensor.masked_fill_`</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">masked_fill_</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Tensor.unique"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.unique">[docs]</a>    <span class="k">def</span> <span class="nf">unique</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">sorted</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">return_inverse</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Returns the unique scalar elements of the tensor as a 1-D tensor.</span>
+<div class="viewcode-block" id="Tensor.unique"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.unique">[docs]</a>    <span class="k">def</span> <span class="nf">unique</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">sorted</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">return_inverse</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Returns the unique elements of the input tensor.</span>
 
 <span class="sd">        See :func:`torch.unique`</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="n">dim</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">output</span><span class="p">,</span> <span class="n">inverse_indices</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_unique_dim</span><span class="p">(</span>
-                <span class="bp">self</span><span class="p">,</span>
-                <span class="nb">sorted</span><span class="o">=</span><span class="nb">sorted</span><span class="p">,</span>
-                <span class="n">return_inverse</span><span class="o">=</span><span class="n">return_inverse</span><span class="p">,</span>
-                <span class="n">dim</span><span class="o">=</span><span class="n">dim</span>
-            <span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">output</span><span class="p">,</span> <span class="n">inverse_indices</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_unique</span><span class="p">(</span>
-                <span class="bp">self</span><span class="p">,</span>
-                <span class="nb">sorted</span><span class="o">=</span><span class="nb">sorted</span><span class="p">,</span>
-                <span class="n">return_inverse</span><span class="o">=</span><span class="n">return_inverse</span>
-            <span class="p">)</span>
-        <span class="k">if</span> <span class="n">return_inverse</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">output</span><span class="p">,</span> <span class="n">inverse_indices</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">output</span></div>
+        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">sorted</span><span class="o">=</span><span class="nb">sorted</span><span class="p">,</span> <span class="n">return_inverse</span><span class="o">=</span><span class="n">return_inverse</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="n">return_counts</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="n">dim</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Tensor.unique_consecutive"><a class="viewcode-back" href="../../tensors.html#torch.Tensor.unique_consecutive">[docs]</a>    <span class="k">def</span> <span class="nf">unique_consecutive</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">return_inverse</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Eliminates all but the first element from every consecutive group of equivalent elements.</span>
+
+<span class="sd">        See :func:`torch.unique_consecutive`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">unique_consecutive</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">return_inverse</span><span class="o">=</span><span class="n">return_inverse</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="n">return_counts</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="n">dim</span><span class="p">)</span></div>
 
     <span class="k">def</span> <span class="nf">__rsub__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">_C</span><span class="o">.</span><span class="n">_VariableFunctions</span><span class="o">.</span><span class="n">rsub</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span>
@@ -647,7 +660,7 @@
         <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;in-place pow not implemented&quot;</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">__rpow__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">new</span><span class="p">([</span><span class="n">other</span><span class="p">])</span> <span class="o">**</span> <span class="bp">self</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">new_tensor</span><span class="p">(</span><span class="n">other</span><span class="p">)</span> <span class="o">**</span> <span class="bp">self</span>
 
     <span class="k">def</span> <span class="nf">__floordiv__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span> <span class="o">/</span> <span class="n">other</span>
@@ -724,6 +737,17 @@
             <span class="n">array</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;uint8&#39;</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
 
+    <span class="k">def</span> <span class="nf">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">element</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Check if `element` is present in tensor</span>
+
+<span class="sd">        Arguments:</span>
+<span class="sd">            element (Tensor or scalar): element to be checked</span>
+<span class="sd">                for presence in current tensor&quot;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">Number</span><span class="p">)):</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">element</span> <span class="o">==</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">()</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
+
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">__cuda_array_interface__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Array view description for cuda tensors.</span>
@@ -793,7 +817,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Torch Contributors.
+        &copy; Copyright 2019, Torch Contributors.
 
     </p>
   </div>

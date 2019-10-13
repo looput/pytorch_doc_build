@@ -108,7 +108,7 @@
               
               
                 <div class="version">
-                  master (1.0.0 )
+                  master (1.1.0 )
                 </div>
               
             
@@ -147,9 +147,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/autograd.html">Autograd mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/broadcasting.html">Broadcasting semantics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notes/cpu_threading_torchscript_inference.html">CPU threading and TorchScript inference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/cuda.html">CUDA semantics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/extending.html">Extending PyTorch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notes/large_scale_deployments.html">Features for large-scale deployments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/multiprocessing.html">Multiprocessing best practices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/randomness.html">Reproducibility</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes/serialization.html">Serialization semantics</a></li>
@@ -161,34 +163,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../../community/governance.html">PyTorch Governance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../community/persons_of_interest.html">PyTorch Governance | Persons of Interest</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Package Reference</span></p>
+<p class="caption"><span class="caption-text">Python API</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../torch.html">torch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nn.html">torch.nn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nn.functional.html">torch.nn.functional</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tensors.html">torch.Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tensor_attributes.html">Tensor Attributes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../type_info.html">Type Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sparse.html">torch.sparse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../cuda.html">torch.cuda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../storage.html">torch.Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nn.html">torch.nn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nn.html#torch-nn-functional">torch.nn.functional</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nn.html#torch-nn-init">torch.nn.init</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../optim.html">torch.optim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../autograd.html">torch.autograd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cuda.html">torch.cuda</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../distributed.html">torch.distributed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../distributions.html">torch.distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../jit.html">torch.jit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../multiprocessing.html">torch.multiprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nn.init.html">torch.nn.init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../optim.html">torch.optim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../random.html">torch.random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sparse.html">torch.sparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../storage.html">torch.Storage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../bottleneck.html">torch.utils.bottleneck</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../checkpoint.html">torch.utils.checkpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../cpp_extension.html">torch.utils.cpp_extension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../data.html">torch.utils.data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../dlpack.html">torch.utils.dlpack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../model_zoo.html">torch.utils.model_zoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tensorboard.html">torch.utils.tensorboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../type_info.html">Type Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../named_tensor.html">Named Tensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../name_inference.html">Named Tensors operator coverage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../__config__.html">torch.__config__</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_deprecated.html">torch.distributed.deprecated</a></li>
 </ul>
 
             
@@ -264,36 +269,34 @@
               
   <h1>Source code for torch.jit</h1><div class="highlight"><pre>
 <span></span><span class="kn">import</span> <span class="nn">torch._C</span>
-<span class="kn">from</span> <span class="nn">torch</span> <span class="k">import</span> <span class="n">Tensor</span>
 <span class="kn">from</span> <span class="nn">torch.autograd</span> <span class="k">import</span> <span class="n">Variable</span><span class="p">,</span> <span class="n">function</span>
 <span class="kn">from</span> <span class="nn">torch.serialization</span> <span class="k">import</span> <span class="n">validate_cuda_device</span>
-<span class="kn">from</span> <span class="nn">torch.nn</span> <span class="k">import</span> <span class="n">Module</span><span class="p">,</span> <span class="n">ModuleList</span><span class="p">,</span> <span class="n">ParameterList</span><span class="p">,</span> <span class="n">Parameter</span><span class="p">,</span> <span class="n">Sequential</span>
-<span class="kn">from</span> <span class="nn">torch.jit.frontend</span> <span class="k">import</span> <span class="n">get_jit_ast</span><span class="p">,</span> <span class="n">get_default_args</span>
+<span class="kn">from</span> <span class="nn">torch.nn</span> <span class="k">import</span> <span class="n">Module</span><span class="p">,</span> <span class="n">ModuleList</span><span class="p">,</span> <span class="n">Parameter</span><span class="p">,</span> <span class="n">Sequential</span>
+<span class="kn">from</span> <span class="nn">torch.jit.frontend</span> <span class="k">import</span> <span class="n">get_jit_class_def</span><span class="p">,</span> <span class="n">get_jit_def</span><span class="p">,</span> <span class="n">get_default_args</span>
 <span class="kn">import</span> <span class="nn">torch.backends.cudnn</span> <span class="k">as</span> <span class="nn">cudnn</span>
 <span class="kn">import</span> <span class="nn">torch.jit.annotations</span>
-<span class="kn">from</span> <span class="nn">torch._six</span> <span class="k">import</span> <span class="n">raise_from</span><span class="p">,</span> <span class="n">with_metaclass</span><span class="p">,</span> <span class="n">get_function_from_type</span><span class="p">,</span> \
+<span class="kn">import</span> <span class="nn">torch._jit_internal</span> <span class="k">as</span> <span class="nn">_jit_internal</span>
+<span class="kn">from</span> <span class="nn">torch._six</span> <span class="k">import</span> <span class="n">with_metaclass</span><span class="p">,</span> <span class="n">get_function_from_type</span><span class="p">,</span> \
     <span class="n">string_classes</span>
-<span class="kn">from</span> <span class="nn">.._jit_internal</span> <span class="k">import</span> <span class="n">createResolutionCallback</span><span class="p">,</span> <span class="n">_compiled_weak_fns</span><span class="p">,</span> \
-    <span class="n">_weak_script_methods</span><span class="p">,</span> <span class="n">_weak_modules</span><span class="p">,</span> <span class="n">_weak_types</span><span class="p">,</span> <span class="n">COMPILED</span><span class="p">,</span> \
-    <span class="n">COMPILATION_PENDING</span><span class="p">,</span> <span class="n">_boolean_dispatched</span>
+<span class="kn">from</span> <span class="nn">torch._jit_internal</span> <span class="k">import</span> <span class="n">ignore</span>  <span class="c1"># noqa: F401</span>
 <span class="kn">from</span> <span class="nn">..nn.modules.utils</span> <span class="k">import</span> <span class="n">_single</span><span class="p">,</span> <span class="n">_pair</span><span class="p">,</span> <span class="n">_triple</span><span class="p">,</span> <span class="n">_quadruple</span><span class="p">,</span> \
     <span class="n">_list_with_default</span>
 <span class="kn">import</span> <span class="nn">torch.testing</span>
+
 <span class="kn">import</span> <span class="nn">math</span>
-<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">OrderedDict</span><span class="p">,</span> <span class="n">namedtuple</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">OrderedDict</span><span class="p">,</span> <span class="n">namedtuple</span>
+<span class="kn">import</span> <span class="nn">textwrap</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">import</span> <span class="nn">warnings</span>
-<span class="kn">import</span> <span class="nn">itertools</span>
 <span class="kn">import</span> <span class="nn">weakref</span>
 <span class="kn">import</span> <span class="nn">types</span>
 <span class="kn">import</span> <span class="nn">contextlib</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">functools</span>
 <span class="kn">import</span> <span class="nn">copy</span>
-<span class="kn">import</span> <span class="nn">numbers</span>
 <span class="kn">import</span> <span class="nn">collections</span>
-<span class="kn">import</span> <span class="nn">re</span>
 <span class="kn">import</span> <span class="nn">inspect</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
 <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
     <span class="kn">import</span> <span class="nn">pathlib</span>
 
@@ -318,8 +321,7 @@
 <span class="n">_enabled</span> <span class="o">=</span> <span class="n">_parse_env</span><span class="p">(</span><span class="s1">&#39;PYTORCH_JIT&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;&gt; Using PyTorch JIT&quot;</span><span class="p">,</span> <span class="s2">&quot;&gt; PyTorch JIT DISABLED&quot;</span><span class="p">)</span>
 <span class="n">_flatten</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_jit_flatten</span>
 <span class="n">_unflatten</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_jit_unflatten</span>
-<span class="n">_jit_script_compile</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_jit_script_compile</span>
-<span class="n">BatchTensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_jit</span><span class="o">.</span><span class="n">BatchTensor</span>
+<span class="n">_jit_script_class_compile</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_jit_script_class_compile</span>
 
 <span class="n">Future</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">Future</span>
 <span class="n">_fork</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">fork</span>
@@ -338,7 +340,10 @@
             <span class="n">tracing_state</span><span class="o">.</span><span class="n">pop_scope</span><span class="p">()</span>
 
 
-<div class="viewcode-block" id="load"><a class="viewcode-back" href="../../jit.html#torch.jit.load">[docs]</a><span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">map_location</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="n">DEFAULT_EXTRA_FILES_MAP</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">ExtraFilesMap</span><span class="p">()</span>
+
+
+<div class="viewcode-block" id="load"><a class="viewcode-back" href="../../jit.html#torch.jit.load">[docs]</a><span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">map_location</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">_extra_files</span><span class="o">=</span><span class="n">DEFAULT_EXTRA_FILES_MAP</span><span class="p">):</span>
     <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Load a ``ScriptModule`` previously saved with :func:`save &lt;torch.jit.save&gt;`</span>
 
@@ -355,21 +360,34 @@
 <span class="sd">                or a string containing a file name</span>
 <span class="sd">            map_location: can a string (e.g., &#39;cpu&#39;, &#39;cuda:0&#39;), a device (e.g.,</span>
 <span class="sd">                torch.device(&#39;cpu&#39;))</span>
+<span class="sd">            _extra_files: map from filename to content. The extra</span>
+<span class="sd">                filenames given in the map would be loaded and their content</span>
+<span class="sd">                would be stored in the provided map.</span>
+
 
 <span class="sd">        Returns:</span>
 <span class="sd">            A ``ScriptModule`` object.</span>
 
 <span class="sd">        Example:</span>
-<span class="sd">            &gt;&gt;&gt; torch.jit.load(&#39;scriptmodule.pt&#39;)</span>
+<span class="sd">            torch.jit.load(&#39;scriptmodule.pt&#39;)</span>
+
 <span class="sd">            # Load ScriptModule from io.BytesIO object</span>
-<span class="sd">            &gt;&gt;&gt; with open(&#39;scriptmodule.pt&#39;, &#39;rb&#39;) as f:</span>
-<span class="sd">                    buffer = io.BytesIO(f.read())</span>
+<span class="sd">            with open(&#39;scriptmodule.pt&#39;, &#39;rb&#39;) as f:</span>
+<span class="sd">                buffer = io.BytesIO(f.read())</span>
+
 <span class="sd">            # Load all tensors to the original device</span>
-<span class="sd">            &gt;&gt;&gt; torch.jit.load(buffer)</span>
+<span class="sd">            torch.jit.load(buffer)</span>
+
 <span class="sd">            # Load all tensors onto CPU, using a device</span>
-<span class="sd">            &gt;&gt;&gt; torch.jit.load(buffer, map_location=torch.device(&#39;cpu&#39;))</span>
+<span class="sd">            torch.jit.load(buffer, map_location=torch.device(&#39;cpu&#39;))</span>
+
 <span class="sd">            # Load all tensors onto CPU, using a string</span>
-<span class="sd">            &gt;&gt;&gt; torch.jit.load(buffer, map_location=&#39;cpu&#39;)</span>
+<span class="sd">            torch.jit.load(buffer, map_location=&#39;cpu&#39;)</span>
+
+<span class="sd">            # Load with extra files.</span>
+<span class="sd">            files = {&#39;metadata.json&#39; : &#39;&#39;}</span>
+<span class="sd">            torch.jit.load(&#39;scriptmodule.pt&#39;, _extra_files = files)</span>
+<span class="sd">            print (files[&#39;metadata.json&#39;])</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">m</span> <span class="o">=</span> <span class="n">ScriptModule</span><span class="p">()</span>
 
@@ -379,8 +397,10 @@
             <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">curr</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
                 <span class="nb">setattr</span><span class="p">(</span><span class="n">curr</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">ScriptModule</span><span class="p">())</span>
             <span class="n">curr</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">curr</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">curr</span>
-
+        <span class="k">return</span> <span class="n">curr</span><span class="o">.</span><span class="n">_c</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">string_classes</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;The provided filename </span><span class="si">{}</span><span class="s2"> does not exist&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">f</span><span class="p">))</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">map_location</span><span class="p">,</span> <span class="n">string_classes</span><span class="p">):</span>
         <span class="n">map_location</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="n">map_location</span><span class="p">)</span>
     <span class="k">elif</span> <span class="ow">not</span> <span class="p">(</span><span class="n">map_location</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span>
@@ -393,49 +413,69 @@
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">or</span> \
             <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">unicode</span><span class="p">))</span> <span class="ow">or</span> \
             <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">)):</span>
-        <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">import_ir_module</span><span class="p">(</span><span class="n">module_lookup</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">map_location</span><span class="p">)</span>
+        <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">import_ir_module</span><span class="p">(</span><span class="n">module_lookup</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">map_location</span><span class="p">,</span> <span class="n">_extra_files</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">import_ir_module_from_buffer</span><span class="p">(</span><span class="n">module_lookup</span><span class="p">,</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">map_location</span><span class="p">)</span>
+        <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">import_ir_module_from_buffer</span><span class="p">(</span><span class="n">module_lookup</span><span class="p">,</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">map_location</span><span class="p">,</span> <span class="n">_extra_files</span><span class="p">)</span>
+
     <span class="k">return</span> <span class="n">m</span></div>
 
 
-<span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="save"><a class="viewcode-back" href="../../jit.html#torch.jit.save">[docs]</a><span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">_extra_files</span><span class="o">=</span><span class="n">DEFAULT_EXTRA_FILES_MAP</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Saves a ScriptModule to a file.</span>
+<span class="sd">        Save an offline version of this module for use in a separate process. The saved</span>
+<span class="sd">        module serializes all of the methods, submodules, parameters, and attributes of this</span>
+<span class="sd">        module. It can be loaded into the C++ API using ``torch::jit::load(filename)`` or into the Python</span>
+<span class="sd">        API with ``torch.jit.load(filename)``.</span>
 
-<span class="sd">        Args:</span>
+<span class="sd">        To be able to save a module, it must not make any calls to native Python functions.</span>
+<span class="sd">        This means that all submodules must be subclasses of ``torch.jit.ScriptModule`` as well.</span>
+
+<span class="sd">        .. DANGER::</span>
+<span class="sd">           All modules, no matter their device, are always loaded onto the CPU during loading.</span>
+<span class="sd">           This is different from :func:`torch.load`&#39;s semantics and may change in the future.</span>
+
+<span class="sd">        Arguments:</span>
 <span class="sd">            m: a ScriptModule to save</span>
 <span class="sd">            f: a file-like object (has to implement write and flush) or a string</span>
 <span class="sd">               containing a file name</span>
+<span class="sd">            _extra_files: Map from filename to contents which will be stored as part of &#39;f&#39;</span>
 
 <span class="sd">        .. warning::</span>
-<span class="sd">            If you are using Python 2, torch.save does NOT support StringIO.StringIO</span>
+<span class="sd">            If you are using Python 2, ``torch.save`` does NOT support ``StringIO.StringIO``</span>
 <span class="sd">            as a valid file-like object. This is because the write method should return</span>
-<span class="sd">            the number of bytes written; StringIO.write() does not do this.</span>
+<span class="sd">            the number of bytes written; ``StringIO.write()`` does not do this.</span>
 
-<span class="sd">            Please use something like io.BytesIO instead.</span>
+<span class="sd">            Please use something like ``io.BytesIO`` instead.</span>
 
 <span class="sd">        Example:</span>
-<span class="sd">            &gt;&gt;&gt; m = torch.jit.ScriptModule()</span>
-<span class="sd">            &gt;&gt;&gt; # Save to file</span>
-<span class="sd">            &gt;&gt;&gt; torch.jit.save(m, &#39;scriptmodule.pt&#39;)</span>
-<span class="sd">            &gt;&gt;&gt; # Save to io.BytesIO buffer</span>
-<span class="sd">            &gt;&gt;&gt; buffer = io.BytesIO()</span>
-<span class="sd">            &gt;&gt;&gt; torch.jit.save(m, buffer)</span>
+<span class="sd">            m = torch.jit.ScriptModule()</span>
+
+<span class="sd">            # Save to file</span>
+<span class="sd">            torch.jit.save(m, &#39;scriptmodule.pt&#39;)</span>
+
+<span class="sd">            # Save to io.BytesIO buffer</span>
+<span class="sd">            buffer = io.BytesIO()</span>
+<span class="sd">            torch.jit.save(m, buffer)</span>
+
+<span class="sd">            # Save with extra files</span>
+<span class="sd">            extra_files = torch._C.ExtraFilesMap()</span>
+<span class="sd">            extra_files[&#39;foo.txt&#39;] = &#39;bar&#39;</span>
+<span class="sd">            torch.jit.save(m, &#39;scriptmodule.pt&#39;, _extra_files=extra_files)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">or</span> \
             <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">unicode</span><span class="p">))</span> <span class="ow">or</span> \
             <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">)):</span>
-        <span class="n">m</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+        <span class="n">m</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">_extra_files</span><span class="o">=</span><span class="n">_extra_files</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">ret</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">save_to_buffer</span><span class="p">()</span>
-        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">save_to_buffer</span><span class="p">(</span><span class="n">_extra_files</span><span class="o">=</span><span class="n">_extra_files</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span></div>
 
 
-<span class="k">def</span> <span class="nf">get_trace_graph</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">_force_outplace</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">get_trace_graph</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">_force_outplace</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">return_inputs</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Trace a function or model, returning a tuple consisting of the both the</span>
-<span class="sd">    *trace* of an execution, as well as the original return value.</span>
+<span class="sd">    *trace* of an execution, as well as the original return value. If return_inputs,</span>
+<span class="sd">    also returns the trace inputs as part of the tuple</span>
 
 <span class="sd">    Tracing is guaranteed not to change the semantics of the function/module</span>
 <span class="sd">    that is traced.</span>
@@ -458,18 +498,24 @@
         <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
         <span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="n">args</span><span class="p">,)</span>
-    <span class="k">return</span> <span class="n">LegacyTracedModule</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">_force_outplace</span><span class="p">)(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">LegacyTracedModule</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">_force_outplace</span><span class="p">,</span> <span class="n">return_inputs</span><span class="p">)(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
 
 <span class="k">def</span> <span class="nf">_unique_state_dict</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">keep_vars</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    <span class="n">state_dict</span> <span class="o">=</span> <span class="n">module</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(</span><span class="n">keep_vars</span><span class="o">=</span><span class="n">keep_vars</span><span class="p">)</span>
+    <span class="c1"># since Parameter.data always creates a new torch.Tensor instance,</span>
+    <span class="c1"># id(v) doesn&#39;t work with it. So we always get the Parameter or Buffer</span>
+    <span class="c1"># as values, and deduplicate the params using Parameters and Buffers</span>
+    <span class="n">state_dict</span> <span class="o">=</span> <span class="n">module</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(</span><span class="n">keep_vars</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">filtered_dict</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">state_dict</span><span class="p">)()</span>
     <span class="n">seen_ids</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">state_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
         <span class="k">if</span> <span class="nb">id</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="n">seen_ids</span><span class="p">:</span>
             <span class="k">continue</span>
         <span class="n">seen_ids</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
-        <span class="n">filtered_dict</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
+        <span class="k">if</span> <span class="n">keep_vars</span><span class="p">:</span>
+            <span class="n">filtered_dict</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">filtered_dict</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">data</span>
     <span class="k">return</span> <span class="n">filtered_dict</span>
 
 
@@ -486,22 +532,23 @@
 
         <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">f_locals</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
             <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="ow">and</span> <span class="n">var</span> <span class="ow">is</span> <span class="n">v</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">k</span>
+                <span class="k">return</span> <span class="n">k</span> <span class="k">if</span> <span class="n">k</span> <span class="o">!=</span> <span class="s1">&#39;self&#39;</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span>
         <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">f_globals</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
             <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="ow">and</span> <span class="n">var</span> <span class="ow">is</span> <span class="n">v</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">k</span>
+                <span class="k">return</span> <span class="n">k</span> <span class="k">if</span> <span class="n">k</span> <span class="o">!=</span> <span class="s1">&#39;self&#39;</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span>
         <span class="k">return</span> <span class="s1">&#39;&#39;</span>
     <span class="k">return</span> <span class="n">_get_interpreter_name_for_var</span>
 
 
 <span class="k">class</span> <span class="nc">LegacyTracedModule</span><span class="p">(</span><span class="n">Module</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inner</span><span class="p">,</span> <span class="n">force_outplace</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inner</span><span class="p">,</span> <span class="n">force_outplace</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">return_inputs</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">LegacyTracedModule</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="c1"># inner may be a Module, or it may be an arbitrary callable</span>
         <span class="c1"># If it&#39;s a Module, we get its parameters automatically, which lets</span>
         <span class="c1"># us avoid a special casing functions versus modules.</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">inner</span> <span class="o">=</span> <span class="n">inner</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_force_outplace</span> <span class="o">=</span> <span class="n">force_outplace</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_return_inputs</span> <span class="o">=</span> <span class="n">return_inputs</span>
 
     <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
         <span class="n">in_vars</span><span class="p">,</span> <span class="n">in_desc</span> <span class="o">=</span> <span class="n">_flatten</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
@@ -509,6 +556,7 @@
         <span class="c1"># This differs from the compiler path, which doesn&#39;t support it at the moment.</span>
         <span class="n">module_state</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">_unique_state_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">keep_vars</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
         <span class="n">trace</span><span class="p">,</span> <span class="n">all_trace_inputs</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_tracer_enter</span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">in_vars</span> <span class="o">+</span> <span class="n">module_state</span><span class="p">))</span>
+        <span class="n">ret_inputs</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">all_trace_inputs</span><span class="p">)</span>
         <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_tracer_set_force_outplace</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_force_outplace</span><span class="p">)</span>
         <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_tracer_set_get_unique_name_fn</span><span class="p">(</span><span class="n">_create_interpreter_name_lookup_fn</span><span class="p">())</span>
         <span class="k">try</span><span class="p">:</span>
@@ -519,7 +567,10 @@
         <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
             <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_tracer_abandon</span><span class="p">()</span>
             <span class="k">raise</span>
-        <span class="k">return</span> <span class="n">trace</span><span class="p">,</span> <span class="n">out</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_return_inputs</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">trace</span><span class="p">,</span> <span class="n">out</span><span class="p">,</span> <span class="n">ret_inputs</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">trace</span><span class="p">,</span> <span class="n">out</span>
 
 
 <span class="k">def</span> <span class="nf">_clone_inputs</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
@@ -734,7 +785,7 @@
                 <span class="k">if</span> <span class="n">n_mod</span><span class="o">.</span><span class="n">kind</span><span class="p">()</span> <span class="o">!=</span> <span class="n">n_check</span><span class="o">.</span><span class="n">kind</span><span class="p">():</span>
                     <span class="k">break</span>  <span class="c1"># Graphs have already diverged</span>
 
-                <span class="k">if</span> <span class="n">n_mod</span><span class="o">.</span><span class="n">kind</span><span class="p">()</span> <span class="o">==</span> <span class="n">n_check</span><span class="o">.</span><span class="n">kind</span><span class="p">()</span> <span class="ow">and</span> <span class="n">n_mod</span><span class="o">.</span><span class="n">kind</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;prim::Constant&#39;</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">n_mod</span><span class="o">.</span><span class="n">kind</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;prim::Constant&#39;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="p">(</span><span class="n">n_mod</span><span class="o">.</span><span class="n">mustBeNone</span><span class="p">()</span> <span class="ow">or</span> <span class="n">n_check</span><span class="o">.</span><span class="n">mustBeNone</span><span class="p">()):</span>
                     <span class="k">if</span> <span class="n">n_mod</span><span class="o">.</span><span class="n">kindOf</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;t&#39;</span> <span class="ow">or</span> <span class="n">n_check</span><span class="o">.</span><span class="n">kindOf</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;t&#39;</span><span class="p">:</span>
                         <span class="k">continue</span>
 
@@ -777,7 +828,8 @@
             <span class="n">has_warned</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
             <span class="n">nondeterm_ops</span> <span class="o">=</span> <span class="p">[</span><span class="n">op</span> <span class="k">for</span> <span class="n">op</span> <span class="ow">in</span> <span class="n">module</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">nodes</span><span class="p">()</span> <span class="k">if</span> <span class="n">op</span><span class="o">.</span><span class="n">isNondeterministic</span><span class="p">()]</span>
             <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">nondeterm_ops</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="n">nondeterministic_ops_warning</span> <span class="o">=</span> <span class="s2">&quot;Trace had nondeterministic nodes. Nodes:</span><span class="se">\n</span><span class="s2">&quot;</span>
+                <span class="n">nondeterministic_ops_warning</span> <span class="o">=</span> <span class="s2">&quot;Trace had nondeterministic nodes. &quot;</span>
+                <span class="n">nondeterministic_ops_warning</span> <span class="o">+=</span> <span class="s2">&quot;Did you forget call .eval() on your model? Nodes:</span><span class="se">\n</span><span class="s2">&quot;</span>
                 <span class="n">nondeterministic_ops_warning</span> <span class="o">+=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">indent</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">op</span><span class="p">))</span> <span class="k">for</span> <span class="n">op</span> <span class="ow">in</span> <span class="n">nondeterm_ops</span><span class="p">][:</span><span class="mi">20</span><span class="p">])</span>
                 <span class="n">nondeterministic_ops_warning</span> <span class="o">+=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">This may cause errors in trace checking. To disable trace checking,&quot;</span>\
                                                 <span class="s2">&quot; pass check_trace=False to torch.jit.trace()&quot;</span>
@@ -828,15 +880,16 @@
           <span class="n">check_trace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
           <span class="n">check_inputs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
           <span class="n">check_tolerance</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">,</span>
-          <span class="n">_force_outplace</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+          <span class="n">_force_outplace</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+          <span class="n">_module_class</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Trace a function and return an executable trace that will be optimized</span>
+<span class="sd">    Trace a function and return an executable ``ScriptModule`` that will be optimized</span>
 <span class="sd">    using just-in-time compilation.</span>
 
 <span class="sd">    .. warning::</span>
 
 <span class="sd">        Tracing only correctly records functions and modules which are not data</span>
-<span class="sd">        dependent (e.g., have conditionals on data in tensors) and do not have</span>
+<span class="sd">        dependent (e.g., do not have conditionals on data in tensors) and do not have</span>
 <span class="sd">        any untracked external dependencies (e.g., perform input/output or</span>
 <span class="sd">        access global variables). If you trace such models, you may silently get</span>
 <span class="sd">        incorrect results on subsequent invocations of the model. The tracer</span>
@@ -844,15 +897,15 @@
 <span class="sd">        incorrect trace to be produced.</span>
 
 <span class="sd">    Arguments:</span>
-<span class="sd">        func (callable or torch.nn.Module):  a python function or torch.nn.Module</span>
-<span class="sd">                                             that will be run with example_inputs.</span>
-<span class="sd">                                             arguments and returns to func must be Tensors</span>
+<span class="sd">        func (callable or torch.nn.Module):  a Python function or ``torch.nn.Module``</span>
+<span class="sd">                                             that will be run with ``example_inputs``.</span>
+<span class="sd">                                             arguments and returns to ``func`` must be tensors</span>
 <span class="sd">                                             or (possibly nested) tuples that</span>
 <span class="sd">                                             contain tensors.</span>
 <span class="sd">        example_inputs (tuple):  a tuple of example inputs that will be passed to the function</span>
 <span class="sd">                                 while tracing. The resulting trace can be run with</span>
 <span class="sd">                                 inputs of different types and shapes assuming the traced operations</span>
-<span class="sd">                                 support those types and shapes. example_inputs may also be a single</span>
+<span class="sd">                                 support those types and shapes. ``example_inputs`` may also be a single</span>
 <span class="sd">                                 Tensor in which case it is automatically wrapped in a tuple</span>
 
 <span class="sd">    Keyword arguments:</span>
@@ -865,98 +918,184 @@
 
 <span class="sd">        check_inputs (list of tuples, optional): A list of tuples of input arguments that should be used</span>
 <span class="sd">                                                 to check the trace against what is expected. Each tuple</span>
-<span class="sd">                                                 is equivalent to a seet of input arguments that would</span>
-<span class="sd">                                                 be specified in ``args``. For best results, pass in a</span>
+<span class="sd">                                                 is equivalent to a set of input arguments that would</span>
+<span class="sd">                                                 be specified in ``example_inputs``. For best results, pass in a</span>
 <span class="sd">                                                 set of checking inputs representative of the space of</span>
 <span class="sd">                                                 shapes and types of inputs you expect the network to see.</span>
-<span class="sd">                                                 If not specified, the original ``args`` is used for checking</span>
+<span class="sd">                                                 If not specified, the original ``example_inputs`` are used for checking</span>
 <span class="sd">        check_tolerance (float, optional): Floating-point comparison tolerance to use in the checker procedure.</span>
 <span class="sd">                                           This can be used to relax the checker strictness in the event that</span>
 <span class="sd">                                           results diverge numerically for a known reason, such as operator fusion.</span>
 
 <span class="sd">    Returns:</span>
 <span class="sd">        A ``ScriptModule`` object with a single ``forward()`` method containing the traced code.</span>
-<span class="sd">        When func is a ``torch.nn.Module``, the returned ``ScriptModule`` will have the same set of</span>
-<span class="sd">        sub-modules and parameters as func.</span>
+<span class="sd">        When ``func`` is a ``torch.nn.Module``, the returned ``ScriptModule`` will have the same set of</span>
+<span class="sd">        sub-modules and parameters as ``func``.</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">       &gt;&gt;&gt; def f(x):</span>
-<span class="sd">       ...     return x * 2</span>
-<span class="sd">       &gt;&gt;&gt; traced_f = torch.jit.trace(f, torch.rand(1))</span>
+<span class="sd">    Example::</span>
+
+<span class="sd">        def f(x):</span>
+<span class="sd">            return x * 2</span>
+<span class="sd">        traced_f = torch.jit.trace(f, torch.rand(1))</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">_enabled</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">func</span>
     <span class="n">executor_options</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;optimize&#39;</span><span class="p">:</span> <span class="nb">bool</span><span class="p">(</span><span class="n">optimize</span><span class="p">)}</span>
     <span class="c1"># Special case for common case of passing a single Tensor</span>
-    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">example_inputs</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">example_inputs</span><span class="p">,</span> <span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)):</span>
         <span class="n">example_inputs</span> <span class="o">=</span> <span class="p">(</span><span class="n">example_inputs</span><span class="p">,)</span>
     <span class="c1"># done primarily so that weird iterables fail here and not pybind11 code</span>
     <span class="k">elif</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">example_inputs</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
         <span class="n">example_inputs</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">example_inputs</span><span class="p">)</span>
-    <span class="n">module</span> <span class="o">=</span> <span class="n">TopLevelTracedModule</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">**</span><span class="n">executor_options</span><span class="p">)</span>
     <span class="n">var_lookup_fn</span> <span class="o">=</span> <span class="n">_create_interpreter_name_lookup_fn</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">module</span><span class="o">.</span><span class="n">_create_method_from_trace</span><span class="p">(</span><span class="s1">&#39;forward&#39;</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">example_inputs</span><span class="p">,</span>
-                                     <span class="n">var_lookup_fn</span><span class="p">,</span> <span class="n">_force_outplace</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">_module_class</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">_module_class</span> <span class="o">=</span> <span class="n">TopLevelTracedModule</span>
+        <span class="n">traced</span> <span class="o">=</span> <span class="n">_module_class</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">**</span><span class="n">executor_options</span><span class="p">)</span>
+        <span class="n">traced</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">_create_method_from_trace</span><span class="p">(</span><span class="s1">&#39;forward&#39;</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">example_inputs</span><span class="p">,</span>
+                                            <span class="n">var_lookup_fn</span><span class="p">,</span> <span class="n">_force_outplace</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s1">&#39;__name__&#39;</span><span class="p">,</span> <span class="s1">&#39;forward&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;&lt;lambda&gt;&#39;</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;_lambda&#39;</span>  <span class="c1"># make name a valid identifier</span>
+        <span class="n">traced</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_create_function_from_trace</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">example_inputs</span><span class="p">,</span>
+                                                      <span class="n">var_lookup_fn</span><span class="p">,</span>
+                                                      <span class="n">_force_outplace</span><span class="p">)</span>
 
     <span class="c1"># Check the trace against new traces created from user-specified inputs</span>
     <span class="k">if</span> <span class="n">check_trace</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">check_inputs</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">_check_trace</span><span class="p">(</span><span class="n">check_inputs</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">executor_options</span><span class="p">,</span> <span class="n">module</span><span class="p">,</span> <span class="n">check_tolerance</span><span class="p">,</span> <span class="n">_force_outplace</span><span class="p">)</span>
+            <span class="n">_check_trace</span><span class="p">(</span><span class="n">check_inputs</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">executor_options</span><span class="p">,</span> <span class="n">traced</span><span class="p">,</span> <span class="n">check_tolerance</span><span class="p">,</span> <span class="n">_force_outplace</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">_check_trace</span><span class="p">([</span><span class="n">example_inputs</span><span class="p">],</span> <span class="n">func</span><span class="p">,</span> <span class="n">executor_options</span><span class="p">,</span> <span class="n">module</span><span class="p">,</span> <span class="n">check_tolerance</span><span class="p">,</span> <span class="n">_force_outplace</span><span class="p">)</span>
+            <span class="n">_check_trace</span><span class="p">([</span><span class="n">example_inputs</span><span class="p">],</span> <span class="n">func</span><span class="p">,</span> <span class="n">executor_options</span><span class="p">,</span> <span class="n">traced</span><span class="p">,</span> <span class="n">check_tolerance</span><span class="p">,</span> <span class="n">_force_outplace</span><span class="p">)</span>
 
-    <span class="k">return</span> <span class="n">module</span></div>
+    <span class="k">return</span> <span class="n">traced</span></div>
 
 
 <span class="k">class</span> <span class="nc">CompilationUnit</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">optimize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">_frames_up</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">module</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">ScriptModule</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_set_optimized</span><span class="p">(</span><span class="n">optimize</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_c</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">CompilationUnit</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">set_optimized</span><span class="p">(</span><span class="n">optimize</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">lang</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">define</span><span class="p">(</span><span class="n">lang</span><span class="p">,</span> <span class="n">_frames_up</span><span class="o">=</span><span class="n">_frames_up</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">optimize</span> <span class="o">=</span> <span class="n">optimize</span>
 
     <span class="k">def</span> <span class="nf">define</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lang</span><span class="p">,</span> <span class="n">rcb</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">_frames_up</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">rcb</span><span class="p">:</span>
-            <span class="n">rcb</span> <span class="o">=</span> <span class="n">createResolutionCallback</span><span class="p">(</span><span class="n">_frames_up</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_define</span><span class="p">(</span><span class="n">lang</span><span class="p">,</span> <span class="n">rcb</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+            <span class="n">rcb</span> <span class="o">=</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">createResolutionCallback</span><span class="p">(</span><span class="n">_frames_up</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">define</span><span class="p">(</span><span class="n">lang</span><span class="p">,</span> <span class="n">rcb</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_get_method</span><span class="p">(</span><span class="n">attr</span><span class="p">)</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">find_function</span><span class="p">(</span><span class="n">attr</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">r</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="s2">&quot;&#39;CompilationUnit&#39; has no attribute &#39;</span><span class="si">{}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">attr</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">r</span>
+
+    <span class="k">def</span> <span class="nf">_import</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">constants</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; test import logic for single function, use only for testing &quot;&quot;&quot;</span>
+        <span class="n">src</span> <span class="o">=</span> <span class="s2">&quot;op_version_set = 0</span><span class="se">\n</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">src</span><span class="p">)</span>
+        <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_jit_import_functions</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">constants</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
 
 
 <span class="k">def</span> <span class="nf">_try_get_dispatched_fn</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">callable</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
         <span class="k">return</span> <span class="kc">None</span>
-    <span class="k">return</span> <span class="n">_boolean_dispatched</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">boolean_dispatched</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_try_get_overloaded_fn</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">field</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">mod</span><span class="o">.</span><span class="n">_overloads</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">ScriptModule</span><span class="p">)</span> <span class="k">else</span> <span class="kc">None</span>
 
 
 <span class="k">def</span> <span class="nf">_try_compile_weak_script</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
-    <span class="n">entry</span> <span class="o">=</span> <span class="n">_compiled_weak_fns</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+    <span class="n">entry</span> <span class="o">=</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">compiled_weak_fns</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">entry</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">None</span>
-    <span class="k">if</span> <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;status&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">COMPILATION_PENDING</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;status&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">COMPILATION_PENDING</span><span class="p">:</span>
         <span class="n">compiled_fn</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">jit</span><span class="o">.</span><span class="n">script</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;rcb&quot;</span><span class="p">])</span>
         <span class="k">del</span> <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;rcb&quot;</span><span class="p">]</span>
-        <span class="n">_compiled_weak_fns</span><span class="p">[</span><span class="n">fn</span><span class="p">][</span><span class="s2">&quot;compiled_fn&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">compiled_fn</span>
-        <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;status&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">COMPILED</span>
+        <span class="n">_jit_internal</span><span class="o">.</span><span class="n">compiled_weak_fns</span><span class="p">[</span><span class="n">fn</span><span class="p">][</span><span class="s2">&quot;compiled_fn&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">compiled_fn</span>
+        <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;status&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">COMPILED</span>
         <span class="k">return</span> <span class="n">compiled_fn</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;compiled_fn&quot;</span><span class="p">]</span>
 
 
-<span class="k">def</span> <span class="nf">script</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="n">optimize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">_frames_up</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">_rcb</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="c1"># ScriptClasses must be new-style classes because we construct them using their</span>
+<span class="c1"># __new__ method.</span>
+<span class="k">def</span> <span class="nf">_is_new_style_class</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="s1">&#39;__class__&#39;</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="s1">&#39;__dict__&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="s1">&#39;__slots__&#39;</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">whichmodule</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Find the module an object belong to.&quot;&quot;&quot;</span>
+    <span class="n">module_name</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s1">&#39;__module__&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="c1"># Protect the iteration by using a list copy of sys.modules against dynamic</span>
+    <span class="c1"># modules that trigger imports of other modules upon calls to getattr.</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">module</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span> <span class="ow">or</span> <span class="n">module</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">_getattribute</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">name</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">is</span> <span class="n">obj</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">module_name</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="k">pass</span>
+    <span class="k">return</span> <span class="s1">&#39;__main__&#39;</span>
+
+
+<span class="c1"># Retrieves a fully-qualified name (module hierarchy + classname) for a given obj.</span>
+<span class="k">def</span> <span class="nf">_qualified_name</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="vm">__name__</span>
+    <span class="n">module_name</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="vm">__module__</span>
+
+    <span class="c1"># The Python docs are very clear that `__module__` can be None, but I can&#39;t</span>
+    <span class="c1"># figure out when it actually would be.</span>
+    <span class="k">if</span> <span class="n">module_name</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Could not get qualified name for class &#39;</span><span class="si">{}</span><span class="s2">&#39;: &quot;</span>
+                           <span class="s2">&quot;__module__ can&#39;t be None.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+
+    <span class="c1"># if getattr(sys.modules[module_name], name) is not obj:</span>
+    <span class="c1">#     raise RuntimeError(&quot;Could not get qualified name for class &#39;{}&#39;: &quot;</span>
+    <span class="c1">#                        &quot;the attr {} on module {} is not the the class&quot;.format(name, name, module_name))</span>
+
+    <span class="c1"># __main__ is a builtin module, so rewrite it to &quot;__torch__&quot;.</span>
+    <span class="k">if</span> <span class="n">module_name</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+        <span class="n">module_name</span> <span class="o">=</span> <span class="s2">&quot;__torch__&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># Everything else gets a &quot;__torch__&quot; prefix to avoid name collisions</span>
+        <span class="c1"># with the names of user values.</span>
+        <span class="n">module_name</span> <span class="o">=</span> <span class="s2">&quot;__torch__.&quot;</span> <span class="o">+</span> <span class="n">module_name</span>
+
+    <span class="k">if</span> <span class="s2">&quot;.&quot;</span> <span class="ow">in</span> <span class="n">name</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Could not get qualified name for class &#39;</span><span class="si">{}</span><span class="s2">&#39;: &quot;</span>
+                           <span class="s2">&quot;&#39;</span><span class="si">{}</span><span class="s2">&#39; is not a valid identifier&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="n">module_name</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span> <span class="o">+</span> <span class="n">name</span>
+
+
+<div class="viewcode-block" id="script"><a class="viewcode-back" href="../../jit.html#torch.jit.script">[docs]</a><span class="k">def</span> <span class="nf">script</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">optimize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">_frames_up</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">_rcb</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">_enabled</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">fn</span>
+        <span class="k">return</span> <span class="n">obj</span>
     <span class="k">if</span> <span class="n">_rcb</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">_rcb</span> <span class="o">=</span> <span class="n">createResolutionCallback</span><span class="p">(</span><span class="n">_frames_up</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="n">ast</span> <span class="o">=</span> <span class="n">get_jit_ast</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="n">is_method</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-    <span class="n">mod</span> <span class="o">=</span> <span class="n">ScriptModule</span><span class="p">()</span>
-    <span class="n">_jit_script_compile</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">ast</span><span class="p">,</span> <span class="n">_rcb</span><span class="p">,</span> <span class="n">get_default_args</span><span class="p">(</span><span class="n">fn</span><span class="p">))</span>
-    <span class="c1"># Forward docstrings</span>
-    <span class="n">mod</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">fn</span><span class="o">.</span><span class="vm">__doc__</span>
-    <span class="k">return</span> <span class="n">mod</span>
+        <span class="n">_rcb</span> <span class="o">=</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">createResolutionCallback</span><span class="p">(</span><span class="n">_frames_up</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">inspect</span><span class="o">.</span><span class="n">isclass</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">_is_new_style_class</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;TorchScript classes must be new-style classes. Please inherit from &#39;object&#39;&quot;</span><span class="p">)</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">_qualified_name</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+        <span class="n">ast</span> <span class="o">=</span> <span class="n">get_jit_class_def</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+        <span class="n">_jit_script_class_compile</span><span class="p">(</span><span class="n">ast</span><span class="p">,</span> <span class="n">_rcb</span><span class="p">)</span>
+        <span class="n">_add_script_class</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">obj</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ast</span> <span class="o">=</span> <span class="n">get_jit_def</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+        <span class="n">fn</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_jit_script_compile</span><span class="p">(</span><span class="n">ast</span><span class="p">,</span> <span class="n">_rcb</span><span class="p">,</span> <span class="n">get_default_args</span><span class="p">(</span><span class="n">obj</span><span class="p">))</span>
+        <span class="c1"># Forward docstrings</span>
+        <span class="n">fn</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="vm">__doc__</span>
+        <span class="k">return</span> <span class="n">fn</span></div>
+
 
 <span class="n">ScriptMethodStub</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;ScriptMethodStub&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;resolution_callback&#39;</span><span class="p">,</span> <span class="s1">&#39;def_&#39;</span><span class="p">,</span> <span class="s1">&#39;original_method&#39;</span><span class="p">))</span>
 
@@ -977,8 +1116,8 @@
     <span class="c1"># createResolutionCallback internally adds 1 to get us to the scope of this</span>
     <span class="c1"># function (the calling function). Adding 2 gets us to the proper surrounding scope.</span>
     <span class="k">if</span> <span class="n">_rcb</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">_rcb</span> <span class="o">=</span> <span class="n">createResolutionCallback</span><span class="p">(</span><span class="n">frames_up</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">ast</span> <span class="o">=</span> <span class="n">get_jit_ast</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="n">is_method</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">_rcb</span> <span class="o">=</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">createResolutionCallback</span><span class="p">(</span><span class="n">frames_up</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">ast</span> <span class="o">=</span> <span class="n">get_jit_def</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="n">self_name</span><span class="o">=</span><span class="s2">&quot;ScriptModule&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">ScriptMethodStub</span><span class="p">(</span><span class="n">_rcb</span><span class="p">,</span> <span class="n">ast</span><span class="p">,</span> <span class="n">fn</span><span class="p">)</span>
 
 
@@ -988,46 +1127,22 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">Module</span><span class="p">):</span>
         <span class="k">return</span> <span class="kc">None</span>
-    <span class="k">return</span> <span class="n">_weak_modules</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">mod</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">weak_modules</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">mod</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_try_get_ignored_op</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">callable</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="s1">&#39;__func__&#39;</span><span class="p">):</span>
+        <span class="n">fn</span> <span class="o">=</span> <span class="n">fn</span><span class="o">.</span><span class="vm">__func__</span>
+    <span class="k">return</span> <span class="n">fn</span> <span class="ow">in</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">ignored_fns</span>
 
 
 <span class="k">def</span> <span class="nf">_is_weak_type</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Check if a type has been annotated with `weak_module`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="bp">cls</span> <span class="ow">in</span> <span class="n">_weak_types</span>
-
-
-<span class="k">def</span> <span class="nf">batch</span><span class="p">(</span><span class="n">batch_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">optimize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">_frames_up</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">decorator</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">_enabled</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">fn</span>
-        <span class="kn">import</span> <span class="nn">torch.jit.batchop</span>
-        <span class="n">mod</span> <span class="o">=</span> <span class="n">script</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="n">optimize</span><span class="p">,</span> <span class="n">_frames_up</span><span class="p">)</span>
-        <span class="n">res_graph</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">to_batch_graph</span><span class="p">(</span><span class="n">mod</span><span class="o">.</span><span class="n">graph</span><span class="p">)</span>
-        <span class="n">res_mod</span> <span class="o">=</span> <span class="n">ScriptModule</span><span class="p">()</span>
-        <span class="n">res_mod</span><span class="o">.</span><span class="n">_create_method_from_graph</span><span class="p">(</span><span class="s1">&#39;forward&#39;</span><span class="p">,</span> <span class="n">res_graph</span><span class="p">)</span>
-
-        <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
-            <span class="n">new_args</span> <span class="o">=</span> <span class="p">[]</span>
-            <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
-                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">):</span>
-                    <span class="n">arg</span> <span class="o">=</span> <span class="n">BatchTensor</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">)</span>
-                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="n">BatchTensor</span><span class="p">):</span>
-                    <span class="n">new_args</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="n">arg</span><span class="o">.</span><span class="n">get_data</span><span class="p">(),</span> <span class="n">arg</span><span class="o">.</span><span class="n">get_mask</span><span class="p">(),</span> <span class="n">arg</span><span class="o">.</span><span class="n">get_dims</span><span class="p">()])</span>
-                <span class="k">else</span><span class="p">:</span>
-                    <span class="n">new_args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
-            <span class="n">res</span> <span class="o">=</span> <span class="n">res_mod</span><span class="p">(</span><span class="o">*</span><span class="n">new_args</span><span class="p">)</span>
-            <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span>
-            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="k">raise</span> <span class="s2">&quot;non-batched-tensor output is not supported yet&quot;</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="p">[</span><span class="n">BatchTensor</span><span class="p">(</span><span class="o">*</span><span class="n">res</span><span class="p">[</span><span class="n">i</span> <span class="o">*</span> <span class="mi">3</span><span class="p">:</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">3</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="o">//</span> <span class="mi">3</span><span class="p">)]</span>
-            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-            <span class="k">return</span> <span class="n">result</span>
-        <span class="n">wrapper</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">fn</span><span class="o">.</span><span class="vm">__doc__</span>
-        <span class="k">return</span> <span class="n">wrapper</span>
-    <span class="k">return</span> <span class="n">decorator</span>
+    <span class="k">return</span> <span class="bp">cls</span> <span class="ow">in</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">weak_types</span>
 
 
 <span class="c1"># These OrderedDictWrapper classes replace the actual OrderedDicts in</span>
@@ -1046,14 +1161,7 @@
 
 <span class="k">class</span> <span class="nc">OrderedDictWrapper</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">module</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">module_ref</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">ref</span><span class="p">(</span><span class="n">module</span><span class="p">)</span>
-
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">module</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">r</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">module_ref</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">r</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;_parameters or _modules alive after module is dead&quot;</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">r</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">module</span> <span class="o">=</span> <span class="n">module</span>
 
     <span class="k">def</span> <span class="nf">keys</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="p">[</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
@@ -1099,7 +1207,7 @@
         <span class="k">if</span> <span class="n">k</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_python_modules</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;cannot re-assign modules in a ScriptModule&quot;</span><span class="p">)</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">ScriptModule</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_register_module</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_register_module</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">_c</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_python_modules</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
 
@@ -1112,9 +1220,7 @@
         <span class="nb">super</span><span class="p">(</span><span class="n">OrderedParameterDict</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">module</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">items</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="p">[(</span><span class="n">name</span><span class="p">,</span> <span class="n">param</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span><span class="p">,</span> <span class="n">is_buffer</span>
-                <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_get_parameters</span><span class="p">()</span>
-                <span class="k">if</span> <span class="ow">not</span> <span class="n">is_buffer</span><span class="p">]</span>
+        <span class="k">return</span> <span class="p">[(</span><span class="n">name</span><span class="p">,</span> <span class="n">param</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_get_parameters</span><span class="p">()]</span>
 
     <span class="k">def</span> <span class="nf">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_register_parameter</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
@@ -1133,12 +1239,11 @@
         <span class="nb">super</span><span class="p">(</span><span class="n">OrderedBufferDict</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">module</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">items</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="p">[(</span><span class="n">name</span><span class="p">,</span> <span class="n">param</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span><span class="p">,</span> <span class="n">is_buffer</span>
-                <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_get_parameters</span><span class="p">()</span>
-                <span class="k">if</span> <span class="n">is_buffer</span><span class="p">]</span>
+        <span class="k">return</span> <span class="p">[(</span><span class="n">name</span><span class="p">,</span> <span class="n">param</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_get_attributes</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">param</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)]</span>
 
     <span class="k">def</span> <span class="nf">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_register_parameter</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_register_buffer</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_has_buffer</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
@@ -1146,7 +1251,7 @@
     <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">k</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_get_parameter</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">_get_buffer</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
 
 <span class="c1"># base types that can be constants</span>
 <span class="c1"># in addition, tuples and lists of these base types are also considered constants</span>
@@ -1161,20 +1266,20 @@
     <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">_get_valid_constant</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">v</span><span class="p">)</span>
     <span class="n">constants</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">typ</span><span class="o">.</span><span class="vm">__name__</span> <span class="k">for</span> <span class="n">typ</span> <span class="ow">in</span> <span class="n">_constant_types</span><span class="p">)</span>
-    <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
-        <span class="s2">&quot;&#39;</span><span class="si">{}</span><span class="s2">&#39; object for attribute &#39;</span><span class="si">{}</span><span class="s2">&#39; &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span> <span class="o">+</span>
-        <span class="s2">&quot;is not a valid constant.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span>
-        <span class="s2">&quot;Valid constants are:</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span>
-        <span class="s2">&quot;  1. a nn.ModuleList</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span>
-        <span class="s2">&quot;  2. a value of type {{</span><span class="si">{}</span><span class="s2">}}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">constants</span><span class="p">)</span> <span class="o">+</span>
-        <span class="s2">&quot;  3. a list or tuple of (2)</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="n">textwrap</span><span class="o">.</span><span class="n">dedent</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">        &#39;</span><span class="si">{}</span><span class="s2">&#39; object for attribute &#39;</span><span class="si">{}</span><span class="s2">&#39; is not a valid constant.</span>
+<span class="s2">        Valid constants are:</span>
+<span class="s2">          1. a nn.ModuleList</span>
+<span class="s2">          2. a value of type {{</span><span class="si">{}</span><span class="s2">}}</span>
+<span class="s2">          3. a list or tuple of (2)</span>
+<span class="s2">        &quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">attr</span><span class="p">,</span> <span class="n">constants</span><span class="p">)))</span>
 
 
 <span class="k">def</span> <span class="nf">_create_methods_from_stubs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stubs</span><span class="p">):</span>
     <span class="n">defs</span> <span class="o">=</span> <span class="p">[</span><span class="n">m</span><span class="o">.</span><span class="n">def_</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">stubs</span><span class="p">]</span>
     <span class="n">rcbs</span> <span class="o">=</span> <span class="p">[</span><span class="n">m</span><span class="o">.</span><span class="n">resolution_callback</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">stubs</span><span class="p">]</span>
     <span class="n">defaults</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_default_args</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">original_method</span><span class="p">)</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">stubs</span><span class="p">]</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">_create_methods</span><span class="p">(</span><span class="n">defs</span><span class="p">,</span> <span class="n">rcbs</span><span class="p">,</span> <span class="n">defaults</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">_create_methods</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">defs</span><span class="p">,</span> <span class="n">rcbs</span><span class="p">,</span> <span class="n">defaults</span><span class="p">)</span>
 
 <span class="c1"># For each user-defined class that subclasses ScriptModule this meta-class,</span>
 <span class="c1"># (1) finds all the methods annotated with @script_method</span>
@@ -1186,7 +1291,7 @@
 <span class="c1"># resolve references to `self.param` or `self.module`.</span>
 
 
-<span class="k">class</span> <span class="nc">ScriptMeta</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">ScriptModule</span><span class="p">)):</span>
+<span class="k">class</span> <span class="nc">ScriptMeta</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
     <span class="c1"># this has to inherit from pybind11&#39;s metaclass otherwise we get</span>
     <span class="c1"># issues because ScriptModule inherits from torch._C.ScriptModule,</span>
     <span class="c1"># a pybind11 type</span>
@@ -1204,14 +1309,10 @@
         <span class="n">original_init</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="s1">&#39;__init__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">:</span> <span class="kc">None</span><span class="p">)</span>
         <span class="n">super_constants</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">super</span><span class="p">(</span><span class="bp">cls</span><span class="p">),</span> <span class="s1">&#39;_constants_set&#39;</span><span class="p">,</span> <span class="nb">set</span><span class="p">())</span>
         <span class="bp">cls</span><span class="o">.</span><span class="n">_constants_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="s1">&#39;__constants__&#39;</span><span class="p">,</span> <span class="p">()))</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">super_constants</span><span class="p">)</span>
+        <span class="bp">cls</span><span class="o">.</span><span class="n">_overloads</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="s1">&#39;__overloads__&#39;</span><span class="p">,</span> <span class="p">{}))</span>
 
         <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">original_init</span><span class="p">)</span>
         <span class="k">def</span> <span class="nf">init_then_register</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-            <span class="c1"># ensure even if the user forgets to call super that</span>
-            <span class="c1"># the pybind object is initialized so it will not segfault</span>
-            <span class="c1"># run this once, before the most-derived __init__ is called</span>
-            <span class="k">if</span> <span class="bp">cls</span> <span class="ow">is</span> <span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-                <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">ScriptModule</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
             <span class="n">original_init</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
             <span class="n">_create_methods_from_stubs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">methods</span><span class="p">)</span>
 
@@ -1220,42 +1321,53 @@
 
 
 <span class="k">if</span> <span class="n">_enabled</span><span class="p">:</span>
-<div class="viewcode-block" id="ScriptModule"><a class="viewcode-back" href="../../jit.html#torch.jit.ScriptModule">[docs]</a>    <span class="k">class</span> <span class="nc">ScriptModule</span><span class="p">(</span><span class="n">with_metaclass</span><span class="p">(</span><span class="n">ScriptMeta</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">ScriptModule</span><span class="p">,</span> <span class="n">Module</span><span class="p">)):</span>
+
+    <span class="c1"># this is a Python &#39;non-data descriptor&#39; that causes the first access</span>
+    <span class="c1"># to ScriptModule&#39;s forward to lookup the forward method and stash</span>
+    <span class="c1"># it in the objects dict. Due to the standard rules for attribute lookup</span>
+    <span class="c1"># subsequent lookups will just directly return the previously looked up method.</span>
+    <span class="c1"># This is necessary because nn.Module defines forward as a method. If we</span>
+    <span class="c1"># did nothing __getattr__ would not be called. Instead we&#39;d get nn.Module.forward</span>
+    <span class="c1"># which always throws an exception.</span>
+    <span class="k">class</span> <span class="nc">_CachedForward</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="bp">cls</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__getattr__</span><span class="p">(</span><span class="s1">&#39;forward&#39;</span><span class="p">)</span>
+
+    <span class="k">class</span> <span class="nc">ScriptModule</span><span class="p">(</span><span class="n">with_metaclass</span><span class="p">(</span><span class="n">ScriptMeta</span><span class="p">,</span> <span class="n">Module</span><span class="p">)):</span>
         <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        The core data structure in Torch Script is the ``ScriptModule``. It is an</span>
-<span class="sd">        analogue of torch&#39;s nn.Module and represents an entire model as a tree of</span>
-<span class="sd">        submodules. Like normal modules, each individual module in a ScriptModule can</span>
-<span class="sd">        have submodules, parameters, and methods. In nn.Modules methods are implemented</span>
-<span class="sd">        as Python functions, but in ScriptModules methods typically implemented as</span>
-<span class="sd">        *Torch Script* functions,  a statically-typed subset of Python that contains all</span>
+<span class="sd">        The core data structure in TorchScript is the ``ScriptModule``. It is an</span>
+<span class="sd">        analogue of torch&#39;s ``nn.Module`` and represents an entire model as a tree of</span>
+<span class="sd">        submodules. Like normal modules, each individual module in a ``ScriptModule`` can</span>
+<span class="sd">        have submodules, parameters, and methods. In ``nn.Module``s methods are implemented</span>
+<span class="sd">        as Python functions, but in ``ScriptModule``s methods are implemented as</span>
+<span class="sd">        TorchScript functions,  a statically-typed subset of Python that contains all</span>
 <span class="sd">        of PyTorch&#39;s built-in Tensor operations. This difference allows your</span>
 <span class="sd">        ScriptModules code to run without the need for a Python interpreter.</span>
 
-<span class="sd">        ScriptModules and the Torch Script functions inside of them can be created in</span>
-<span class="sd">        two ways:</span>
+<span class="sd">        ``ScriptModule``s be created in two ways:</span>
 
 <span class="sd">        **Tracing:**</span>
 
-<span class="sd">            Using ``torch.jit.trace``, you can take an existing module or python</span>
-<span class="sd">            function, provide example inputs, and we run the function, recording the</span>
-<span class="sd">            operations performed on all the tensors. We turn the resulting recording</span>
-<span class="sd">            into a Torch Script method that is installed as the ``forward`` method of a</span>
-<span class="sd">            ScriptModule. This module also contains any parameters that the original</span>
+<span class="sd">            Using ``torch.jit.trace``, you can turn an existing module or Python</span>
+<span class="sd">            function into a TorchScript program. You must provide example inputs,</span>
+<span class="sd">            and we run the function, recording the operations performed on all the tensors. We turn the resulting recording</span>
+<span class="sd">            into a TorchScript method that is installed as the ``forward`` method of a</span>
+<span class="sd">            ``ScriptModule``. This module also contains any parameters that the original</span>
 <span class="sd">            module had as well.</span>
 
-<span class="sd">            Example::</span>
+<span class="sd">            Example (tracing a function)::</span>
 
 <span class="sd">                import torch</span>
 <span class="sd">                def foo(x, y):</span>
-<span class="sd">                    return 2*x + y</span>
+<span class="sd">                    return 2 * x + y</span>
 <span class="sd">                traced_foo = torch.jit.trace(foo, (torch.rand(3), torch.rand(3)))</span>
 
 <span class="sd">            .. note::</span>
-<span class="sd">                Tracing a *function* will produce a ``ScriptModule`` with a single</span>
-<span class="sd">                ``forward`` method that implements that function, and that contains</span>
-<span class="sd">                no parameters.</span>
+<span class="sd">                Tracing a function will construct a ``ScriptModule`` with a single</span>
+<span class="sd">                ``forward`` method that implements the function. The resulting</span>
+<span class="sd">                ``ScriptModule`` has no parameters or attributes.</span>
 
-<span class="sd">            Example::</span>
+<span class="sd">            Example (tracing an existing module)::</span>
 
 <span class="sd">                import torch</span>
 <span class="sd">                import torchvision</span>
@@ -1270,12 +1382,11 @@
 <span class="sd">                expected to run different sets of operations, depending on the input and/or the</span>
 <span class="sd">                module state. For example,</span>
 
-<span class="sd">                    + Tracing will not record any control-flow like if statements or loops. When</span>
+<span class="sd">                    + Tracing will not record any control-flow like if-statements or loops. When</span>
 <span class="sd">                      this control-flow is constant across your module, this is fine and it often</span>
-<span class="sd">                      just inlines configuration decisions. But sometimes the control-flow is</span>
-<span class="sd">                      actually part of the model itself. For instance, a beam search in</span>
-<span class="sd">                      sequence-to-sequence translation is a loop over the (varying) sequence</span>
-<span class="sd">                      length of inputs.</span>
+<span class="sd">                      inlines the control-flow decisions. But sometimes the control-flow is</span>
+<span class="sd">                      actually part of the model itself. For instance, a recurrent network is</span>
+<span class="sd">                      a loop over the (possibly dynamic) length of an input sequence.</span>
 
 <span class="sd">                    + In the returned ``ScriptModule``, operations that have different behaviors</span>
 <span class="sd">                      in ``training`` and ``eval`` modes will always behave as if it is in the</span>
@@ -1287,16 +1398,16 @@
 
 <span class="sd">        **Scripting:**</span>
 
-<span class="sd">            You can write Torch Script code directly using Python syntax. You do this</span>
-<span class="sd">            using the ``torch.jit.script`` annotation (for functions) or</span>
-<span class="sd">            ``torch.jit.script_method`` annotation (for methods) on subclasses of</span>
-<span class="sd">            ScriptModule. With this annotation the body of the annotated function is</span>
-<span class="sd">            directly translated into Torch Script. Torch Script itself is a subset of</span>
+<span class="sd">            You can write TorchScript code directly using Python syntax. You do this</span>
+<span class="sd">            using the ``@torch.jit.script`` decorator (for functions) or</span>
+<span class="sd">            ``@torch.jit.script_method`` decorator (for methods) on subclasses of</span>
+<span class="sd">            ScriptModule. With this decorator the body of the annotated function is</span>
+<span class="sd">            directly translated into TorchScript. TorchScript itself is a subset of</span>
 <span class="sd">            the Python language, so not all features in python work, but we provide</span>
 <span class="sd">            enough functionality to compute on tensors and do control-dependent</span>
 <span class="sd">            operations.</span>
 
-<span class="sd">            Example::</span>
+<span class="sd">            Example (scripting a function)::</span>
 
 <span class="sd">                import torch</span>
 <span class="sd">                @torch.jit.script</span>
@@ -1308,11 +1419,11 @@
 <span class="sd">                    return r</span>
 
 <span class="sd">            .. note::</span>
-<span class="sd">                A script *function* annotation will construct a ScriptModule</span>
-<span class="sd">                with a single ``forward`` method that implements that function,</span>
-<span class="sd">                and that contains no parameters.</span>
+<span class="sd">                A ``@torch.jit.script`` decorator will construct a ``ScriptModule`` with a single</span>
+<span class="sd">                ``forward`` method that implements the function. The resulting</span>
+<span class="sd">                ``ScriptModule`` has no parameters or attributes.</span>
 
-<span class="sd">            Example::</span>
+<span class="sd">            Example (scripting a simple module with a Parameter)::</span>
 
 <span class="sd">              import torch</span>
 <span class="sd">              class MyModule(torch.jit.ScriptModule):</span>
@@ -1324,21 +1435,20 @@
 <span class="sd">                  def forward(self, input):</span>
 <span class="sd">                      return self.weight.mv(input)</span>
 
-<span class="sd">            Example::</span>
+<span class="sd">            Example (scripting a module with traced submodules)::</span>
 
 <span class="sd">                import torch</span>
 <span class="sd">                import torch.nn as nn</span>
 <span class="sd">                import torch.nn.functional as F</span>
-<span class="sd">                from torch.jit import ScriptModule, script_method, trace</span>
 
-<span class="sd">                class MyScriptModule(ScriptModule):</span>
+<span class="sd">                class MyScriptModule(torch.jit.ScriptModule):</span>
 <span class="sd">                    def __init__(self):</span>
 <span class="sd">                        super(MyScriptModule, self).__init__()</span>
-<span class="sd">                        # trace produces a ScriptModule&#39;s conv1 and conv2</span>
-<span class="sd">                        self.conv1 = trace(nn.Conv2d(1, 20, 5), torch.rand(1, 1, 16, 16))</span>
-<span class="sd">                        self.conv2 = trace(nn.Conv2d(20, 20, 5), torch.rand(1, 20, 16, 16))</span>
+<span class="sd">                        # torch.jit.trace produces a ScriptModule&#39;s conv1 and conv2</span>
+<span class="sd">                        self.conv1 = torch.jit.trace(nn.Conv2d(1, 20, 5), torch.rand(1, 1, 16, 16))</span>
+<span class="sd">                        self.conv2 = torch.jit.trace(nn.Conv2d(20, 20, 5), torch.rand(1, 20, 16, 16))</span>
 
-<span class="sd">                    @script_method</span>
+<span class="sd">                    @torch.jit.script_method</span>
 <span class="sd">                    def forward(self, input):</span>
 <span class="sd">                      input = F.relu(self.conv1(input))</span>
 <span class="sd">                      input = F.relu(self.conv2(input))</span>
@@ -1346,23 +1456,49 @@
 <span class="sd">        &quot;&quot;&quot;</span>
 
         <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">optimize</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-            <span class="c1"># must be before Module.init since the field is used in __getattr__</span>
+            <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;_c&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">ScriptModule</span><span class="p">()</span>
             <span class="n">Module</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_set_optimized</span><span class="p">(</span><span class="n">optimize</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_parameters</span> <span class="o">=</span> <span class="n">OrderedParameterDict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_buffers</span> <span class="o">=</span> <span class="n">OrderedBufferDict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_modules</span> <span class="o">=</span> <span class="n">OrderedModuleDict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">_set_optimized</span><span class="p">(</span><span class="n">optimize</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_parameters</span> <span class="o">=</span> <span class="n">OrderedParameterDict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_buffers</span> <span class="o">=</span> <span class="n">OrderedBufferDict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_modules</span> <span class="o">=</span> <span class="n">OrderedModuleDict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="p">)</span>
+
+        <span class="nd">@property</span>
+        <span class="k">def</span> <span class="nf">graph</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">forward</span><span class="o">.</span><span class="n">graph</span>
+
+        <span class="nd">@property</span>
+        <span class="k">def</span> <span class="nf">code</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">forward</span><span class="o">.</span><span class="n">code</span>
+
+        <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">save_to_buffer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">save_to_buffer</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">get_debug_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">get_debug_state</span><span class="p">()</span>
+
+        <span class="n">forward</span> <span class="o">=</span> <span class="n">_CachedForward</span><span class="p">()</span>
 
         <span class="k">def</span> <span class="nf">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">):</span>
-            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_has_method</span><span class="p">(</span><span class="n">attr</span><span class="p">):</span>
+            <span class="k">if</span> <span class="s1">&#39;_c&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;ScriptModule has not been initialized, did you forget to call super&#39;s init?&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">_has_method</span><span class="p">(</span><span class="n">attr</span><span class="p">):</span>
                 <span class="k">if</span> <span class="n">attr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_original_methods</span><span class="p">:</span>
                     <span class="n">original_method</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_original_methods</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span>
-                    <span class="n">script_method</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_method</span><span class="p">(</span><span class="n">attr</span><span class="p">)</span>
-                    <span class="k">return</span> <span class="n">functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">original_method</span><span class="p">)(</span><span class="n">script_method</span><span class="p">)</span>
+                    <span class="n">script_method</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">_get_method</span><span class="p">(</span><span class="n">attr</span><span class="p">)</span>
+                    <span class="n">script_method</span> <span class="o">=</span> <span class="n">functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">original_method</span><span class="p">)(</span><span class="n">script_method</span><span class="p">)</span>
                 <span class="k">else</span><span class="p">:</span>
-                    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_method</span><span class="p">(</span><span class="n">attr</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">attr</span> <span class="o">==</span> <span class="s1">&#39;graph&#39;</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_has_method</span><span class="p">(</span><span class="s1">&#39;forward&#39;</span><span class="p">):</span>
-                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__getattr__</span><span class="p">(</span><span class="s1">&#39;forward&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">graph</span>
+                    <span class="n">script_method</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">_get_method</span><span class="p">(</span><span class="n">attr</span><span class="p">)</span>
+                <span class="c1"># cache method so future calls do not go through __getattr__</span>
+                <span class="c1"># to improve invocation performance</span>
+                <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">script_method</span>
+                <span class="k">return</span> <span class="n">script_method</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">_has_attribute</span><span class="p">(</span><span class="n">attr</span><span class="p">):</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">_get_attribute</span><span class="p">(</span><span class="n">attr</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">Module</span><span class="o">.</span><span class="fm">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
 
         <span class="k">def</span> <span class="nf">__setattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
@@ -1371,22 +1507,39 @@
                     <span class="c1"># Compile weak script module</span>
                     <span class="n">value</span> <span class="o">=</span> <span class="n">_make_strong</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
                 <span class="k">if</span> <span class="n">attr</span> <span class="o">==</span> <span class="s1">&#39;training&#39;</span><span class="p">:</span>
-                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_has_buffer</span><span class="p">(</span><span class="s1">&#39;training&#39;</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">_has_buffer</span><span class="p">(</span><span class="s1">&#39;training&#39;</span><span class="p">):</span>
                         <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;training&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
-                        <span class="bp">self</span><span class="o">.</span><span class="n">_get_parameter</span><span class="p">(</span><span class="s1">&#39;training&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fill_</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">_get_buffer</span><span class="p">(</span><span class="s1">&#39;training&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fill_</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
                         <span class="k">return</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Attribute</span><span class="p">):</span>
+                    <span class="n">the_type</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">jit</span><span class="o">.</span><span class="n">annotations</span><span class="o">.</span><span class="n">ann_to_type</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">type</span><span class="p">)</span>
+                    <span class="k">try</span><span class="p">:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">_register_attribute</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span> <span class="n">the_type</span><span class="p">,</span> <span class="n">value</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+                    <span class="k">except</span> <span class="ne">RuntimeError</span><span class="p">:</span>
+                        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Could not register attribute &#39;</span><span class="si">{}</span><span class="s2">&#39; of type &#39;</span><span class="si">{}</span><span class="s2">&#39; for a value of type &#39;</span><span class="si">{}</span><span class="s2">&#39;&quot;</span>
+                                           <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span> <span class="n">value</span><span class="o">.</span><span class="n">type</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">value</span><span class="p">)))</span>
+                    <span class="k">return</span>
                 <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">ScriptModule</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__setattr__</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 
             <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">):</span>
                 <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;attempting to re-assign constant &#39;</span><span class="si">{}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">attr</span><span class="p">))</span>
-            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">ModuleList</span><span class="p">):</span>
+
+            <span class="k">def</span> <span class="nf">conv_module_to_const</span><span class="p">(</span><span class="n">module_value</span><span class="p">):</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">module_value</span><span class="p">,</span> <span class="p">(</span><span class="n">ModuleList</span><span class="p">,</span> <span class="n">Sequential</span><span class="p">)):</span>
+                    <span class="k">return</span> <span class="n">module_value</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">module_value</span><span class="p">)):</span>
+                    <span class="n">module_value</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">conv_module_to_const</span><span class="p">(</span><span class="n">module_value</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">module_value</span><span class="p">,</span> <span class="n">Sequential</span><span class="p">):</span>
+                    <span class="k">return</span> <span class="n">_ConstSequential</span><span class="p">(</span><span class="n">module_value</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="n">_ConstModuleList</span><span class="p">(</span><span class="n">module_value</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="p">(</span><span class="n">ModuleList</span><span class="p">,</span> <span class="n">Sequential</span><span class="p">)):</span>
                 <span class="c1"># special case for list of modules. Modules need to be registered with their</span>
                 <span class="c1"># parent module. To do this, we create a ConstModuleList, which is itself a module, that</span>
                 <span class="c1"># contains each of these modules as submodules. The ConstModuleList then</span>
                 <span class="c1"># is set as an attribute of the parent module.</span>
-                <span class="nb">super</span><span class="p">(</span><span class="n">ScriptModule</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__setattr__</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span> <span class="n">_ConstModuleList</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
-            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Sequential</span><span class="p">):</span>
-                <span class="nb">super</span><span class="p">(</span><span class="n">ScriptModule</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__setattr__</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span> <span class="n">_ConstSequential</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+                <span class="nb">super</span><span class="p">(</span><span class="n">ScriptModule</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__setattr__</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span> <span class="n">conv_module_to_const</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="nb">super</span><span class="p">(</span><span class="n">ScriptModule</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__setattr__</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span> <span class="n">_get_valid_constant</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
 
@@ -1402,8 +1555,30 @@
             <span class="c1">#</span>
             <span class="c1"># createResolutionCallback internally adds 1 to get us to our frame, then</span>
             <span class="c1"># we add 1 to get to the proper surrounding scope.</span>
-            <span class="n">rcb</span> <span class="o">=</span> <span class="n">createResolutionCallback</span><span class="p">(</span><span class="n">frames_up</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_define</span><span class="p">(</span><span class="n">lang</span><span class="p">,</span> <span class="n">rcb</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span></div>
+            <span class="n">rcb</span> <span class="o">=</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">createResolutionCallback</span><span class="p">(</span><span class="n">frames_up</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">_define</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lang</span><span class="p">,</span> <span class="n">rcb</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">m</span> <span class="o">=</span> <span class="n">ScriptModule</span><span class="p">()</span>
+
+            <span class="k">def</span> <span class="nf">module_lookup</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
+                <span class="n">curr</span> <span class="o">=</span> <span class="n">m</span>
+                <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">curr</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+                        <span class="nb">setattr</span><span class="p">(</span><span class="n">curr</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">ScriptModule</span><span class="p">())</span>
+                    <span class="n">curr</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">curr</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">curr</span><span class="o">.</span><span class="n">_c</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_c</span><span class="o">.</span><span class="n">_copy_into</span><span class="p">(</span><span class="n">module_lookup</span><span class="p">,</span> <span class="p">{},</span> <span class="p">[])</span>
+            <span class="k">return</span> <span class="n">m</span>
+
+        <span class="k">def</span> <span class="nf">__getstate__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">pickle</span><span class="o">.</span><span class="n">PickleError</span><span class="p">(</span>
+                <span class="s2">&quot;ScriptModules cannot be saved using torch.save. &quot;</span> <span class="o">+</span>
+                <span class="s2">&quot;Mixed serialization of script and non-script modules is not supported. &quot;</span> <span class="o">+</span>
+                <span class="s2">&quot;For purely script modules use my_script_module.save(&lt;filename&gt;) instead.&quot;</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">graph_for</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">forward</span><span class="o">.</span><span class="n">graph_for</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
     <span class="k">class</span> <span class="nc">WeakScriptModuleProxy</span><span class="p">(</span><span class="n">ScriptModule</span><span class="p">):</span>
         <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">original</span><span class="p">,</span> <span class="n">stubs</span><span class="p">):</span>
@@ -1431,6 +1606,9 @@
 
             <span class="c1"># Copy constants</span>
             <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s2">&quot;_constants_set&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">original</span><span class="p">,</span> <span class="s2">&quot;__constants__&quot;</span><span class="p">,</span> <span class="p">[]))</span>
+
+            <span class="c1"># Copy overloads</span>
+            <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s2">&quot;_overloads&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">original</span><span class="p">,</span> <span class="s2">&quot;__overloads__&quot;</span><span class="p">,</span> <span class="p">{}))</span>
 
             <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s2">&quot;_initialized&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
             <span class="n">_create_methods_from_stubs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stubs</span><span class="p">)</span>
@@ -1463,7 +1641,9 @@
                                      <span class="s2">&quot;created&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">attr</span><span class="p">))</span>
 
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">ScriptModule</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span>
+<div class="viewcode-block" id="ScriptModule"><a class="viewcode-back" href="../../jit.html#torch.jit.ScriptModule">[docs]</a>    <span class="k">class</span> <span class="nc">ScriptModule</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">optimize</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+            <span class="nb">super</span><span class="p">(</span><span class="n">ScriptModule</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span></div>
 
 
 <span class="k">def</span> <span class="nf">_get_weak_stubs</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
@@ -1474,8 +1654,8 @@
     <span class="n">stubs</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
         <span class="n">func</span> <span class="o">=</span> <span class="n">get_function_from_type</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">func</span> <span class="ow">in</span> <span class="n">_weak_script_methods</span><span class="p">:</span>
-            <span class="n">entry</span> <span class="o">=</span> <span class="n">_weak_script_methods</span><span class="p">[</span><span class="n">func</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">func</span> <span class="ow">in</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">weak_script_methods</span><span class="p">:</span>
+            <span class="n">entry</span> <span class="o">=</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">weak_script_methods</span><span class="p">[</span><span class="n">func</span><span class="p">]</span>
             <span class="n">stub</span> <span class="o">=</span> <span class="n">script_method</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="s2">&quot;original_method&quot;</span><span class="p">],</span> <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;rcb&quot;</span><span class="p">])</span>
             <span class="n">stubs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stub</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">stubs</span>
@@ -1485,21 +1665,21 @@
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Converts a weak module into a subclass of ScriptModule</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">mod</span> <span class="ow">in</span> <span class="n">_weak_modules</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">_weak_modules</span><span class="p">[</span><span class="n">mod</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">mod</span> <span class="ow">in</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">weak_modules</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">weak_modules</span><span class="p">[</span><span class="n">mod</span><span class="p">]</span>
 
-    <span class="n">stubs</span> <span class="o">=</span> <span class="n">_weak_types</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">mod</span><span class="p">))[</span><span class="s2">&quot;method_stubs&quot;</span><span class="p">]</span>
+    <span class="n">stubs</span> <span class="o">=</span> <span class="n">_jit_internal</span><span class="o">.</span><span class="n">weak_types</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">mod</span><span class="p">))[</span><span class="s2">&quot;method_stubs&quot;</span><span class="p">]</span>
 
     <span class="k">if</span> <span class="n">stubs</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="c1"># Generate stubs and and store on _weak_types in case this type is</span>
+        <span class="c1"># Generate stubs and and store on weak_types in case this type is</span>
         <span class="c1"># used again</span>
         <span class="n">stubs</span> <span class="o">=</span> <span class="n">_get_weak_stubs</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">mod</span><span class="p">))</span>
-        <span class="n">_weak_types</span><span class="p">[</span><span class="nb">type</span><span class="p">(</span><span class="n">mod</span><span class="p">)][</span><span class="s2">&quot;method_stubs&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">stubs</span>
+        <span class="n">_jit_internal</span><span class="o">.</span><span class="n">weak_types</span><span class="p">[</span><span class="nb">type</span><span class="p">(</span><span class="n">mod</span><span class="p">)][</span><span class="s2">&quot;method_stubs&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">stubs</span>
 
     <span class="c1"># Create proxy with stubs</span>
     <span class="n">proxy</span> <span class="o">=</span> <span class="n">WeakScriptModuleProxy</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">stubs</span><span class="p">)</span>
 
-    <span class="n">_weak_modules</span><span class="p">[</span><span class="n">mod</span><span class="p">]</span> <span class="o">=</span> <span class="n">proxy</span>
+    <span class="n">_jit_internal</span><span class="o">.</span><span class="n">weak_modules</span><span class="p">[</span><span class="n">mod</span><span class="p">]</span> <span class="o">=</span> <span class="n">proxy</span>
 
     <span class="k">return</span> <span class="n">proxy</span>
 
@@ -1512,7 +1692,7 @@
 
 <span class="n">_compiled_methods_whitelist</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;forward&#39;</span><span class="p">,</span> <span class="s1">&#39;register_buffer&#39;</span><span class="p">,</span> <span class="s1">&#39;register_parameter&#39;</span><span class="p">,</span> <span class="s1">&#39;add_module&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;_apply&#39;</span><span class="p">,</span> <span class="s1">&#39;apply&#39;</span><span class="p">,</span> <span class="s1">&#39;cuda&#39;</span><span class="p">,</span> <span class="s1">&#39;cpu&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;float&#39;</span><span class="p">,</span> <span class="s1">&#39;double&#39;</span><span class="p">,</span> <span class="s1">&#39;half&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;_apply&#39;</span><span class="p">,</span> <span class="s1">&#39;apply&#39;</span><span class="p">,</span> <span class="s1">&#39;cuda&#39;</span><span class="p">,</span> <span class="s1">&#39;cpu&#39;</span><span class="p">,</span> <span class="s1">&#39;to&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;float&#39;</span><span class="p">,</span> <span class="s1">&#39;double&#39;</span><span class="p">,</span> <span class="s1">&#39;half&#39;</span><span class="p">,</span>
     <span class="s1">&#39;state_dict&#39;</span><span class="p">,</span> <span class="s1">&#39;load_state_dict&#39;</span><span class="p">,</span> <span class="s1">&#39;_load_from_state_dict&#39;</span><span class="p">,</span>
     <span class="s1">&#39;_named_members&#39;</span><span class="p">,</span> <span class="s1">&#39;parameters&#39;</span><span class="p">,</span> <span class="s1">&#39;named_parameters&#39;</span><span class="p">,</span>
     <span class="s1">&#39;buffers&#39;</span><span class="p">,</span> <span class="s1">&#39;named_buffers&#39;</span><span class="p">,</span> <span class="s1">&#39;children&#39;</span><span class="p">,</span> <span class="s1">&#39;named_children&#39;</span><span class="p">,</span> <span class="s1">&#39;modules&#39;</span><span class="p">,</span>
@@ -1523,7 +1703,7 @@
 
 <span class="k">def</span> <span class="nf">_make_fail</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">fail</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; is not supported on TracedModules&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; is not supported on ScriptModules&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">fail</span>
 
 
@@ -1543,11 +1723,8 @@
         <span class="k">if</span> <span class="n">id_set</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">id_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 
-        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">orig</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">orig</span><span class="o">.</span><span class="vm">__name__</span>
-            <span class="n">orig</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">()</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="s1">&#39;TracedModule[&#39;</span> <span class="o">+</span> <span class="nb">type</span><span class="p">(</span><span class="n">orig</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">+</span> <span class="s1">&#39;]&#39;</span>
+        <span class="k">assert</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">orig</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="s1">&#39;TracedModule[&#39;</span> <span class="o">+</span> <span class="nb">type</span><span class="p">(</span><span class="n">orig</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">+</span> <span class="s1">&#39;]&#39;</span>
 
         <span class="k">def</span> <span class="nf">check_unique</span><span class="p">(</span><span class="n">param</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">id_set</span><span class="p">:</span>
@@ -1569,7 +1746,10 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Modules that have hooks assigned can&#39;t be compiled&quot;</span><span class="p">)</span>
 
         <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">submodule</span> <span class="ow">in</span> <span class="n">orig</span><span class="o">.</span><span class="n">_modules</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_modules</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">TracedModule</span><span class="p">(</span><span class="n">submodule</span><span class="p">,</span> <span class="n">id_set</span><span class="p">,</span> <span class="n">optimize</span><span class="o">=</span><span class="n">optimize</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">submodule</span><span class="p">,</span> <span class="n">ScriptModule</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">submodule</span><span class="p">,</span> <span class="n">TracedModule</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_modules</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">submodule</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_modules</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">TracedModule</span><span class="p">(</span><span class="n">submodule</span><span class="p">,</span> <span class="n">id_set</span><span class="p">,</span> <span class="n">optimize</span><span class="o">=</span><span class="n">optimize</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_freeze</span><span class="p">()</span>
 
@@ -1589,8 +1769,7 @@
 
 
 <span class="k">class</span> <span class="nc">TopLevelTracedModule</span><span class="p">(</span><span class="n">TracedModule</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_method</span><span class="p">(</span><span class="s1">&#39;forward&#39;</span><span class="p">)(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="n">forward</span> <span class="o">=</span> <span class="n">_CachedForward</span><span class="p">()</span>
 
 
 <span class="k">class</span> <span class="nc">_ConstModuleList</span><span class="p">(</span><span class="n">ScriptModule</span><span class="p">):</span>
@@ -1644,22 +1823,7 @@
 
 <span class="n">_builtin_table</span> <span class="o">=</span> <span class="kc">None</span>
 
-<span class="n">_modules_containing_builtins</span> <span class="o">=</span> <span class="p">(</span><span class="n">torch</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">functional</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_nn</span><span class="p">)</span>
-
-<span class="c1"># These functions have been converted to weak script, so don&#39;t add them as</span>
-<span class="c1"># builtin aten ops. Instead, they will be compiled from the code in</span>
-<span class="c1"># torch.nn.functional when used.</span>
-
-
-<span class="c1"># TODO: delete _should_skip() and remove torch.nn.functional from builtins list</span>
-<span class="c1"># once everything in it has been converted to weak script</span>
-<span class="k">def</span> <span class="nf">_should_skip</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">mod</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">functional</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">False</span>
-    <span class="n">func</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">functional</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">func</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">False</span>
-    <span class="k">return</span> <span class="n">func</span> <span class="ow">in</span> <span class="n">_compiled_weak_fns</span> <span class="ow">or</span> <span class="n">func</span> <span class="ow">in</span> <span class="n">_boolean_dispatched</span>
+<span class="n">_modules_containing_builtins</span> <span class="o">=</span> <span class="p">(</span><span class="n">torch</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_nn</span><span class="p">)</span>
 
 
 <span class="k">def</span> <span class="nf">_unwrap_optional</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -1677,7 +1841,7 @@
     <span class="k">def</span> <span class="nf">register_all</span><span class="p">(</span><span class="n">mod</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">mod</span><span class="p">):</span>
             <span class="n">v</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">callable</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">_should_skip</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">callable</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
                 <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">v</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::&quot;</span> <span class="o">+</span> <span class="n">name</span>
     <span class="k">for</span> <span class="n">mod</span> <span class="ow">in</span> <span class="n">_modules_containing_builtins</span><span class="p">:</span>
         <span class="n">register_all</span><span class="p">(</span><span class="n">mod</span><span class="p">)</span>
@@ -1694,10 +1858,24 @@
     <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">functional</span><span class="o">.</span><span class="n">_no_grad_embedding_renorm_</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::_no_grad_embedding_renorm_&quot;</span>
 
     <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::floor&quot;</span>
+    <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::ceil&quot;</span>
+    <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::log&quot;</span>
+    <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log1p</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::log1p&quot;</span>
+    <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log10</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::log10&quot;</span>
+    <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::exp&quot;</span>
+    <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::sqrt&quot;</span>
+    <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::pow&quot;</span>
     <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">functional</span><span class="o">.</span><span class="n">interpolate</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::__interpolate&quot;</span>
     <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">functional</span><span class="o">.</span><span class="n">upsample_nearest</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::__upsample_nearest&quot;</span>
     <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">functional</span><span class="o">.</span><span class="n">upsample</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::__upsample&quot;</span>
     <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">functional</span><span class="o">.</span><span class="n">upsample_bilinear</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::__upsample_bilinear&quot;</span>
+    <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">functional</span><span class="o">.</span><span class="n">assert_int_or_pair</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::_assert_int_or_pair&quot;</span>
+    <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">get_packed_sequence</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::_pack_sequence&quot;</span>
+
+    <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">init</span><span class="o">.</span><span class="n">_no_grad_fill_</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::_no_grad_fill_&quot;</span>
+    <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">init</span><span class="o">.</span><span class="n">_no_grad_normal_</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::_no_grad_normal_&quot;</span>
+    <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">init</span><span class="o">.</span><span class="n">_no_grad_uniform_</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::_no_grad_uniform_&quot;</span>
+    <span class="n">_builtin_table</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">init</span><span class="o">.</span><span class="n">_no_grad_zero_</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;aten::_no_grad_zero_&quot;</span>
 
     <span class="k">return</span> <span class="n">_builtin_table</span>
 
@@ -1712,6 +1890,22 @@
 
 <span class="n">_register_builtin</span><span class="p">(</span><span class="nb">len</span><span class="p">,</span> <span class="s1">&#39;aten::len&#39;</span><span class="p">)</span>
 <span class="n">_register_builtin</span><span class="p">(</span><span class="n">_wait</span><span class="p">,</span> <span class="s1">&#39;aten::wait&#39;</span><span class="p">)</span>
+
+<span class="c1"># qualified_name =&gt; ScriptClass mapping</span>
+<span class="n">_script_classes</span> <span class="o">=</span> <span class="p">{}</span>
+
+
+<span class="k">def</span> <span class="nf">_add_script_class</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">_script_classes</span>
+    <span class="n">_script_classes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="bp">cls</span>
+
+
+<span class="k">def</span> <span class="nf">_get_script_class</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">_script_classes</span>
+    <span class="k">if</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">_script_classes</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Unknown reference to ScriptClass &#39;</span><span class="si">{}</span><span class="s2">&#39;. &quot;</span>
+                           <span class="s2">&quot;Did you forget to import it?&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">_script_classes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 
 <span class="c1"># torch.jit.Error</span>
 <span class="n">Error</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">JITException</span>
@@ -1732,6 +1926,20 @@
     <span class="c1"># noop in python</span>
     <span class="k">return</span> <span class="n">the_value</span>
 
+
+<span class="n">Attribute</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;Attribute&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">])</span>
+
+<span class="n">last_executed_optimized_graph</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_last_executed_optimized_graph</span>
+
+
+<span class="k">def</span> <span class="nf">_graph_for</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="bp">self</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">last_executed_optimized_graph</span><span class="p">()</span>
+
+<span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">ScriptMethod</span><span class="o">.</span><span class="n">graph_for</span> <span class="o">=</span> <span class="n">_graph_for</span>
+<span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">Function</span><span class="o">.</span><span class="n">graph_for</span> <span class="o">=</span> <span class="n">_graph_for</span>
+<span class="n">Function</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">Function</span>
+
 <span class="k">if</span> <span class="ow">not</span> <span class="n">torch</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_jit_init</span><span class="p">():</span>
     <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;JIT initialization failed&quot;</span><span class="p">)</span>
 </pre></div>
@@ -1750,7 +1958,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Torch Contributors.
+        &copy; Copyright 2019, Torch Contributors.
 
     </p>
   </div>

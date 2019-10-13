@@ -108,7 +108,7 @@
               
               
                 <div class="version">
-                  master (1.0.0 )
+                  master (1.1.0 )
                 </div>
               
             
@@ -147,9 +147,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/autograd.html">Autograd mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/broadcasting.html">Broadcasting semantics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notes/cpu_threading_torchscript_inference.html">CPU threading and TorchScript inference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/cuda.html">CUDA semantics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/extending.html">Extending PyTorch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notes/large_scale_deployments.html">Features for large-scale deployments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/multiprocessing.html">Multiprocessing best practices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/randomness.html">Reproducibility</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../notes/serialization.html">Serialization semantics</a></li>
@@ -161,34 +163,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../community/governance.html">PyTorch Governance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../community/persons_of_interest.html">PyTorch Governance | Persons of Interest</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Package Reference</span></p>
+<p class="caption"><span class="caption-text">Python API</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../torch.html">torch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nn.html">torch.nn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nn.functional.html">torch.nn.functional</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tensors.html">torch.Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tensor_attributes.html">Tensor Attributes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../type_info.html">Type Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sparse.html">torch.sparse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../cuda.html">torch.cuda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../storage.html">torch.Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nn.html">torch.nn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nn.html#torch-nn-functional">torch.nn.functional</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nn.html#torch-nn-init">torch.nn.init</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../optim.html">torch.optim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../autograd.html">torch.autograd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cuda.html">torch.cuda</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../distributed.html">torch.distributed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../distributions.html">torch.distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../jit.html">torch.jit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../multiprocessing.html">torch.multiprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nn.init.html">torch.nn.init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../optim.html">torch.optim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../random.html">torch.random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sparse.html">torch.sparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../storage.html">torch.Storage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../bottleneck.html">torch.utils.bottleneck</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../checkpoint.html">torch.utils.checkpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../cpp_extension.html">torch.utils.cpp_extension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../data.html">torch.utils.data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../dlpack.html">torch.utils.dlpack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../model_zoo.html">torch.utils.model_zoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../onnx.html">torch.onnx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tensorboard.html">torch.utils.tensorboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../type_info.html">Type Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../named_tensor.html">Named Tensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../name_inference.html">Named Tensors operator coverage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../__config__.html">torch.__config__</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_deprecated.html">torch.distributed.deprecated</a></li>
 </ul>
 
             
@@ -274,18 +279,19 @@
 
 <div class="viewcode-block" id="LogitRelaxedBernoulli"><a class="viewcode-back" href="../../../distributions.html#torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli">[docs]</a><span class="k">class</span> <span class="nc">LogitRelaxedBernoulli</span><span class="p">(</span><span class="n">Distribution</span><span class="p">):</span>
     <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Creates a LogitRelaxedBernoulli distribution parameterized by :attr:`probs` or :attr:`logits`</span>
-<span class="sd">    (but not both), which is the logit of a RelaxedBernoulli distribution.</span>
+<span class="sd">    Creates a LogitRelaxedBernoulli distribution parameterized by :attr:`probs`</span>
+<span class="sd">    or :attr:`logits` (but not both), which is the logit of a RelaxedBernoulli</span>
+<span class="sd">    distribution.</span>
 
 <span class="sd">    Samples are logits of values in (0, 1). See [1] for more details.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        temperature (Tensor): relaxation temperature</span>
-<span class="sd">        probs (Number, Tensor): the probabilty of sampling `1`</span>
+<span class="sd">        probs (Number, Tensor): the probability of sampling `1`</span>
 <span class="sd">        logits (Number, Tensor): the log-odds of sampling `1`</span>
 
-<span class="sd">    [1] The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables</span>
-<span class="sd">    (Maddison et al, 2017)</span>
+<span class="sd">    [1] The Concrete Distribution: A Continuous Relaxation of Discrete Random</span>
+<span class="sd">    Variables (Maddison et al, 2017)</span>
 
 <span class="sd">    [2] Categorical Reparametrization with Gumbel-Softmax</span>
 <span class="sd">    (Jang et al, 2017)</span>
@@ -318,7 +324,7 @@
         <span class="k">if</span> <span class="s1">&#39;probs&#39;</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">:</span>
             <span class="n">new</span><span class="o">.</span><span class="n">probs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">probs</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">batch_shape</span><span class="p">)</span>
             <span class="n">new</span><span class="o">.</span><span class="n">_param</span> <span class="o">=</span> <span class="n">new</span><span class="o">.</span><span class="n">probs</span>
-        <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s1">&#39;logits&#39;</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">:</span>
             <span class="n">new</span><span class="o">.</span><span class="n">logits</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">logits</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">batch_shape</span><span class="p">)</span>
             <span class="n">new</span><span class="o">.</span><span class="n">_param</span> <span class="o">=</span> <span class="n">new</span><span class="o">.</span><span class="n">logits</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">LogitRelaxedBernoulli</span><span class="p">,</span> <span class="n">new</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">batch_shape</span><span class="p">,</span> <span class="n">validate_args</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -356,9 +362,10 @@
 
 <div class="viewcode-block" id="RelaxedBernoulli"><a class="viewcode-back" href="../../../distributions.html#torch.distributions.relaxed_bernoulli.RelaxedBernoulli">[docs]</a><span class="k">class</span> <span class="nc">RelaxedBernoulli</span><span class="p">(</span><span class="n">TransformedDistribution</span><span class="p">):</span>
     <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Creates a RelaxedBernoulli distribution, parametrized by :attr:`temperature`, and either</span>
-<span class="sd">    :attr:`probs` or :attr:`logits` (but not both). This is a relaxed version of the `Bernoulli`</span>
-<span class="sd">    distribution, so the values are in (0, 1), and has reparametrizable samples.</span>
+<span class="sd">    Creates a RelaxedBernoulli distribution, parametrized by</span>
+<span class="sd">    :attr:`temperature`, and either :attr:`probs` or :attr:`logits`</span>
+<span class="sd">    (but not both). This is a relaxed version of the `Bernoulli` distribution,</span>
+<span class="sd">    so the values are in (0, 1), and has reparametrizable samples.</span>
 
 <span class="sd">    Example::</span>
 
@@ -369,7 +376,7 @@
 
 <span class="sd">    Args:</span>
 <span class="sd">        temperature (Tensor): relaxation temperature</span>
-<span class="sd">        probs (Number, Tensor): the probabilty of sampling `1`</span>
+<span class="sd">        probs (Number, Tensor): the probability of sampling `1`</span>
 <span class="sd">        logits (Number, Tensor): the log-odds of sampling `1`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">arg_constraints</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;probs&#39;</span><span class="p">:</span> <span class="n">constraints</span><span class="o">.</span><span class="n">unit_interval</span><span class="p">,</span>
@@ -414,7 +421,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Torch Contributors.
+        &copy; Copyright 2019, Torch Contributors.
 
     </p>
   </div>
